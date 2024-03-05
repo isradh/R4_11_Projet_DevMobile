@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SplashScreenActivity"
+    android:background="#BFD8BD">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="0dp">
+
+        <ImageView
+            android:id="@+id/logo_splash"
+            android:layout_width="350dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo_accueil"
+            tools:ignore="MissingConstraints" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Pas de compte ? Inscrit toi !"
+            android:textColor="@color/ligthgreen"
+            android:textSize="21dp"
+            android:textStyle="bold"
+
+            />
+
+        <EditText
+            android:id="@+id/nom"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background_edittext"
+            android:hint="Nom"
+            android:drawableLeft="@drawable/carte_identite"
+            android:drawablePadding="8dp"
+            android:inputType="text"
+            android:paddingLeft="10dp"
+            android:textStyle="italic"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/prenom"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background_edittext"
+            android:hint="Prénom"
+            android:drawableLeft="@drawable/utilisateur"
+            android:drawablePadding="8dp"
+            android:paddingLeft="10dp"
+            android:paddingTop="3dp"
+            android:inputType="text"
+            android:textStyle="italic"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <LinearLayout
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_margin="20dp">
+
+            <EditText
+                android:id="@+id/etage"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:background="@drawable/background_edittext"
+                android:hint="Etage"
+                android:inputType="number"
+                android:maxLength="2"
+                android:drawableLeft="@drawable/codepostale"
+                android:drawablePadding="6dp"
+                android:paddingLeft="10dp"
+                android:textStyle="italic"
+                tools:ignore="TouchTargetSizeCheck" />
+
+            <EditText
+                android:id="@+id/superficie"
+                android:layout_width="140dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="20dp"
+                android:background="@drawable/background_edittext"
+                android:hint="Superficie"
+                android:inputType="number"
+                android:maxLength="3"
+                android:drawableLeft="@drawable/ville"
+                android:drawablePadding="6dp"
+                android:paddingLeft="10dp"
+                android:textStyle="italic"
+                tools:ignore="TouchTargetSizeCheck" />
+
+        </LinearLayout>
+
+
+        <EditText
+            android:id="@+id/adresseMail"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:background="@drawable/background_edittext"
+            android:hint="Adresse mail"
+            android:inputType="text"
+            android:drawableLeft="@drawable/email"
+            android:drawablePadding="8dp"
+            android:paddingLeft="10dp"
+            android:textStyle="italic"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <EditText
+            android:id="@+id/mdp"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/background_edittext"
+            android:hint="Mot de passe"
+            android:inputType="textPassword"
+            android:drawableLeft="@drawable/cadena"
+            android:drawablePadding="8dp"
+            android:paddingLeft="10dp"
+            android:textStyle="italic"
+            tools:ignore="TouchTargetSizeCheck" />
+
+
+        <Button
+            android:id="@+id/loginBtn"
+            style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+            android:layout_width="170dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="30dp"
+            android:backgroundTint="#5C7E6F"
+            android:text="Inscription"
+            android:textSize="15dp"
+            tools:ignore="TextSizeCheck" />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            >
+
+            <View
+                android:layout_width="150dp"
+                android:layout_height="2dp"
+                android:background="@android:color/white"
+                />
+
+            <TextView
+                android:layout_width="50dp"
+                android:layout_height="match_parent"
+                android:text="OU"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:textColor="@color/white"/>
+
+            <View
+                android:layout_width="150dp"
+                android:layout_height="2dp"
+                android:background="@android:color/white"
+                />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="20dp"
+            >
+
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:src="@drawable/seconnecter"/>
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:text="Se connecter"
+                android:textColor="@color/ligthgreen"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+        </LinearLayout>
+
+
+
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
