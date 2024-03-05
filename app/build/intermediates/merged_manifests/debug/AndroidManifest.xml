@@ -31,6 +31,12 @@
         android:testOnly="true"
         android:theme="@style/Theme.R4_11_DevMobile" >
         <activity
+            android:name="com.example.r4_11_devmobile.mdpOublieActivity2"
+            android:exported="false" />
+        <activity
+            android:name="com.example.r4_11_devmobile.mdpOublieActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.r4_11_devmobile.AccueilActivity"
             android:exported="false" />
         <activity

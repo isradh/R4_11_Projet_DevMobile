@@ -1,20 +1,14 @@
 package com.example.r4_11_devmobile;
 
 import androidx.appcompat.app.AppCompatActivity;
+
 import android.view.View;
 
-import android.animation.ObjectAnimator;
 import android.content.Intent;
-import android.media.Image;
 import android.os.Bundle;
-import android.view.View;
-import android.view.animation.LinearInterpolator;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.ImageView;
 import android.widget.TextView;
-import android.os.Bundle;
-import android.widget.Button;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -44,10 +38,17 @@ public class LoginActivity extends AppCompatActivity {
 
         Button loginBtn = findViewById(R.id.loginBtn);
         TextView btncreecompte = findViewById(R.id.textView5);
-        EditText usernameLN = findViewById(R.id.adresseMail);
-        EditText passwordLN = findViewById(R.id.mdp);
+        EditText usernameLN = findViewById(R.id.mdp);
+        EditText passwordLN = findViewById(R.id.confirmeMdp);
+        TextView mdpLost = findViewById(R.id.lost);
 
-
+        mdpLost.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), mdpOublieActivity.class);
+                startActivity(intent);
+            }
+        });
         btncreecompte.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {

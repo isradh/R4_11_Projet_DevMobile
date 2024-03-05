@@ -39,7 +39,7 @@
 
 
         <EditText
-            android:id="@+id/adresseMail"
+            android:id="@+id/mdp"
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:background="@drawable/background_edittext"
@@ -54,7 +54,7 @@
 
 
         <EditText
-            android:id="@+id/mdp"
+            android:id="@+id/confirmeMdp"
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:layout_marginTop="30dp"
@@ -68,6 +68,7 @@
             tools:ignore="TouchTargetSizeCheck" />
 
         <TextView
+            android:id="@+id/lost"
             android:layout_width="match_parent"
             android:layout_height="30dp"
             android:text="Mot de passe oublié ?"

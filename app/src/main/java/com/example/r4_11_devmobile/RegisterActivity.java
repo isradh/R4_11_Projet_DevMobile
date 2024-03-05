@@ -55,9 +55,9 @@ public class RegisterActivity extends AppCompatActivity {
 
 
         EditText nom_ = findViewById(R.id.nom);
-        EditText mdp_ = findViewById(R.id.mdp);
+        EditText mdp_ = findViewById(R.id.confirmeMdp);
         EditText prenom_ = findViewById(R.id.prenom);
-        EditText email_ = findViewById(R.id.adresseMail);
+        EditText email_ = findViewById(R.id.mdp);
         EditText etage_ = findViewById(R.id.etage);
         EditText superficie_ = findViewById(R.id.superficie);
 

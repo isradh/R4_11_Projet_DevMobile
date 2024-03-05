@@ -2983,6 +2983,7 @@ drawable btn_radio_on_to_off_mtrl_animation
 drawable cadena
 drawable carte_identite
 drawable codepostale
+drawable confirme
 drawable copyright
 drawable design_fab_background
 drawable design_ic_visibility
@@ -3154,7 +3155,6 @@ id action_text
 id actions
 id activity_chooser_view_content
 id add
-id adresseMail
 id alertTitle
 id aligned
 id all
@@ -3171,6 +3171,7 @@ id auto
 id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
+id back
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3208,6 +3209,7 @@ id closest
 id collapseActionView
 id compress
 id confirm_button
+id confirmeMdp
 id conseil
 id constraint
 id container
@@ -3269,6 +3271,7 @@ id etage
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
+id explicationText
 id fade
 id fill
 id fill_horizontal
@@ -3329,7 +3332,11 @@ id linear
 id listMode
 id list_item
 id loginBtn
+id logo
+id logoCo
 id logo_splash
+id lost
+id lostMDPText
 id m3_side_sheet
 id marquee
 id masked
@@ -3707,6 +3714,8 @@ layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_accueil
 layout activity_login
+layout activity_mdp_oublie
+layout activity_mdp_oublie2
 layout activity_register
 layout activity_splash_screen
 layout activity_splash_screen2
