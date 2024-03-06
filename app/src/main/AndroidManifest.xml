@@ -16,10 +16,10 @@
         android:theme="@style/Theme.R4_11_DevMobile"
         tools:targetApi="31">
         <activity
-            android:name=".mdpOublieActivity2"
+            android:name=".NewPasswordActivity"
             android:exported="false" />
         <activity
-            android:name=".mdpOublieActivity"
+            android:name=".ForgotPasswordActivity"
             android:exported="false" />
         <activity
             android:name=".AccueilActivity"

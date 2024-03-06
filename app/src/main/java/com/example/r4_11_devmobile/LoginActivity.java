@@ -45,7 +45,7 @@ public class LoginActivity extends AppCompatActivity {
         mdpLost.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), mdpOublieActivity.class);
+                Intent intent = new Intent(getApplicationContext(), ForgotPasswordActivity.class);
                 startActivity(intent);
             }
         });

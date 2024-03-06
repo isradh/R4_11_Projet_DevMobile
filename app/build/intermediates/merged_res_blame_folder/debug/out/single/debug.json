@@ -1,162 +1,150 @@
 [
     {
-        "merged": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/layout_activity_splash_screen.xml.flat",
-        "source": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/layout/activity_splash_screen.xml"
+        "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/mipmap-hdpi_ic_launcher.webp.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/mipmap-hdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/drawable_cadena.png.flat",
-        "source": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/drawable/cadena.png"
+        "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/mipmap-xhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/mipmap-xhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/xml_data_extraction_rules.xml.flat",
-        "source": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/xml/data_extraction_rules.xml"
+        "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/xml_backup_rules.xml.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/xml/backup_rules.xml"
     },
     {
-        "merged": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/drawable_seconnecter.png.flat",
-        "source": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/drawable/seconnecter.png"
+        "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
-        "merged": "com.example.r4_11_devmobile.app-merged_res-31:/layout_activity_register.xml.flat",
-        "source": "com.example.r4_11_devmobile.app-main-33:/layout/activity_register.xml"
+        "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/drawable_ville.png.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/drawable/ville.png"
     },
     {
-        "merged": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/drawable_utilisateur.png.flat",
-        "source": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/drawable/utilisateur.png"
+        "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/xml_data_extraction_rules.xml.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/xml/data_extraction_rules.xml"
     },
     {
-        "merged": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
-        "source": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/mipmap-anydpi-v26/ic_launcher_round.xml"
+        "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/mipmap-mdpi_ic_launcher.webp.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/mipmap-mdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/drawable_carte_identite.png.flat",
-        "source": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/drawable/carte_identite.png"
+        "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/drawable_ic_launcher_background.xml.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/drawable/ic_launcher_background.xml"
     },
     {
-        "merged": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/mipmap-xhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/mipmap-xhdpi/ic_launcher_round.webp"
+        "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/drawable_broche.png.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/drawable/broche.png"
     },
     {
-        "merged": "com.example.r4_11_devmobile.app-merged_res-31:/layout_activity_login.xml.flat",
-        "source": "com.example.r4_11_devmobile.app-main-33:/layout/activity_login.xml"
+        "merged": "com.example.r4_11_devmobile.app-merged_res-31:/layout_activity_new_password.xml.flat",
+        "source": "com.example.r4_11_devmobile.app-main-33:/layout/activity_new_password.xml"
     },
     {
-        "merged": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/mipmap-anydpi-v26/ic_launcher.xml"
+        "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/mipmap-xxxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/mipmap-xxxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/drawable_copyright.png.flat",
-        "source": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/drawable/copyright.png"
+        "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/mipmap-xxhdpi_ic_launcher.webp.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
-        "merged": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/xml_backup_rules.xml.flat",
-        "source": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/xml/backup_rules.xml"
+        "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/layout_activity_splash_screen.xml.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/layout/activity_splash_screen.xml"
     },
     {
-        "merged": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/drawable_ic_launcher_background.xml.flat",
-        "source": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/drawable/ic_launcher_background.xml"
+        "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/drawable_maison_ecologique.png.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/drawable/maison_ecologique.png"
     },
     {
-        "merged": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/drawable_maison_ecologique.png.flat",
-        "source": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/drawable/maison_ecologique.png"
+        "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/drawable_utilisateur.png.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/drawable/utilisateur.png"
     },
     {
-        "merged": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/xml_network_security_config.xml.flat",
-        "source": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/xml/network_security_config.xml"
+        "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/drawable_codepostale.png.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/drawable/codepostale.png"
     },
     {
-        "merged": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
-        "source": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-pngs-27:/drawable-anydpi-v24/ic_launcher_foreground.xml"
+        "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/drawable_logo_accueil.png.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/drawable/logo_accueil.png"
     },
     {
-        "merged": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/mipmap-hdpi_ic_launcher.webp.flat",
-        "source": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/mipmap-hdpi/ic_launcher.webp"
+        "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/drawable_email.png.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/drawable/email.png"
     },
     {
-        "merged": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/drawable_background_edittext.xml.flat",
-        "source": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/drawable/background_edittext.xml"
+        "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/drawable-anydpi-v24_ic_launcher_foreground.xml.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-pngs-27:/drawable-anydpi-v24/ic_launcher_foreground.xml"
     },
     {
-        "merged": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/mipmap-xxxhdpi/ic_launcher_round.webp"
+        "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/drawable_cadena.png.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/drawable/cadena.png"
     },
     {
-        "merged": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/mipmap-xxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/mipmap-xxhdpi/ic_launcher.webp"
+        "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/drawable_seconnecter.png.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/drawable/seconnecter.png"
     },
     {
-        "merged": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/layout_activity_mdp_oublie.xml.flat",
-        "source": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/layout/activity_mdp_oublie.xml"
+        "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/mipmap-xxxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/mipmap-xxxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/mipmap-xhdpi_ic_launcher.webp.flat",
-        "source": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/mipmap-xhdpi/ic_launcher.webp"
+        "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/drawable_background_edittext.xml.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/drawable/background_edittext.xml"
     },
     {
-        "merged": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/layout_activity_register.xml.flat",
-        "source": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/layout/activity_register.xml"
+        "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/layout_activity_login.xml.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/layout/activity_login.xml"
     },
     {
-        "merged": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/drawable_broche.png.flat",
-        "source": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/drawable/broche.png"
+        "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/layout_activity_new_password.xml.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/layout/activity_new_password.xml"
     },
     {
-        "merged": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/drawable_email.png.flat",
-        "source": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/drawable/email.png"
+        "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/drawable_carte_identite.png.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/drawable/carte_identite.png"
     },
     {
-        "merged": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/mipmap-xxxhdpi_ic_launcher.webp.flat",
-        "source": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/mipmap-xxxhdpi/ic_launcher.webp"
+        "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/drawable_copyright.png.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/drawable/copyright.png"
     },
     {
-        "merged": "com.example.r4_11_devmobile.app-merged_res-31:/layout_activity_mdp_oublie.xml.flat",
-        "source": "com.example.r4_11_devmobile.app-main-33:/layout/activity_mdp_oublie.xml"
+        "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/mipmap-xhdpi_ic_launcher.webp.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/mipmap-xhdpi/ic_launcher.webp"
     },
     {
-        "merged": "com.example.r4_11_devmobile.app-merged_res-31:/drawable_confirme.png.flat",
-        "source": "com.example.r4_11_devmobile.app-main-33:/drawable/confirme.png"
+        "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/layout_activity_forgot_password.xml.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/layout/activity_forgot_password.xml"
     },
     {
-        "merged": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/drawable_ville.png.flat",
-        "source": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/drawable/ville.png"
+        "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/xml_network_security_config.xml.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/xml/network_security_config.xml"
     },
     {
-        "merged": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/mipmap-xxhdpi/ic_launcher_round.webp"
+        "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/mipmap-xxhdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/mipmap-xxhdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/layout_activity_login.xml.flat",
-        "source": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/layout/activity_login.xml"
+        "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/mipmap-mdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/mipmap-mdpi/ic_launcher_round.webp"
     },
     {
-        "merged": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/drawable_logo_accueil.png.flat",
-        "source": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/drawable/logo_accueil.png"
+        "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/layout_activity_splash_screen2.xml.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/layout/activity_splash_screen2.xml"
     },
     {
-        "merged": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/mipmap-hdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/mipmap-hdpi/ic_launcher_round.webp"
+        "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/layout_activity_register.xml.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/layout/activity_register.xml"
     },
     {
-        "merged": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/drawable_codepostale.png.flat",
-        "source": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/drawable/codepostale.png"
+        "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/layout_activity_accueil.xml.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/layout/activity_accueil.xml"
     },
     {
-        "merged": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/layout_activity_accueil.xml.flat",
-        "source": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/layout/activity_accueil.xml"
+        "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/mipmap-anydpi-v26/ic_launcher_round.xml"
     },
     {
-        "merged": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/mipmap-mdpi_ic_launcher_round.webp.flat",
-        "source": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/mipmap-mdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/layout_activity_splash_screen2.xml.flat",
-        "source": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/layout/activity_splash_screen2.xml"
-    },
-    {
-        "merged": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/mipmap-mdpi_ic_launcher.webp.flat",
-        "source": "/Users/ines/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/mipmap-mdpi/ic_launcher.webp"
-    },
-    {
-        "merged": "com.example.r4_11_devmobile.app-merged_res-31:/layout_activity_mdp_oublie2.xml.flat",
-        "source": "com.example.r4_11_devmobile.app-main-33:/layout/activity_mdp_oublie2.xml"
+        "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/mipmap-hdpi_ic_launcher_round.webp.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/mipmap-hdpi/ic_launcher_round.webp"
     }
 ]

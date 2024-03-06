@@ -9,7 +9,6 @@ drawable broche
 drawable cadena
 drawable carte_identite
 drawable codepostale
-drawable confirme
 drawable copyright
 drawable email
 drawable ic_launcher_background
@@ -19,6 +18,7 @@ drawable maison_ecologique
 drawable seconnecter
 drawable utilisateur
 drawable ville
+id adressMail
 id back
 id citationText
 id confirmeMdp
@@ -41,9 +41,9 @@ id superficie
 id text
 id textView5
 layout activity_accueil
+layout activity_forgot_password
 layout activity_login
-layout activity_mdp_oublie
-layout activity_mdp_oublie2
+layout activity_new_password
 layout activity_register
 layout activity_splash_screen
 layout activity_splash_screen2

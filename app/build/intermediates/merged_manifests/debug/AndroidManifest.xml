@@ -31,10 +31,10 @@
         android:testOnly="true"
         android:theme="@style/Theme.R4_11_DevMobile" >
         <activity
-            android:name="com.example.r4_11_devmobile.mdpOublieActivity2"
+            android:name="com.example.r4_11_devmobile.NewPasswordActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.r4_11_devmobile.mdpOublieActivity"
+            android:name="com.example.r4_11_devmobile.ForgotPasswordActivity"
             android:exported="false" />
         <activity
             android:name="com.example.r4_11_devmobile.AccueilActivity"

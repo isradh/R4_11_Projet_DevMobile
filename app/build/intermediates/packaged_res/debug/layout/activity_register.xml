@@ -45,6 +45,7 @@
             android:drawableLeft="@drawable/carte_identite"
             android:drawablePadding="8dp"
             android:inputType="text"
+            android:elevation="10dp"
             android:paddingLeft="10dp"
             android:textStyle="italic"
             tools:ignore="TouchTargetSizeCheck" />
@@ -56,6 +57,7 @@
             android:layout_marginTop="20dp"
             android:background="@drawable/background_edittext"
             android:hint="Prénom"
+            android:elevation="10dp"
             android:drawableLeft="@drawable/utilisateur"
             android:drawablePadding="8dp"
             android:paddingLeft="10dp"
@@ -77,6 +79,7 @@
                 android:hint="Etage"
                 android:inputType="number"
                 android:maxLength="2"
+                android:elevation="10dp"
                 android:drawableLeft="@drawable/codepostale"
                 android:drawablePadding="6dp"
                 android:paddingLeft="10dp"
@@ -92,6 +95,7 @@
                 android:hint="Superficie"
                 android:inputType="number"
                 android:maxLength="3"
+                android:elevation="10dp"
                 android:drawableLeft="@drawable/ville"
                 android:drawablePadding="6dp"
                 android:paddingLeft="10dp"
@@ -102,12 +106,13 @@
 
 
         <EditText
-            android:id="@+id/adresseMail"
+            android:id="@+id/mdp"
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:background="@drawable/background_edittext"
             android:hint="Adresse mail"
             android:inputType="text"
+            android:elevation="10dp"
             android:drawableLeft="@drawable/email"
             android:drawablePadding="8dp"
             android:paddingLeft="10dp"
@@ -115,12 +120,13 @@
             tools:ignore="TouchTargetSizeCheck" />
 
         <EditText
-            android:id="@+id/mdp"
+            android:id="@+id/confirmeMdp"
             android:layout_width="300dp"
             android:layout_height="40dp"
             android:layout_marginTop="20dp"
             android:background="@drawable/background_edittext"
             android:hint="Mot de passe"
+            android:elevation="10dp"
             android:inputType="textPassword"
             android:drawableLeft="@drawable/cadena"
             android:drawablePadding="8dp"
@@ -138,6 +144,7 @@
             android:layout_marginTop="30dp"
             android:backgroundTint="#5C7E6F"
             android:text="Inscription"
+            android:elevation="10dp"
             android:textSize="15dp"
             tools:ignore="TextSizeCheck" />
 
