@@ -3,7 +3,7 @@ header('Content-Type: application/json');
 include_once '../config/Database.php';
 
 $json = json_decode(file_get_contents('php://input'), true); 
-$result = array(); // Initialisation de $result
+$result = array(); 
 
 if(isset($json['email']) && isset($json['mdp'])){ 
     $email = htmlspecialchars($json['email']); 
