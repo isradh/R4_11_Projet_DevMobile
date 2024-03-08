@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <group>
+        <item
+            android:id="@+id/nav_habitats"
+            android:title="Listes des habitats "
+            icon
+
+            />
+
+        <item
+            android:id="@+id/nav_notif"
+
+            android:title="Mes notifications" />
+
+        <item
+            android:id="@+id/nav_preference"
+
+            android:title="Mes preferences" />
+
+        <item
+            android:id="@+id/nav_monhabitat"
+
+            android:title="Mon Habitats" />
+    </group>
+
+    <item android:title="Mon Profil">
+
+        <menu>
+
+            <group android:checkableBehavior="single">
+
+                <item
+                    android:id="@+id/nav_profil"
+
+                    android:title="Mon Profil " />
+
+                <item
+                    android:id="@+id/nav_apropos"
+
+                    android:title="A propos" />
+
+
+            </group>
+        </menu>
+    </item>
+
+</menu>
