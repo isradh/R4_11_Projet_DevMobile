@@ -6,4 +6,8 @@
     </style>
 
     <style name="Theme.R4_11_DevMobile" parent="Base.Theme.R4_11_DevMobile" />
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+
+    </style>
+
 </resources>

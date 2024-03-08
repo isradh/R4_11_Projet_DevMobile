@@ -5,6 +5,14 @@
     <color name="ligthgreen">#6B9080</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">R4_11_DevMobile</string>
+    <string name="navi">Close </string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="traveling">Traveling</string>
+    <string name="www_taimoorsikander_com">www.taimoorsikander.com</string>
+    <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar">
+
+    </style>
     <style name="Base.Theme.R4_11_DevMobile" parent="Theme.Material3.DayNight.NoActionBar">
         
         
