@@ -1,0 +1,350 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#BFD8BD"
+    tools:ignore="MissingConstraints"
+    tools:context=".EspaceClientActivity">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-118dp"
+        android:backgroundTint="#6B9080"
+        app:cardBackgroundColor="@color/white"
+        app:cardElevation="0dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/burger"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+
+                android:src="@drawable/burger"
+                />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Espace personnel"
+                android:textColor="#FFFFFF"
+                android:textSize="22dp"
+                android:textStyle="bold"
+                android:layout_marginTop="13dp"
+                android:layout_marginStart="15dp"
+                />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/hello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Bonjour, "
+        android:textColor="#FFFFFF"
+        android:textSize="22dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/banner"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <TextView
+        android:id="@+id/ecoCoins"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Eco-coins"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/hello"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/coins1"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="35dp"
+        app:cardCornerRadius="15dp"
+        android:backgroundTint="#6B9080"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/ecoCoins"
+        app:layout_constraintEnd_toStartOf="@+id/coins2"
+        app:cardElevation="20dp">
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/coins2"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+
+        app:cardCornerRadius="15dp"
+        android:backgroundTint="#6B9080"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/ecoCoins"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardElevation="20dp">
+
+    </androidx.cardview.widget.CardView>
+    <androidx.cardview.widget.CardView
+        android:id="@+id/coins3"
+        android:layout_width="90dp"
+        android:layout_height="90dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="35dp"
+        app:cardCornerRadius="15dp"
+        android:backgroundTint="#6B9080"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/ecoCoins"
+        app:layout_constraintStart_toEndOf="@+id/coins2"
+        app:cardElevation="20dp">
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Information personnel"
+        android:textColor="@color/black"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:layout_marginTop="30dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintTop_toBottomOf="@+id/coins3"
+        app:layout_constraintStart_toStartOf="parent"
+        />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/information"
+        android:layout_width="350dp"
+        android:layout_height="280dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="15dp"
+        android:backgroundTint="#6B9080"
+        app:cardBackgroundColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/info"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:cardElevation="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/nom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nom : "
+                    android:textColor="#FFFFFF"
+                    android:textSize="18dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="28dp"
+                    />
+
+                <EditText
+                    android:id="@+id/nomSaisie"
+                    android:layout_width="170dp"
+                    android:layout_height="20dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18dp"
+                    android:background="@drawable/background_edittext"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="28dp"
+                    app:layout_constraintTop_toBottomOf="@+id/nom"
+                    app:layout_constraintStart_toStartOf="@id/nom"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/prenom"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Prénom : "
+                    android:textColor="#FFFFFF"
+                    android:textSize="18dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    />
+
+                <EditText
+                    android:id="@+id/prenomSaisie"
+                    android:layout_width="170dp"
+                    android:layout_height="20dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18dp"
+                    android:background="@drawable/background_edittext"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintTop_toBottomOf="@+id/nom"
+                    app:layout_constraintStart_toStartOf="@id/nom"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/etage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Etage : "
+                    android:textColor="#FFFFFF"
+                    android:textSize="18dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    />
+                <EditText
+                    android:id="@+id/etageSaisie"
+                    android:layout_width="170dp"
+                    android:layout_height="20dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18dp"
+                    android:background="@drawable/background_edittext"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintTop_toBottomOf="@+id/nom"
+                    app:layout_constraintStart_toStartOf="@id/nom"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/superficie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Superficie  : "
+                    android:textColor="#FFFFFF"
+                    android:textSize="18dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    />
+                <EditText
+                    android:id="@+id/superficieSaisie"
+                    android:layout_width="170dp"
+                    android:layout_height="20dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18dp"
+                    android:background="@drawable/background_edittext"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintTop_toBottomOf="@+id/nom"
+                    app:layout_constraintStart_toStartOf="@id/nom"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/mail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Adresse mail   : "
+                    android:textColor="#FFFFFF"
+                    android:textSize="18dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    />
+                <EditText
+                    android:id="@+id/mailSaisie"
+                    android:layout_width="170dp"
+                    android:layout_height="20dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18dp"
+                    android:background="@drawable/background_edittext"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintTop_toBottomOf="@+id/nom"
+                    app:layout_constraintStart_toStartOf="@id/nom"
+                    />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/mdp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Mot de passe   : "
+                    android:textColor="#FFFFFF"
+                    android:textSize="18dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="15dp"
+                    />
+                <EditText
+                    android:id="@+id/mdpSaisie"
+                    android:layout_width="170dp"
+                    android:layout_height="20dp"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18dp"
+                    android:background="@drawable/background_edittext"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    app:layout_constraintTop_toBottomOf="@+id/nom"
+                    app:layout_constraintStart_toStartOf="@id/nom"
+                    />
+            </LinearLayout>
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/loginBtn"
+        style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+        android:layout_width="350dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:backgroundTint="#5C7E6F"
+        android:text="Enregistrer les modifications"
+        android:textSize="15dp"
+        android:elevation="10dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/information"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="TextSizeCheck"
+        app:cardElevation="20dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
