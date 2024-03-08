@@ -2092,6 +2092,7 @@ color switch_thumb_normal_material_dark
 color switch_thumb_normal_material_light
 color tooltip_background_dark
 color tooltip_background_light
+color veriligthgreen
 color white
 dimen abc_action_bar_content_inset_material
 dimen abc_action_bar_content_inset_with_nav
@@ -2983,6 +2984,7 @@ drawable btn_radio_off_mtrl
 drawable btn_radio_off_to_on_mtrl_animation
 drawable btn_radio_on_mtrl
 drawable btn_radio_on_to_off_mtrl_animation
+drawable burger
 drawable cadena
 drawable carte_identite
 drawable codepostale
@@ -3090,6 +3092,7 @@ drawable seconnecter
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
+drawable user
 drawable utilisateur
 drawable ville
 id ALT
@@ -3099,6 +3102,10 @@ id CTRL
 id FUNCTION
 id META
 id NO_DEBUG
+id Nbequipement
+id NbequipementText
+id Nom
+id NomText
 id SHIFT
 id SHOW_ALL
 id SHOW_PATH
@@ -3169,6 +3176,7 @@ id aligned
 id all
 id allStates
 id always
+id ancienneAlertelistView
 id animateToEnd
 id animateToStart
 id antiClockwise
@@ -3181,6 +3189,7 @@ id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
 id back
+id banner
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3192,10 +3201,12 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id burger
 id buttonPanel
 id cache_measures
 id callMeasure
 id cancel_button
+id cardetage
 id carryVelocity
 id center
 id centerCrop
@@ -3215,6 +3226,9 @@ id clip_horizontal
 id clip_vertical
 id clockwise
 id closest
+id coins1
+id coins2
+id coins3
 id collapseActionView
 id compress
 id confirm_button
@@ -3269,6 +3283,7 @@ id easeIn
 id easeInOut
 id easeOut
 id east
+id ecoCoins
 id edge
 id edit_query
 id elastic
@@ -3278,6 +3293,7 @@ id endToStart
 id enterAlways
 id enterAlwaysCollapsed
 id etage
+id etageSaisie
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -3310,6 +3326,7 @@ id groups
 id guidelineEnd
 id guidelineStart
 id header_title
+id hello
 id hideable
 id home
 id homeAsUp
@@ -3317,6 +3334,8 @@ id honorRequest
 id horizontal_only
 id icon
 id icon_group
+id id
+id idtext
 id ifRoom
 id ignore
 id ignoreRequest
@@ -3325,6 +3344,7 @@ id immediateStop
 id included
 id indeterminate
 id info
+id information
 id invisible
 id inward
 id italic
@@ -3348,6 +3368,8 @@ id logo_splash
 id lost
 id lostMDPText
 id m3_side_sheet
+id mail
+id mailSaisie
 id marquee
 id masked
 id match_constraint
@@ -3374,9 +3396,11 @@ id material_timepicker_view
 id material_value_index
 id matrix
 id mdp
+id mdpSaisie
 id message
 id middle
 id mini
+id modif
 id month_grid
 id month_navigation_bar
 id month_navigation_fragment_toggle
@@ -3428,6 +3452,7 @@ id neverCompleteToStart
 id noScroll
 id noState
 id nom
+id nomSaisie
 id none
 id normal
 id north
@@ -3469,6 +3494,8 @@ id pin
 id position
 id postLayout
 id prenom
+id prenomSaisie
+id prenomText
 id pressed
 id progress_circular
 id progress_horizontal
@@ -3544,6 +3571,7 @@ id stretch
 id submenuarrow
 id submit_area
 id superficie
+id superficieSaisie
 id supportScrollUp
 id tabMode
 id tag_accessibility_actions
@@ -3586,6 +3614,7 @@ id toolbar
 id top
 id topPanel
 id touch_outside
+id tout
 id transitionToEnd
 id transitionToStart
 id transition_current_scene
@@ -3732,10 +3761,13 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_accueil
+layout activity_espace_client
+layout activity_espace_client_modification
 layout activity_forgot_password
 layout activity_login
 layout activity_new_password
 layout activity_register
+layout activity_resident
 layout activity_splash_screen
 layout activity_splash_screen2
 layout custom_dialog
@@ -3755,6 +3787,7 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout header_menu
+layout item_resident
 layout m3_alert_dialog
 layout m3_alert_dialog_actions
 layout m3_alert_dialog_title

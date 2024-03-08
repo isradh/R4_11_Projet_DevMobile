@@ -47,6 +47,7 @@ public class LoginActivity extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), ForgotPasswordActivity.class);
                 startActivity(intent);
+
             }
         });
         btncreecompte.setOnClickListener(new View.OnClickListener() {
@@ -61,6 +62,7 @@ public class LoginActivity extends AppCompatActivity {
                 username = usernameLN.getText().toString();
                 password = passwordLN.getText().toString();
                 connectUser();
+
             }
         });
 
@@ -82,8 +84,9 @@ public class LoginActivity extends AppCompatActivity {
                 success = reponse.getBoolean("success");
 
                 if(success == true ){
+                    String userId = reponse.getString("idUser");
+                    UserId.setUserId(userId);
                     Intent intent = new Intent(getApplicationContext(), AccueilActivity.class);
-                    intent.putExtra("username", username);
                     startActivity(intent);
                     finish();
 

@@ -40,6 +40,15 @@
             android:name="com.example.r4_11_devmobile.AccueilActivity"
             android:exported="false" />
         <activity
+            android:name="com.example.r4_11_devmobile.ResidentActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
             android:name="com.example.r4_11_devmobile.LoginActivity"
             android:exported="true" >
             <intent-filter>
@@ -48,6 +57,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name="com.example.r4_11_devmobile.EspaceClientModificationActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.r4_11_devmobile.EspaceClientActivity"
+            android:exported="false" />
         <activity
             android:name="com.example.r4_11_devmobile.RegisterActivity"
             android:exported="true" />

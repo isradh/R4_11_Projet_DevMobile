@@ -3,6 +3,7 @@
     <color name="black">#FF000000</color>
     <color name="darkgreen">#5C7E6F</color>
     <color name="ligthgreen">#6B9080</color>
+    <color name="veriligthgreen">#BFD8BD</color>
     <color name="white">#FFFFFFFF</color>
     <string name="app_name">R4_11_DevMobile</string>
     <string name="navi">Close </string>

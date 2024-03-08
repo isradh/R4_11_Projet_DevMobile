@@ -174,7 +174,6 @@
                     android:id="@+id/nomSaisie"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text=""
                     android:textColor="#FFFFFF"
                     android:textSize="18dp"
                     android:layout_marginStart="10dp"
@@ -319,7 +318,7 @@
     </androidx.cardview.widget.CardView>
 
     <Button
-        android:id="@+id/loginBtn"
+        android:id="@+id/modif"
         style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
         android:layout_width="300dp"
         android:layout_height="50dp"

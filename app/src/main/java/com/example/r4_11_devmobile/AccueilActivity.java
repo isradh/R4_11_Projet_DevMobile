@@ -1,13 +1,17 @@
 package com.example.r4_11_devmobile;
 
+
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
+import android.view.MenuItem;
 import android.widget.TextView;
 import androidx.appcompat.widget.Toolbar;
 
@@ -41,7 +45,24 @@ public class AccueilActivity extends AppCompatActivity {
         toggle.syncState();
         navigationView.setCheckedItem(R.id.nav_habitats);
 
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
 
+
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                if (item.getItemId() == R.id.nav_habitats) {
+                    // Ouvrez l'activité EspaceClientActivity lorsque l'élément de menu "Listes des habitats" est cliqué
+                    Intent intent = new Intent(AccueilActivity.this, EspaceClientActivity.class);
+                    startActivity(intent);
+                    //toggle.syncState();
+                }
+                // Ajoutez d'autres conditions pour d'autres éléments de menu si nécessaire
+
+                // Fermez le tiroir après avoir traité le clic sur l'élément de menu
+                drawerLayout.closeDrawer(GravityCompat.START);
+                return true;
+            }
+        });
 
 
 
