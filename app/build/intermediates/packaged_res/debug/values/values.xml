@@ -5,6 +5,10 @@
     <color name="ligthgreen">#6B9080</color>
     <color name="veriligthgreen">#BFD8BD</color>
     <color name="white">#FFFFFFFF</color>
+    <item name="nav_habitats" type="id"/>
+    <item name="nav_monhabitat" type="id"/>
+    <item name="nav_notif" type="id"/>
+    <item name="nav_preference" type="id"/>
     <string name="app_name">R4_11_DevMobile</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="navi">Close </string>

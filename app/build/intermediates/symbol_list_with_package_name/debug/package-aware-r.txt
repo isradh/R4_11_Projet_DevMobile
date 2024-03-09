@@ -3189,7 +3189,6 @@ id autoComplete
 id autoCompleteToEnd
 id autoCompleteToStart
 id back
-id banner
 id barrier
 id baseline
 id beginOnFirstDraw
@@ -3201,7 +3200,6 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
-id burger
 id buttonPanel
 id cache_measures
 id callMeasure
@@ -3347,6 +3345,7 @@ id image
 id immediateStop
 id included
 id indeterminate
+id indice
 id info
 id information
 id invisible
@@ -3765,10 +3764,14 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_accueil
+layout activity_accueiloff
 layout activity_espace_client
 layout activity_espace_client_modification
 layout activity_forgot_password
 layout activity_login
+layout activity_mesnotifications
+layout activity_mespreferences
+layout activity_monhabitats
 layout activity_new_password
 layout activity_register
 layout activity_resident

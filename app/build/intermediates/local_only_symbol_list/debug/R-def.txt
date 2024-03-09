@@ -37,8 +37,6 @@ id NomText
 id adressMail
 id ancienneAlertelistView
 id back
-id banner
-id burger
 id cardetage
 id citationText
 id coin
@@ -61,6 +59,7 @@ id guidelineStart
 id hello
 id id
 id idtext
+id indice
 id info
 id information
 id loginBtn
@@ -94,10 +93,14 @@ id textView5
 id toolbar
 id tout
 layout activity_accueil
+layout activity_accueiloff
 layout activity_espace_client
 layout activity_espace_client_modification
 layout activity_forgot_password
 layout activity_login
+layout activity_mesnotifications
+layout activity_mespreferences
+layout activity_monhabitats
 layout activity_new_password
 layout activity_register
 layout activity_resident

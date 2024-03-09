@@ -1,6 +1,0 @@
-com.example.r4_11_devmobile.test.app-annotation-experimental-1.3.0-0 /Users/isra/.gradle/caches/transforms-3/075bf41ce814d4260f02e042700ce999/transformed/annotation-experimental-1.3.0/res
-com.example.r4_11_devmobile.test.app-core-1.5.0-1 /Users/isra/.gradle/caches/transforms-3/30568b380fcbd6c472dec8793871322c/transformed/core-1.5.0/res
-com.example.r4_11_devmobile.test.app-androidTest-2 /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/R4_11_PJ_DEVMOBILE/app/build/generated/res/resValues/androidTest/debug
-com.example.r4_11_devmobile.test.app-mergeDebugAndroidTestResources-3 /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/R4_11_PJ_DEVMOBILE/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/merged.dir
-com.example.r4_11_devmobile.test.app-mergeDebugAndroidTestResources-4 /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/R4_11_PJ_DEVMOBILE/app/build/intermediates/incremental/debugAndroidTest/mergeDebugAndroidTestResources/stripped.dir
-com.example.r4_11_devmobile.test.app-merged_res-5 /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/R4_11_PJ_DEVMOBILE/app/build/intermediates/merged_res/debugAndroidTest

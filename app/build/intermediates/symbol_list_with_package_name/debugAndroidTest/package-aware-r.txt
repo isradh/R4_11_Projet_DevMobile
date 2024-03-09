@@ -1,3 +1,0 @@
-com.example.r4_11_devmobile.test
-style WhiteBackgroundDialogTheme
-style WhiteBackgroundTheme

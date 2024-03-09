@@ -9,6 +9,8 @@
         android:targetSdkVersion="34" />
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <permission
         android:name="com.example.r4_11_devmobile.DYNAMIC_RECEIVER_NOT_EXPORTED_PERMISSION"
@@ -38,9 +40,6 @@
             android:exported="false" />
         <activity
             android:name="com.example.r4_11_devmobile.AccueilActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.example.r4_11_devmobile.ResidentActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -49,13 +48,14 @@
             </intent-filter>
         </activity>
         <activity
+            android:name="com.example.r4_11_devmobile.ResidentActivity"
+            android:exported="false" >
+        </activity>
+        <activity
             android:name="com.example.r4_11_devmobile.LoginActivity"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="false" >
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <!-- Supprimez l'intent-filter ci-dessous de l'activité LoginActivity -->
         </activity>
         <activity
             android:name="com.example.r4_11_devmobile.EspaceClientModificationActivity"
@@ -69,25 +69,10 @@
         <activity
             android:name="com.example.r4_11_devmobile.SplashScreenActivity"
             android:exported="true" >
-
-            <!--
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-            -->
         </activity>
         <activity
             android:name="com.example.r4_11_devmobile.SplashScreenActivity2"
             android:exported="true" >
-
-            <!--
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-            -->
         </activity>
 
         <provider

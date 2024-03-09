@@ -14,17 +14,22 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.TextView;
 import androidx.appcompat.widget.Toolbar;
+import android.view.MenuItem;
 
 
 import androidx.appcompat.widget.Toolbar;
 import com.google.android.material.navigation.NavigationView;
-
-public class AccueilActivity extends AppCompatActivity {
+public class AccueilActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener{
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     Toolbar toolbar;
     Menu menu;
     TextView textView;
+    //public static final int NAV_HOME = R.id.nav_home;
+    public static final int NAV_HABITATS = R.id.nav_habitats;
+    public static final int NAV_NOTIF = R.id.nav_notif;
+    public static final int NAV_PREFERENCE = R.id.nav_preference;
+    public static final int NAV_MONHABITAT = R.id.nav_monhabitat;
 
 
     @SuppressLint({"MissingInflatedId", "WrongViewCast"})
@@ -56,7 +61,22 @@ public class AccueilActivity extends AppCompatActivity {
                     startActivity(intent);
                     //toggle.syncState();
                 }
-                // Ajoutez d'autres conditions pour d'autres éléments de menu si nécessaire
+          else if(item.getItemId() == R.id.nav_notif){
+                    Intent i = new Intent(AccueilActivity.this, NotificationsActivity.class);
+                    startActivity(i);
+
+                }
+          else if(item.getItemId() == R.id.nav_preference){
+                    Intent pref = new Intent(AccueilActivity.this, PreferencesActivity.class);
+                    startActivity(pref);
+
+                } else if (item.getItemId() == R.id.nav_profil) {
+                    Intent intent = new Intent(AccueilActivity.this, EspaceClientActivity.class);
+                    startActivity(intent);
+
+                }
+
+
 
                 // Fermez le tiroir après avoir traité le clic sur l'élément de menu
                 drawerLayout.closeDrawer(GravityCompat.START);
@@ -77,7 +97,31 @@ public class AccueilActivity extends AppCompatActivity {
         }
 
 
+
     }
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+        int itemId = menuItem.getItemId();
+        if (itemId == MenuIds.NAV_HABITATS) {
+            Intent intent = new Intent(AccueilActivity.this, MonHabitatActivity.class);
+            startActivity(intent);
+        } else if (itemId == MenuIds.NAV_NOTIF) {
+            Intent i = new Intent(AccueilActivity.this, NotificationsActivity.class);
+            startActivity(i);
+        } else if (itemId == MenuIds.NAV_PREFERENCE) {
+            Intent pref = new Intent(AccueilActivity.this, PreferencesActivity.class);
+            startActivity(pref);
+        } else if (itemId == MenuIds.NAV_MONHABITAT) {
+            Intent habitat = new Intent(AccueilActivity.this, MonHabitatActivity.class);
+            startActivity(habitat);
+        }
+
+        drawerLayout.closeDrawer(GravityCompat.START);
+        return true;
+    }
+
+
+
 
 
 
