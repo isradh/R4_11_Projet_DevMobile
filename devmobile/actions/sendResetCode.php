@@ -3,8 +3,7 @@ use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
 
-require '../../../../../Users/isra/vendor/autoload.php'; // Assurez-vous que le chemin vers autoload.php est correct
-
+require '../../../../../Users/isra/vendor/autoload.php'; 
 header('Content-Type: application/json');
 include_once '../config/Database.php';
 
@@ -34,20 +33,21 @@ if (isset($json['email'])) {
         $mail = new PHPMailer(true);
         try {
             $mail->isSMTP();
-            $mail->Host       = 'smtp.gmail.com'; // Spécifiez le serveur SMTP
+            $mail->Host       = 'smtp.gmail.com'; 
             $mail->SMTPAuth   = true;
-            $mail->Username   = 'powerhouse.verif@gmail.com'; // SMTP username
-            $mail->Password   = 'vxds qrff rtcf zana'; // SMTP password
+            $mail->Username   = 'powerhouse.verif@gmail.com'; 
+            $mail->Password   = 'vxds qrff rtcf zana'; 
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS;
             $mail->Port       = 587;
 
             $mail->setFrom('powerhouse.verif@gmail.com', 'PowerHouse');
-            $mail->addAddress($email); // Ajoutez un destinataire
+            $mail->addAddress($email); 
 
-            // Contenu
-            $mail->isHTML(true); // Définissez le format de l'email à HTML
+
+            $mail->isHTML(true); 
+            $mail->CharSet = 'UTF-8';
             $mail->Subject = 'Votre code de réinitialisation';
-            $mail->Body    = "Bonjour ! <br> <br> Voici votre code vous permettant de changer votre mot de passe : <b>$code</b>
+            $mail->Body    = "<meta charset=\"UTF-8\"> Bonjour ! <br> <br> Voici votre code vous permettant de changer votre mot de passe : <b>$code</b>
                             <br> <br>le code de vérification à une durée de validité de seulement <b>30 minutes<b>
                             <br> <br>À bientôt sur PowerHouse !
                             <br> Ceci est un mail automatique, merci de ne pas y répondre.";

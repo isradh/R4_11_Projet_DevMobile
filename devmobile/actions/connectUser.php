@@ -14,7 +14,7 @@ if(isset($json['email']) && isset($json['mdp'])){
         $result["success"] = false;
         $result["erreur"] = "Veuillez saisie une adresse email valide";
     }
-    $getUser = $bdd->prepare("SELECT * FROM users WHERE email = ?"); 
+    $getUser = $bdd->prepare("SELECT idUser, email, mdp FROM users WHERE email = ?");
     $getUser->execute([$email]); 
 
     if ($getUser->rowCount() > 0) {
@@ -22,6 +22,7 @@ if(isset($json['email']) && isset($json['mdp'])){
 
         if(password_verify($mdp, $user['mdp'])){
             $result["success"] = true;
+            $result["idUser"] = $user['idUser'];
         } else {
             $result["success"] = false;
             $result["erreur"] = "Mot de passe incorrect";
