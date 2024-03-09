@@ -41,6 +41,10 @@ id banner
 id burger
 id cardetage
 id citationText
+id coin
+id coin1
+id coin2
+id coin3
 id coins1
 id coins2
 id coins3
@@ -99,12 +103,14 @@ layout activity_register
 layout activity_resident
 layout activity_splash_screen
 layout activity_splash_screen2
+layout fragment_coin
 layout header_menu
 layout item_resident
 menu main_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
+string hello_blank_fragment
 string navi
 string navigation_drawer_close
 string navigation_drawer_open
