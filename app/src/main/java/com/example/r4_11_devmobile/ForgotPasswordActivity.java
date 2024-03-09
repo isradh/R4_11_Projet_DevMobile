@@ -73,8 +73,7 @@ public class ForgotPasswordActivity extends AppCompatActivity {
                 {
                     @Override
                     public void onResponse(JSONObject response) {
-                        // Réponse du serveur
-                        Toast.makeText(ForgotPasswordActivity.this, "Réponse : " + response, Toast.LENGTH_SHORT).show();
+                        Toast.makeText(ForgotPasswordActivity.this, "Un e-mail vous a été envoyé, vérifiez dans vos spams.", Toast.LENGTH_SHORT).show();
                     }
                 },
                 new Response.ErrorListener()

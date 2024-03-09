@@ -13,8 +13,8 @@ public class Resident {
 
 
     // Constructeur
-    public Resident(String id, String nom, String prenom, int nombreEquipement, int etage, int superficie) {
-        this.id = id;
+    public Resident( String nom, String prenom, int nombreEquipement, int etage, int superficie) {
+
         this.nom = nom;
         this.prenom = prenom;
         this.nombreEquipement = nombreEquipement;
@@ -23,6 +23,7 @@ public class Resident {
     }
 
     public Resident(String id, String nom, String prenom, int nombreEquipement, int etage) {
+        this.id = id;
         this.nom = nom;
         this.prenom = prenom;
         this.nombreEquipement = nombreEquipement;

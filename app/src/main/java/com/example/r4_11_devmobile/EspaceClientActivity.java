@@ -54,13 +54,13 @@ public class EspaceClientActivity extends AppCompatActivity {
     }
 
     public void connectUser(String userId) {
-        Toast.makeText(EspaceClientActivity.this, userId, Toast.LENGTH_SHORT).show();
 
-        String url = "http://10.0.2.2/devmobile/actions/recupAllUser.php?userId=" + userId;
+        String url = "http://10.0.2.2/devmobile/actions/recupInfoUser.php?userId=" + userId;
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, url, null,
                 new Response.Listener<JSONArray>() {
                     @Override
                     public void onResponse(JSONArray response) {
+
                         handleResponse(response);
                     }
                 }, new Response.ErrorListener() {
@@ -79,13 +79,12 @@ public class EspaceClientActivity extends AppCompatActivity {
                 String nom = jsonObject.getString("nom");
                 String prenom = jsonObject.getString("prenom");
                 String email = jsonObject.getString("email");
-                String mdp = jsonObject.getString("mdp");
+
                 String etageStr = jsonObject.getString("etage");
                 int etage = Integer.parseInt(etageStr);
                 String superficieStr = jsonObject.getString("superficie");
                 int superficie = Integer.parseInt(superficieStr);
 
-                // Assurez-vous d'obtenir également la superficie de la même manière si nécessaire
 
                 TextView nomTextView = findViewById(R.id.nomSaisie);
                 nomTextView.setText(nom);
@@ -96,8 +95,7 @@ public class EspaceClientActivity extends AppCompatActivity {
                 TextView emailTextView = findViewById(R.id.mailSaisie);
                 emailTextView.setText(email);
 
-                TextView mdpTextView = findViewById(R.id.mdpSaisie);
-                mdpTextView.setText(mdp);
+
 
                 TextView etageTextView = findViewById(R.id.etageSaisie);
                 etageTextView.setText(String.valueOf(etage));
