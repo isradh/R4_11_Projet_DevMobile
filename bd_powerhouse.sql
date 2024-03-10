@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Hôte : localhost:8889
--- Généré le : mer. 06 mars 2024 à 16:51
+-- Généré le : dim. 10 mars 2024 à 22:09
 -- Version du serveur : 5.7.39
 -- Version de PHP : 7.4.33
 
@@ -20,6 +20,27 @@ SET time_zone = "+00:00";
 --
 -- Base de données : `bd_powerhouse`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `appliances`
+--
+
+CREATE TABLE `appliances` (
+  `id` int(11) NOT NULL,
+  `path` longblob NOT NULL,
+  `nom` varchar(150) NOT NULL,
+  `wattage` int(11) NOT NULL,
+  `idUser` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Déchargement des données de la table `appliances`
+--
+
+INSERT INTO `appliances` (`id`, `path`, `nom`, `wattage`, `idUser`) VALUES
+(1, 0x696d616765732f31302d30332d323032342d313731303038343533312d3234343132302e6a7067, 'machine', 10, 7);
 
 -- --------------------------------------------------------
 
@@ -43,7 +64,8 @@ INSERT INTO `habitats` (`idUser`, `etage`, `superficie`) VALUES
 (9, 1, 22),
 (10, 1, 11),
 (11, 1, 11),
-(12, 11, 11);
+(12, 11, 11),
+(13, 12, 122);
 
 -- --------------------------------------------------------
 
@@ -71,11 +93,19 @@ INSERT INTO `users` (`idUser`, `nom`, `prenom`, `email`, `mdp`, `reset_code`, `c
 (9, 'mm', 'mm', 'm@gmail.com', '$2y$10$r3RGLHPXP9eHTZUP9c4PQ.Bwuc05GCA3lnGOP4c2ARTZa3vN.sJra', NULL, NULL),
 (10, 'dhi', 'israa', 'isradh1978@gmail.com', '$2y$10$aLgF8LyU41.TeYWvsrf2neum3RSNYDiKF2NDAtyOci2NixWmrhepK', 508728, '2024-03-06 17:40:45'),
 (11, 'kadji', 'ines', 'ineskadjii@gmail.com', '$2y$10$wNpNeyUOP3ntY43ikLufBOCvT8qLHEGmhYrLRElItIkNBgQtOF136', 127334, '2024-03-06 17:43:41'),
-(12, 'Oum', 'Lamrabet', 'ouum.lamrabet@gmail.com', '$2y$10$X8KZHjgpkgXZ/ub4cL72AOs9QpwMF.xYtoX/d2/ex2kcJTs6gf4w6', 123366, '2024-03-06 17:45:34');
+(12, 'Oum', 'Lamrabet', 'ouum.lamrabet@gmail.com', '$2y$10$X8KZHjgpkgXZ/ub4cL72AOs9QpwMF.xYtoX/d2/ex2kcJTs6gf4w6', 123366, '2024-03-06 17:45:34'),
+(13, 'dhiab', 'amira', 'isra.dhiab@gmail.com', '$2y$10$T8I/zuFyVrcEHQejAl.PwufkZeN8rC8nJ34gBQwSee1oBGcdAXt9.', 236156, '2024-03-09 13:12:33');
 
 --
 -- Index pour les tables déchargées
 --
+
+--
+-- Index pour la table `appliances`
+--
+ALTER TABLE `appliances`
+  ADD PRIMARY KEY (`id`),
+  ADD KEY `FK_idUser_appliance` (`idUser`);
 
 --
 -- Index pour la table `habitats`
@@ -95,14 +125,26 @@ ALTER TABLE `users`
 --
 
 --
+-- AUTO_INCREMENT pour la table `appliances`
+--
+ALTER TABLE `appliances`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
 -- AUTO_INCREMENT pour la table `users`
 --
 ALTER TABLE `users`
-  MODIFY `idUser` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+  MODIFY `idUser` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=14;
 
 --
 -- Contraintes pour les tables déchargées
 --
+
+--
+-- Contraintes pour la table `appliances`
+--
+ALTER TABLE `appliances`
+  ADD CONSTRAINT `FK_idUser_appliance` FOREIGN KEY (`idUser`) REFERENCES `users` (`idUser`) ON DELETE CASCADE ON UPDATE CASCADE;
 
 --
 -- Contraintes pour la table `habitats`
