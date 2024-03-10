@@ -5,7 +5,7 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="#BFD8BD"
     tools:context=".AccueilActivity" >
 
     <RelativeLayout
@@ -18,16 +18,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content">
 
-            <com.google.android.material.appbar.MaterialToolbar
-                android:id="@+id/toolbar"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                app:title="FoxAndroid"
-                app:theme="@style/ToolbarTheme"
-                app:navigationIcon="@drawable/baseline_menu_24"
-                android:background="@color/ligthgreen"
-                />
-
         </com.google.android.material.appbar.AppBarLayout>
 
 
@@ -35,7 +25,72 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:id="@+id/frameLayout"
-            android:layout_below="@+id/appbarLayout"/>
+            android:layout_below="@+id/appbarLayout">
+
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/ligthgreen"
+                app:navigationIcon="@drawable/baseline_menu_24"
+                app:theme="@style/ToolbarTheme"
+                app:title="Accueil" />
+
+            <TextView
+                android:id="@+id/hello"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="40dp"
+                android:layout_marginTop="90dp"
+                android:paddingLeft="60dp"
+                android:gravity="center_horizontal"
+                android:text="Ajouter un équipement "
+                android:fontFamily="sans-serif-light"
+                android:textColor="#FFFFFF"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                 />
+
+            <ImageView
+                android:id="@+id/image"
+                android:layout_width="301dp"
+                android:layout_height="200dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="150dp"
+
+
+                android:src="@drawable/maison_ecologique"
+                tools:ignore="MissingConstraints" />
+
+            <Button
+                android:id="@+id/ajtEq"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:layout_width="302dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="50dp"
+                android:backgroundTint="#5C7E6F"
+                android:elevation="10dp"
+                android:text=" Ajouter un équipement "
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck" />
+
+            <Button
+                android:id="@+id/ajtRes"
+                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
+                android:layout_width="306dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="170dp"
+                android:backgroundTint="#5C7E6F"
+                android:elevation="10dp"
+                android:text=" Ajouter une réservation"
+                android:textSize="15dp"
+                tools:ignore="TextSizeCheck" />
+
+        </FrameLayout>
+
 
 
 

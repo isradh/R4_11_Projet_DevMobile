@@ -7,10 +7,12 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import androidx.appcompat.widget.Toolbar;
 
@@ -35,6 +37,8 @@ public class AccueilActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_accueil);
+        Button ajtEq= findViewById(R.id.ajtEq);
+        Button ajtRes= findViewById(R.id.ajtRes);
 
         MaterialToolbar toolbar = findViewById(R.id.toolbar);
         DrawerLayout drawerLayout = findViewById(R.id.drawer_layout);
@@ -73,9 +77,24 @@ public class AccueilActivity extends AppCompatActivity {
 
 
 
-                // Fermez le tiroir après avoir traité le clic sur l'élément de menu
                 drawerLayout.closeDrawer(GravityCompat.START);
                 return true;
+            }
+        });
+
+        ajtEq.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), NewEquipmentActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ajtRes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), NewEquipmentActivity.class);
+                startActivity(intent);
             }
         });
 

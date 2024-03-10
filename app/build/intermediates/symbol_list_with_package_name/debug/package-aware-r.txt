@@ -3176,6 +3176,8 @@ id activity_chooser_view_content
 id add
 id adressMail
 id ajoutAlerte
+id ajtEq
+id ajtRes
 id alertTitle
 id aligned
 id all

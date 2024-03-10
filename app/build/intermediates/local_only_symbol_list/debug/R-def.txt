@@ -40,6 +40,8 @@ id Nom
 id NomText
 id adressMail
 id ajoutAlerte
+id ajtEq
+id ajtRes
 id ancienneAlertelistView
 id appbarLayout
 id back
@@ -69,6 +71,7 @@ id guidelineStart
 id hello
 id id
 id idtext
+id image
 id imageView
 id info
 id information
