@@ -38,6 +38,17 @@ public class EspaceClientActivity extends AppCompatActivity implements Navigatio
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_espace_client);
 
+        drawerLayout = findViewById(R.id.drawer_layout);
+        navigationView = findViewById(R.id.nav_view);
+        toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        drawerLayout.addDrawerListener(toggle);
+        toggle.syncState();
+
+        navigationView.setNavigationItemSelectedListener(this);
+
         TextView ecoCoinsTextView = findViewById(R.id.ecoCoins);
         ecoCoinsTextView.setPaintFlags(ecoCoinsTextView.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
 
@@ -46,31 +57,20 @@ public class EspaceClientActivity extends AppCompatActivity implements Navigatio
 
         Button modif = findViewById(R.id.modif);
 
-        drawerLayout = findViewById(R.id.drawer_layout);
-        navigationView = findViewById(R.id.nav_view);
-        toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-        ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(this, drawerLayout, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
-        drawerLayout.addDrawerListener(toggle);
-        toggle.syncState();
-
-        navigationView.setNavigationItemSelectedListener(this);
-
         modif.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), EspaceClientModificationActivity.class);
                 startActivity(intent);
-
             }
         });
 
         String userId = UserId.getUserId();
-
         connectUser(userId);
     }
 
     public void connectUser(String userId) {
+
         String url = "http://10.0.2.2/devmobile/actions/recupInfoUser.php?userId=" + userId;
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, url, null,
                 new Response.Listener<JSONArray>() {
@@ -86,44 +86,6 @@ public class EspaceClientActivity extends AppCompatActivity implements Navigatio
         });
 
         Volley.newRequestQueue(this).add(jsonArrayRequest);
-    }
-
-    @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-        int itemId = item.getItemId();
-        if (itemId == R.id.nav_habitats) {
-            Intent intentHabitats = new Intent(EspaceClientActivity.this, MonHabitatActivity.class);
-            startActivity(intentHabitats);
-        } else if (itemId == R.id.nav_notif) {
-            Intent intentNotif = new Intent(EspaceClientActivity.this, NotificationsActivity.class);
-            startActivity(intentNotif);
-        } else if (itemId == R.id.nav_preference) {
-            Intent intentPref = new Intent(EspaceClientActivity.this, PreferencesActivity.class);
-            startActivity(intentPref);
-        } else if (itemId == R.id.nav_monhabitat) {
-            Intent intentMonHabitat = new Intent(EspaceClientActivity.this, MonHabitatActivity.class);
-            startActivity(intentMonHabitat);
-        }
-
-        drawerLayout.closeDrawer(GravityCompat.START);
-        return true;
-    }
-
-
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        int id = item.getItemId();
-
-        if (id == android.R.id.home) {
-            if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
-                drawerLayout.closeDrawer(GravityCompat.START);
-            } else {
-                drawerLayout.openDrawer(GravityCompat.START);
-            }
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
     }
 
     private void handleResponse(JSONArray response) {
@@ -155,6 +117,39 @@ public class EspaceClientActivity extends AppCompatActivity implements Navigatio
             }
         } catch (JSONException e) {
             e.printStackTrace();
+        }
+    }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        int itemId = item.getItemId();
+        if (itemId == R.id.nav_habitats) {
+            Intent intentHabitats = new Intent(EspaceClientActivity.this, MonHabitatActivity.class);
+            startActivity(intentHabitats);
+        } else if (itemId == R.id.nav_notif) {
+            Intent intentNotif = new Intent(EspaceClientActivity.this, NotificationsActivity.class);
+            startActivity(intentNotif);
+        } else if (itemId == R.id.nav_preference) {
+            Intent intentPref = new Intent(EspaceClientActivity.this, PreferencesActivity.class);
+            startActivity(intentPref);
+        } else if (itemId == R.id.nav_monhabitat) {
+            Intent intentMonHabitat = new Intent(EspaceClientActivity.this, MonHabitatActivity.class);
+            startActivity(intentMonHabitat);
+        }
+        else if (itemId == R.id.nav_profil) {
+            Intent intentMonProfil = new Intent(EspaceClientActivity.this,EspaceClientActivity.class);
+            startActivity(intentMonProfil);
+        }
+        drawerLayout.closeDrawer(GravityCompat.START);
+        return true;
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (drawerLayout.isDrawerOpen(GravityCompat.START)) {
+            drawerLayout.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
         }
     }
 }

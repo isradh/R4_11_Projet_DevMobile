@@ -49,7 +49,7 @@ public class MonHabitatActivity extends AppCompatActivity implements NavigationV
             Intent intentPref = new Intent(MonHabitatActivity.this, PreferencesActivity.class);
             startActivity(intentPref);
         } else if (itemId == R.id.nav_monhabitat) {
-            // Do nothing as we are already in MonHabitatActivity
+
         }
 
         drawerLayout.closeDrawer(GravityCompat.START);

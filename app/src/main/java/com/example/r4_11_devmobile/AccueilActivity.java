@@ -25,7 +25,7 @@ public class AccueilActivity extends AppCompatActivity implements NavigationView
     Toolbar toolbar;
     Menu menu;
     TextView textView;
-    //public static final int NAV_HOME = R.id.nav_home;
+
     public static final int NAV_HABITATS = R.id.nav_habitats;
     public static final int NAV_NOTIF = R.id.nav_notif;
     public static final int NAV_PREFERENCE = R.id.nav_preference;
@@ -54,34 +54,26 @@ public class AccueilActivity extends AppCompatActivity implements NavigationView
 
 
             @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-                if (item.getItemId() == R.id.nav_habitats) {
-                    // Ouvrez l'activité EspaceClientActivity lorsque l'élément de menu "Listes des habitats" est cliqué
-                    Intent intent = new Intent(AccueilActivity.this, EspaceClientActivity.class);
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
+                int itemId = menuItem.getItemId();
+                if (itemId == R.id.nav_habitats) {
+                    Intent intent = new Intent(AccueilActivity.this, MonHabitatActivity.class);
                     startActivity(intent);
-                    //toggle.syncState();
-                }
-          else if(item.getItemId() == R.id.nav_notif){
+                } else if (itemId == R.id.nav_notif) {
                     Intent i = new Intent(AccueilActivity.this, NotificationsActivity.class);
                     startActivity(i);
-
-                }
-          else if(item.getItemId() == R.id.nav_preference){
+                } else if (itemId == R.id.nav_preference) {
                     Intent pref = new Intent(AccueilActivity.this, PreferencesActivity.class);
                     startActivity(pref);
-
-                } else if (item.getItemId() == R.id.nav_profil) {
+                } else if (itemId == R.id.nav_profil) {
                     Intent intent = new Intent(AccueilActivity.this, EspaceClientActivity.class);
                     startActivity(intent);
-
                 }
 
-
-
-                // Fermez le tiroir après avoir traité le clic sur l'élément de menu
                 drawerLayout.closeDrawer(GravityCompat.START);
                 return true;
             }
+
         });
 
 
