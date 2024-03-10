@@ -5,35 +5,52 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:fitsSystemWindows="true"
-    tools:openDrawer="start"
-    tools:context=".AccueilActivity">
+    android:background="@color/white"
+    tools:context=".AccueilActivity" >
 
-    <com.google.android.material.appbar.AppBarLayout
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
+        android:layout_height="wrap_content">
 
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
+        <com.google.android.material.appbar.AppBarLayout
+            android:id="@+id/appbarLayout"
+            android:fitsSystemWindows="true"
             android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            app:title="Your Toolbar Title"
-            app:menu="@menu/main_menu" />
-    </com.google.android.material.appbar.AppBarLayout>
+            android:layout_height="wrap_content">
+
+            <com.google.android.material.appbar.MaterialToolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:title="FoxAndroid"
+                app:theme="@style/ToolbarTheme"
+                app:navigationIcon="@drawable/baseline_menu_24"
+                android:background="@color/ligthgreen"
+                />
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/frameLayout"
+            android:layout_below="@+id/appbarLayout"/>
+
+
+
+    </RelativeLayout>
+
+
 
     <com.google.android.material.navigation.NavigationView
-        android:id="@+id/nav_view"
+        android:id="@+id/navigation_view"
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:layout_gravity="start"
         app:headerLayout="@layout/header_menu"
-        app:menu="@menu/main_menu" />
+        app:menu="@menu/main_menu"
+        android:visibility="visible"/>
 
-    <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-    </ScrollView>
 
 </androidx.drawerlayout.widget.DrawerLayout>

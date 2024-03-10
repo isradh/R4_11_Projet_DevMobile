@@ -1,9 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
     <uses-permission android:name="android.permission.INTERNET" />
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
-    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
     <application
         android:allowBackup="true"
@@ -16,7 +17,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.R4_11_DevMobile"
         tools:targetApi="31">
-
+        <activity
+            android:name=".NewEquipmentActivity"
+            android:exported="false" />
         <activity
             android:name=".NewPasswordActivity"
             android:exported="false" />
@@ -25,39 +28,38 @@
             android:exported="false" />
         <activity
             android:name=".AccueilActivity"
+            android:exported="false"></activity>
+        <activity
+            android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
         <activity
-            android:name=".ResidentActivity"
-            android:exported="false">
-        </activity>
-        <activity
-            android:name=".LoginActivity"
-            android:exported="false">
-            <!-- Supprimez l'intent-filter ci-dessous de l'activité LoginActivity -->
-        </activity>
-        <activity
             android:name=".EspaceClientModificationActivity"
-            android:exported="false" />
-        <activity
-            android:name=".EspaceClientActivity"
             android:exported="false" />
         <activity
             android:name=".RegisterActivity"
             android:exported="true" />
         <activity
             android:name=".SplashScreenActivity"
-            android:exported="true">
+            android:exported="true"></activity>
+        <!--
+        <activity
+            android:name=".ResidentActivity"
+            android:exported="false">
         </activity>
-
         <activity android:name=".NotificationsActivity"
             android:exported="false" >
 
         </activity>
+
+               <activity
+            android:name=".EspaceClientActivity"
+            android:exported="false" />
         <activity android:name=".PreferencesActivity"
             android:exported="false" >
 
@@ -66,16 +68,15 @@
             android:exported="false" >
 
         </activity>
-        <activity
-            android:name=".SplashScreenActivity2"
-            android:exported="true">
-        </activity>
-        <activity
+
+                activity
             android:name=".MonHabitatActivity"
             android:exported="true">
         </activity>
-
-
+        -->
+        <activity
+            android:name=".SplashScreenActivity2"
+            android:exported="true"></activity>
     </application>
 
 </manifest>

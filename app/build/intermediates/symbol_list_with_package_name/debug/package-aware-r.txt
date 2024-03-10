@@ -2969,11 +2969,14 @@ drawable abc_textfield_search_activated_mtrl_alpha
 drawable abc_textfield_search_default_mtrl_alpha
 drawable abc_textfield_search_material
 drawable abc_vector_test
+drawable ajout_alerte
+drawable ajout_alerte_petit
 drawable aspirateur
 drawable avd_hide_password
 drawable avd_show_password
 drawable background_edittext
 drawable banniere
+drawable baseline_menu_24
 drawable blanchisserie
 drawable broche
 drawable btn_checkbox_checked_mtrl
@@ -3089,6 +3092,7 @@ drawable notification_tile_bg
 drawable notify_panel_notification_icon_bg
 drawable prefererencs
 drawable seconnecter
+drawable telechargement
 drawable test_level_drawable
 drawable tooltip_frame_dark
 drawable tooltip_frame_light
@@ -3171,6 +3175,7 @@ id actions
 id activity_chooser_view_content
 id add
 id adressMail
+id ajoutAlerte
 id alertTitle
 id aligned
 id all
@@ -3181,6 +3186,7 @@ id animateToEnd
 id animateToStart
 id antiClockwise
 id anticipate
+id appbarLayout
 id arc
 id asConfigured
 id async
@@ -3200,10 +3206,13 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id btnAnnuler
+id btnUpload
 id buttonPanel
 id cache_measures
 id callMeasure
 id cancel_button
+id cardView
 id cardetage
 id carryVelocity
 id center
@@ -3315,6 +3324,7 @@ id flip
 id floating
 id forever
 id fragment_container_view_tag
+id frameLayout
 id frost
 id fullscreen_header
 id ghost_view
@@ -3342,10 +3352,10 @@ id ifRoom
 id ignore
 id ignoreRequest
 id image
+id imageView
 id immediateStop
 id included
 id indeterminate
-id indice
 id info
 id information
 id invisible
@@ -3436,11 +3446,14 @@ id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
 id nav_apropos
+id nav_equipement
+id nav_espaceclient
 id nav_habitats
 id nav_monhabitat
 id nav_notif
 id nav_preference
 id nav_profil
+id nav_resident
 id nav_view
 id navigation_bar_item_active_indicator_view
 id navigation_bar_item_icon_container
@@ -3449,6 +3462,7 @@ id navigation_bar_item_labels_group
 id navigation_bar_item_large_label_view
 id navigation_bar_item_small_label_view
 id navigation_header_container
+id navigation_view
 id never
 id neverCompleteToEnd
 id neverCompleteToStart
@@ -3640,6 +3654,7 @@ id view_tree_saved_state_registry_owner
 id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
+id wattage
 id west
 id withText
 id with_icon
@@ -3764,14 +3779,10 @@ layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
 layout activity_accueil
-layout activity_accueiloff
-layout activity_espace_client
 layout activity_espace_client_modification
 layout activity_forgot_password
 layout activity_login
-layout activity_mesnotifications
-layout activity_mespreferences
-layout activity_monhabitats
+layout activity_new_equipment
 layout activity_new_password
 layout activity_register
 layout activity_resident
@@ -3794,6 +3805,9 @@ layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_coin
+layout fragment_equipement
+layout fragment_espace_client
+layout fragment_resident
 layout header_menu
 layout item_resident
 layout m3_alert_dialog
@@ -4654,6 +4668,7 @@ style Theme_MaterialComponents_Light_NoActionBar
 style Theme_MaterialComponents_Light_NoActionBar_Bridge
 style Theme_MaterialComponents_NoActionBar
 style Theme_MaterialComponents_NoActionBar_Bridge
+style Theme_Navigation_Drawer
 style Theme_R4_11_DevMobile
 style ThemeOverlay_AppCompat
 style ThemeOverlay_AppCompat_ActionBar
@@ -4769,6 +4784,7 @@ style ThemeOverlay_MaterialComponents_TimePicker_Display_TextInputEditText
 style ThemeOverlay_MaterialComponents_Toolbar_Popup_Primary
 style ThemeOverlay_MaterialComponents_Toolbar_Primary
 style ThemeOverlay_MaterialComponents_Toolbar_Surface
+style ToolbarTheme
 style Widget_AppCompat_ActionBar
 style Widget_AppCompat_ActionBar_Solid
 style Widget_AppCompat_ActionBar_TabBar

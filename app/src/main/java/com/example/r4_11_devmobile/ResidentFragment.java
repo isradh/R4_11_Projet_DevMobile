@@ -1,10 +1,12 @@
 package com.example.r4_11_devmobile;
 
 import android.os.Bundle;
+import androidx.fragment.app.Fragment;
+import android.view.LayoutInflater;
+import android.view.View;
+import android.view.ViewGroup;
 import android.widget.ListView;
 import android.widget.Toast;
-
-import androidx.appcompat.app.AppCompatActivity;
 
 import com.android.volley.Request;
 import com.android.volley.Response;
@@ -18,19 +20,20 @@ import org.json.JSONObject;
 
 import java.util.ArrayList;
 
-public class ResidentActivity extends AppCompatActivity {
 
+public class ResidentFragment extends Fragment {
+
+    private View view;
     private ListView listView;
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_resident);
-
-        listView = findViewById(R.id.ancienneAlertelistView);
-
-
+    public View onCreateView(LayoutInflater inflater, ViewGroup container,
+                             Bundle savedInstanceState) {
+        // Inflate the layout for this fragment
+        view = inflater.inflate(R.layout.fragment_resident, container, false);
+        listView = view.findViewById(R.id.ancienneAlertelistView);
         connectUser();
+        return view;
     }
 
     public void connectUser() {
@@ -44,13 +47,12 @@ public class ResidentActivity extends AppCompatActivity {
                 }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError erreur) {
-                Toast.makeText(getApplicationContext(), erreur.getMessage().toString(), Toast.LENGTH_LONG).show();
+                Toast.makeText(getContext(), erreur.getMessage().toString(), Toast.LENGTH_LONG).show();
             }
         });
 
-        Volley.newRequestQueue(this).add(jsonArrayRequest);
+        Volley.newRequestQueue(getContext()).add(jsonArrayRequest);
     }
-
 
     private void handleResponse(JSONArray response) {
         ArrayList<Resident> residents = new ArrayList<>();
@@ -67,7 +69,7 @@ public class ResidentActivity extends AppCompatActivity {
                 e.printStackTrace();
             }
         }
-        ResidentAdapter adapter = new ResidentAdapter(ResidentActivity.this, residents);
+        ResidentAdapter adapter = new ResidentAdapter(getContext(), residents);
         listView.setAdapter(adapter);
     }
 }

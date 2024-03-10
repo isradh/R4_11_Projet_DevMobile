@@ -33,6 +33,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.R4_11_DevMobile" >
         <activity
+            android:name="com.example.r4_11_devmobile.NewEquipmentActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.r4_11_devmobile.NewPasswordActivity"
             android:exported="false" />
         <activity
@@ -40,6 +43,9 @@
             android:exported="false" />
         <activity
             android:name="com.example.r4_11_devmobile.AccueilActivity"
+            android:exported="false" />
+        <activity
+            android:name="com.example.r4_11_devmobile.LoginActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -48,48 +54,44 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.r4_11_devmobile.ResidentActivity"
-            android:exported="false" >
-        </activity>
-        <activity
-            android:name="com.example.r4_11_devmobile.LoginActivity"
-            android:exported="false" >
-
-            <!-- Supprimez l'intent-filter ci-dessous de l'activité LoginActivity -->
-        </activity>
-        <activity
             android:name="com.example.r4_11_devmobile.EspaceClientModificationActivity"
-            android:exported="false" />
-        <activity
-            android:name="com.example.r4_11_devmobile.EspaceClientActivity"
             android:exported="false" />
         <activity
             android:name="com.example.r4_11_devmobile.RegisterActivity"
             android:exported="true" />
         <activity
             android:name="com.example.r4_11_devmobile.SplashScreenActivity"
-            android:exported="true" >
-        </activity>
+            android:exported="true" />
+        <!--
         <activity
-            android:name="com.example.r4_11_devmobile.NotificationsActivity"
-            android:exported="false" >
+            android:name=".ResidentActivity"
+            android:exported="false">
         </activity>
-        <activity
-            android:name="com.example.r4_11_devmobile.PreferencesActivity"
+        <activity android:name=".NotificationsActivity"
             android:exported="false" >
+
         </activity>
-        <activity
-            android:name="com.example.r4_11_devmobile.AProposActivity"
+
+               <activity
+            android:name=".EspaceClientActivity"
+            android:exported="false" />
+        <activity android:name=".PreferencesActivity"
             android:exported="false" >
+
         </activity>
+        <activity android:name=".AProposActivity"
+            android:exported="false" >
+
+        </activity>
+
+                activity
+            android:name=".MonHabitatActivity"
+            android:exported="true">
+        </activity>
+        -->
         <activity
             android:name="com.example.r4_11_devmobile.SplashScreenActivity2"
-            android:exported="true" >
-        </activity>
-        <activity
-            android:name="com.example.r4_11_devmobile.MonHabitatActivity"
-            android:exported="true" >
-        </activity>
+            android:exported="true" />
 
         <provider
             android:name="androidx.startup.InitializationProvider"

@@ -6,23 +6,12 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#BFD8BD"
-    android:fitsSystemWindows="true"
     tools:openDrawer="start">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
+        android:layout_marginTop="10dp"
         android:layout_height="match_parent">
-
-        <androidx.appcompat.widget.Toolbar
-            android:id="@+id/toolbar"
-            android:layout_width="match_parent"
-            android:layout_height="?attr/actionBarSize"
-            android:background="?attr/colorPrimary"
-            android:elevation="4dp"
-            app:title="Your Toolbar Title"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent" />
 
         <TextView
             android:id="@+id/hello"
@@ -30,19 +19,19 @@
             android:layout_height="wrap_content"
             android:text="Bonjour, "
             android:textColor="#FFFFFF"
+
             android:textSize="22dp"
             android:textStyle="bold"
-            android:layout_marginTop="20dp"
             android:layout_marginStart="20dp"
-            app:layout_constraintTop_toBottomOf="@id/toolbar"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints" />
 
         <TextView
             android:id="@+id/ecoCoins"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Eco-coins"
-            android:textColor="@android:color/black"
+            android:textColor="@color/black"
             android:textSize="24dp"
             android:textStyle="bold"
             android:layout_marginTop="20dp"
@@ -90,7 +79,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Information personnel"
-            android:textColor="@android:color/black"
+            android:textColor="@color/black"
             android:textSize="24dp"
             android:textStyle="bold"
             android:layout_marginTop="30dp"
@@ -98,17 +87,20 @@
             app:layout_constraintTop_toBottomOf="@id/coin"
             app:layout_constraintStart_toStartOf="parent" />
 
+
         <androidx.cardview.widget.CardView
             android:id="@+id/information"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_gravity="center"
             android:layout_margin="20dp"
             app:cardCornerRadius="15dp"
-            app:cardBackgroundColor="#6B9080"
-            app:cardElevation="20dp"
+            android:backgroundTint="#6B9080"
+            app:cardBackgroundColor="@color/white"
             app:layout_constraintTop_toBottomOf="@id/info"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintEnd_toEndOf="parent">
+            app:layout_constraintEnd_toEndOf="parent"
+            app:cardElevation="20dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -130,8 +122,8 @@
                         android:textColor="#FFFFFF"
                         android:textSize="18dp"
                         android:layout_marginStart="20dp"
-                        android:layout_marginTop="20dp"
-                        />
+                        android:layout_marginTop="20dp" />
+
                     <TextView
                         android:id="@+id/nomSaisie"
                         android:layout_width="wrap_content"
@@ -139,21 +131,7 @@
                         android:textColor="#FFFFFF"
                         android:textSize="18dp"
                         android:layout_marginStart="10dp"
-                        android:layout_marginTop="20dp"
-                        />
-
-
-                    <TextView
-                        android:id="@+id/indice"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Votre indice: 95"
-                        android:textColor="@android:color/black"
-                        android:textSize="18sp"
-                        android:textStyle="bold"
-                        android:layout_marginStart="20dp"
-                        android:layout_marginTop="15dp" />
-
+                        android:layout_marginTop="20dp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -169,8 +147,7 @@
                         android:textColor="#FFFFFF"
                         android:textSize="18dp"
                         android:layout_marginStart="20dp"
-                        android:layout_marginTop="15dp"
-                        />
+                        android:layout_marginTop="15dp" />
 
                     <TextView
                         android:id="@+id/prenomSaisie"
@@ -180,8 +157,7 @@
                         android:textColor="#FFFFFF"
                         android:textSize="18dp"
                         android:layout_marginStart="10dp"
-                        android:layout_marginTop="20dp"
-                        />
+                        android:layout_marginTop="20dp" />
                 </LinearLayout>
 
                 <LinearLayout
@@ -196,8 +172,7 @@
                         android:textColor="#FFFFFF"
                         android:textSize="18dp"
                         android:layout_marginStart="20dp"
-                        android:layout_marginTop="15dp"
-                        />
+                        android:layout_marginTop="15dp" />
                     <TextView
                         android:id="@+id/etageSaisie"
                         android:layout_width="wrap_content"
@@ -206,9 +181,9 @@
                         android:textColor="#FFFFFF"
                         android:textSize="18dp"
                         android:layout_marginStart="10dp"
-                        android:layout_marginTop="20dp"
-                        />
+                        android:layout_marginTop="20dp" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -221,8 +196,7 @@
                         android:textColor="#FFFFFF"
                         android:textSize="18dp"
                         android:layout_marginStart="20dp"
-                        android:layout_marginTop="15dp"
-                        />
+                        android:layout_marginTop="15dp" />
                     <TextView
                         android:id="@+id/superficieSaisie"
                         android:layout_width="wrap_content"
@@ -231,9 +205,9 @@
                         android:textColor="#FFFFFF"
                         android:textSize="18dp"
                         android:layout_marginStart="10dp"
-                        android:layout_marginTop="20dp"
-                        />
+                        android:layout_marginTop="20dp" />
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -246,8 +220,7 @@
                         android:textColor="#FFFFFF"
                         android:textSize="18dp"
                         android:layout_marginStart="20dp"
-                        android:layout_marginTop="15dp"
-                        />
+                        android:layout_marginTop="15dp" />
                     <TextView
                         android:id="@+id/mailSaisie"
                         android:layout_width="wrap_content"
@@ -256,13 +229,9 @@
                         android:textColor="#FFFFFF"
                         android:textSize="18dp"
                         android:layout_marginStart="10dp"
-                        android:layout_marginTop="20dp"
-                        />
+                        android:layout_marginTop="20dp" />
                 </LinearLayout>
-
-
             </LinearLayout>
-
         </androidx.cardview.widget.CardView>
 
         <Button
@@ -280,17 +249,8 @@
             app:layout_constraintTop_toBottomOf="@id/information"
             app:layout_constraintBottom_toBottomOf="parent"
             tools:ignore="TextSizeCheck"
-            app:cardElevation="20dp"/>
-
+            app:cardElevation="20dp" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 
-    <com.google.android.material.navigation.NavigationView
-        android:id="@+id/nav_view"
-        android:layout_width="wrap_content"
-        android:layout_height="match_parent"
-        android:layout_gravity="start"
-        app:headerLayout="@layout/header_menu"
-        app:menu="@menu/main_menu"
-       />
 
 </androidx.drawerlayout.widget.DrawerLayout>
