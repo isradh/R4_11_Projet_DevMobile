@@ -3447,6 +3447,7 @@ id mtrl_picker_text_input_range_start
 id mtrl_picker_title_text
 id mtrl_view_tag_bottom_padding
 id multiply
+id nav_accueil
 id nav_apropos
 id nav_equipement
 id nav_espaceclient
@@ -3657,6 +3658,7 @@ id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
 id wattage
+id wattageText
 id west
 id withText
 id with_icon
@@ -3806,11 +3808,13 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_accueil
 layout fragment_coin
 layout fragment_equipement
 layout fragment_espace_client
 layout fragment_resident
 layout header_menu
+layout item_equipement
 layout item_resident
 layout m3_alert_dialog
 layout m3_alert_dialog_actions

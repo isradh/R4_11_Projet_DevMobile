@@ -30,7 +30,6 @@ public class EspaceClientFragment extends Fragment {
 
     private View view;
     public EspaceClientFragment() {
-        // Constructeur vide requis pour les fragments
     }
 
     @Override

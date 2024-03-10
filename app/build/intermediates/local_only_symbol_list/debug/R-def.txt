@@ -86,6 +86,7 @@ id mailSaisie
 id mdp
 id mdpSaisie
 id modif
+id nav_accueil
 id nav_apropos
 id nav_equipement
 id nav_espaceclient
@@ -110,6 +111,7 @@ id textView5
 id toolbar
 id tout
 id wattage
+id wattageText
 layout activity_accueil
 layout activity_espace_client_modification
 layout activity_forgot_password
@@ -120,11 +122,13 @@ layout activity_register
 layout activity_resident
 layout activity_splash_screen
 layout activity_splash_screen2
+layout fragment_accueil
 layout fragment_coin
 layout fragment_equipement
 layout fragment_espace_client
 layout fragment_resident
 layout header_menu
+layout item_equipement
 layout item_resident
 menu main_menu
 mipmap ic_launcher

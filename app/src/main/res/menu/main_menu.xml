@@ -3,6 +3,11 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
     <group>
         <item
+            android:id="@+id/nav_accueil"
+            android:title="Page d'accueil"
+
+            />
+        <item
             android:id="@+id/nav_equipement"
             android:title="Listes des équipement"
 

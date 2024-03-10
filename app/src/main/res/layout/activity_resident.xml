@@ -4,7 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
->
+    app:cardBackgroundColor="@color/veriligthgreen"
+    >
 
     <ListView
         android:id="@+id/ancienneAlertelistView"
@@ -12,8 +13,7 @@
         android:layout_height="wrap_content"
         android:paddingRight="20dp"
         android:paddingLeft="20dp"
-        android:paddingBottom="15dp"
-        android:divider="#FFFFFF"
-        android:dividerHeight="17dp"
+        app:cardBackgroundColor="@color/veriligthgreen"
+
         tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>

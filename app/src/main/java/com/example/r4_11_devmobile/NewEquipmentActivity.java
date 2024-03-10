@@ -43,7 +43,6 @@ public class NewEquipmentActivity extends AppCompatActivity {
     Button upload_btn;
     String base64Image = null;
     String nom;
-    ProgressBar progressBar;
     Bitmap bitmap;
     String wattage;
 

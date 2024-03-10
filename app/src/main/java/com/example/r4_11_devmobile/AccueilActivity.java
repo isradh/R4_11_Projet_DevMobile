@@ -43,6 +43,8 @@ public class AccueilActivity extends AppCompatActivity {
         MaterialToolbar toolbar = findViewById(R.id.toolbar);
         DrawerLayout drawerLayout = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.navigation_view);
+        ajtEq.setVisibility(View.VISIBLE);
+        ajtRes.setVisibility(View.VISIBLE);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -60,18 +62,26 @@ public class AccueilActivity extends AppCompatActivity {
                 if (item.getItemId() == R.id.nav_equipement) {
                     replaceFragment(new EquipementFragment());
                     toolbar.setTitle("Espace Client");
+
+                    visibilitybtn();
                 }
                 else if(item.getItemId() == R.id.nav_resident){
                     replaceFragment(new ResidentFragment());
                     toolbar.setTitle("Resident");
+                    visibilitybtn();
                 }
                 else if(item.getItemId() == R.id.nav_espaceclient){
                     replaceFragment(new EspaceClientFragment());
                     toolbar.setTitle("Espace Client");
+                    visibilitybtn();
 
                 } else if (item.getItemId() == R.id.nav_profil) {
                    /* Intent intent = new Intent(AccueilActivity.this, EspaceClientActivity.class);
                     startActivity(intent);*/
+
+                }else if (item.getItemId() == R.id.nav_accueil){
+                    replaceFragment(new AccueilFragment());
+                    toolbar.setTitle("Accueil");
 
                 }
 
@@ -100,6 +110,11 @@ public class AccueilActivity extends AppCompatActivity {
 
 
 
+    }
+
+    private void visibilitybtn() {
+        findViewById(R.id.ajtEq).setVisibility(View.GONE);
+        findViewById(R.id.ajtRes).setVisibility(View.GONE);
     }
 
     /*@Override
