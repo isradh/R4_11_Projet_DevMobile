@@ -80,7 +80,6 @@ public class ForgotPasswordActivity extends AppCompatActivity {
                 {
                     @Override
                     public void onErrorResponse(VolleyError erreur) {
-                        // Une erreur s'est produite
                         Toast.makeText(getApplicationContext(), erreur.getMessage().toString(), Toast.LENGTH_LONG).show();
                     }
                 }

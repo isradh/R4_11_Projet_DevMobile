@@ -50,6 +50,7 @@ id appbarLayout
 id back
 id btnAnnuler
 id btnUpload
+id btnajouter
 id cardView
 id cardViewHeureDebut
 id cardViewHeureFin

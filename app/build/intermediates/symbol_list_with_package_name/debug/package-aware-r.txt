@@ -3213,6 +3213,7 @@ id bounceEnd
 id bounceStart
 id btnAnnuler
 id btnUpload
+id btnajouter
 id buttonPanel
 id cache_measures
 id callMeasure

@@ -38,6 +38,8 @@ public class RegisterActivity extends AppCompatActivity {
 
 
 
+
+
     private DatabaseManager databaseManager;
 
     @Override

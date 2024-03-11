@@ -2,50 +2,59 @@ package com.example.r4_11_devmobile;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
-import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
-import android.widget.ImageView;
+import android.widget.Button;
 import android.widget.Spinner;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.fragment.app.Fragment;
 
 import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonArrayRequest;
+import com.android.volley.toolbox.JsonObjectRequest;
 import com.android.volley.toolbox.Volley;
-import com.example.r4_11_devmobile.NewEquipmentActivity;
-import com.example.r4_11_devmobile.R;
-import com.example.r4_11_devmobile.UserId;
+import com.example.r4_11_devmobile.bd.DatabaseManager;
 
 import org.json.JSONArray;
 import org.json.JSONException;
 import org.json.JSONObject;
 
 import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
 
 public class NewReservationActivity extends AppCompatActivity {
 
 
     Spinner listequipement;
+    Spinner spinnerHeuredebut;
+    Spinner spinnerHeureFin;
+
+    String equipement;
+
+    private DatabaseManager databaseManager;
+
+    String heureDebut;
+
+    String heureFin;
+
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_nouvellereservation);
 
+        databaseManager = new DatabaseManager(getApplicationContext());
+
+
         listequipement = findViewById(R.id.spinnerEquipements);
+        spinnerHeuredebut = findViewById(R.id.spinner_heuredebut);
+        spinnerHeureFin = findViewById(R.id.spinner_heurefin);
 
         String userId = UserId.getUserId();
         connectUser(userId);
-
-
-        Spinner spinnerHeuredebut = findViewById(R.id.spinner_heuredebut);
-        Spinner spinnerHeureFin = findViewById(R.id.spinner_heurefin);
-
 
         ArrayList<String> heuresList = new ArrayList<>();
         for (int i = 0; i < 24; i++) {
@@ -58,8 +67,39 @@ public class NewReservationActivity extends AppCompatActivity {
         spinnerHeuredebut.setAdapter(heureAdapter);
         spinnerHeureFin.setAdapter(heureAdapter);
 
+        Button btnAnnuler = findViewById(R.id.btnAnnuler);
+        Button btnajouter = findViewById(R.id.btnajouter);
+
+        btnAnnuler.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                finish();
+            }
+        });
+
+        btnajouter.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                reservation();
+
+                if (listequipement.getSelectedItem() == null) {
+                    Toast.makeText(NewReservationActivity.this, "Veuillez sélectionner une équipement", Toast.LENGTH_SHORT).show();
+                } else if(spinnerHeuredebut.getSelectedItem() == null){
+                    Toast.makeText(NewReservationActivity.this, "Veuillez sélectionner une heure de début", Toast.LENGTH_SHORT).show();
+
+                }else if(spinnerHeureFin.getSelectedItem() == null){
+                    Toast.makeText(NewReservationActivity.this, "Veuillez sélectionner une heure de fin.", Toast.LENGTH_SHORT).show();
+
+                }else {
+                     equipement = listequipement.getSelectedItem().toString();
+                     heureDebut = spinnerHeuredebut.getSelectedItem().toString();
+                     heureFin= spinnerHeureFin.getSelectedItem().toString();
 
 
+
+                }
+            }
+        });
     }
 
     public void connectUser(String userId) {
@@ -86,17 +126,69 @@ public class NewReservationActivity extends AppCompatActivity {
             try {
                 JSONObject jsonObject = response.getJSONObject(i);
                 String nom = jsonObject.getString("nom");
-                equipement.add(nom); // Ajouter le nom à la liste des équipements
+                equipement.add(nom);
             } catch (JSONException e) {
                 e.printStackTrace();
             }
         }
 
-        // Créer un adaptateur simple si vous ne souhaitez pas utiliser ArrayAdapter
         ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, equipement);
         adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
 
-        // Associer l'adaptateur au Spinner
         listequipement.setAdapter(adapter);
     }
+
+
+
+
+    public void reservation(){
+        String url ="http://10.0.2.2/devmobile/actions/reservation.php";
+
+        Map<String, String> parametres = new HashMap<>();
+        parametres.put("equipement", equipement);
+        parametres.put("heureDebut", heureDebut);
+        parametres.put("heureFin", heureFin);
+
+        JSONObject parametre = new JSONObject(parametres);
+
+        JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, url, parametre, new Response.Listener<JSONObject>() {
+            @Override
+            public void onResponse(JSONObject response) {
+
+                ApiResponse(response);
+            }
+        },new Response.ErrorListener() {
+            @Override
+            public void onErrorResponse(VolleyError erreur) {
+                Toast.makeText(getApplicationContext(), erreur.getMessage().toString(), Toast.LENGTH_LONG).show();
+            }
+        });
+
+        databaseManager.queue.add(jsonObjectRequest);
+    }
+
+
+
+    public void ApiResponse(JSONObject reponse){
+        Boolean success = null;
+        String error = "";
+
+        try{
+            success = reponse.getBoolean("success");
+
+            if(success == true ){
+                Toast.makeText(NewReservationActivity.this, "Ri", Toast.LENGTH_SHORT).show();
+            }else {
+                error = reponse.getString("erreur");
+                Toast.makeText(NewReservationActivity.this, error, Toast.LENGTH_SHORT).show();
+
+            }
+
+        }catch(JSONException e){
+            e.printStackTrace();
+            Toast.makeText(NewReservationActivity.this, e.toString(), Toast.LENGTH_SHORT).show();
+
+        }
+    }
+
 }
