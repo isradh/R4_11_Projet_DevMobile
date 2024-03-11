@@ -42,15 +42,6 @@
             android:name="com.example.r4_11_devmobile.ForgotPasswordActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.r4_11_devmobile.AccueilActivity"
-            android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
-
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity
             android:name="com.example.r4_11_devmobile.LoginActivity"
             android:exported="true" >
             <intent-filter>
@@ -68,33 +59,29 @@
         <activity
             android:name="com.example.r4_11_devmobile.SplashScreenActivity"
             android:exported="true" />
+        <activity
+            android:name="com.example.r4_11_devmobile.AccueilActivity"
+            android:exported="true" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <!-- Vous devez supprimer cette occurrence -->
         <!--
         <activity
-            android:name=".ResidentActivity"
-            android:exported="false">
-        </activity>
-        <activity android:name=".NotificationsActivity"
-            android:exported="false" >
-
-        </activity>
-
-               <activity
-            android:name=".EspaceClientActivity"
-            android:exported="false" />
-        <activity android:name=".PreferencesActivity"
-            android:exported="false" >
-
-        </activity>
-        <activity android:name=".AProposActivity"
-            android:exported="false" >
-
-        </activity>
-
-                activity
-            android:name=".MonHabitatActivity"
-            android:exported="true">
+            android:name=".AccueilActivity"
+            android:exported="true"
+            tools:ignore="DuplicateActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
         -->
+
         <activity
             android:name="com.example.r4_11_devmobile.SplashScreenActivity2"
             android:exported="true" />
