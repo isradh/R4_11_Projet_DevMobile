@@ -38,13 +38,12 @@
             <!-- Déplacez les éléments spécifiques ici -->
             <TextView
                 android:id="@+id/hello"
+                android:layout_marginTop="70dp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginBottom="40dp"
-                android:layout_marginTop="90dp"
                 android:paddingLeft="60dp"
                 android:gravity="center_horizontal"
-                android:text="Ajouter un équipement "
+                android:text="Faire une reservation ! "
                 android:fontFamily="sans-serif-light"
                 android:textColor="#FFFFFF"
                 android:textSize="30dp"
@@ -52,20 +51,24 @@
 
             <ImageView
                 android:id="@+id/image"
-                android:layout_width="301dp"
+                android:layout_width="match_parent"
                 android:layout_height="200dp"
                 android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
                 android:layout_marginTop="150dp"
                 android:src="@drawable/maison_ecologique" />
 
             <Button
                 android:id="@+id/ajtEq"
                 style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
-                android:layout_width="302dp"
-                android:layout_height="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="50dp"
-                android:backgroundTint="#5C7E6F"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:backgroundTint="@color/darkgreen"
                 android:elevation="10dp"
                 android:text="Ajouter un équipement "
                 android:textSize="15dp" />
@@ -73,10 +76,13 @@
             <Button
                 android:id="@+id/ajtRes"
                 style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
-                android:layout_width="306dp"
-                android:layout_height="100dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:layout_marginTop="170dp"
+                android:padding="15dp"
+                android:layout_marginTop="150dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
                 android:backgroundTint="#5C7E6F"
                 android:elevation="10dp"
                 android:text="Ajouter une réservation"

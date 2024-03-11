@@ -24,12 +24,14 @@ public class EquipmentAdaptateur extends ArrayAdapter<Equipement> {
         if (convertView == null) {
             convertView = LayoutInflater.from(getContext()).inflate(R.layout.item_equipement, parent, false);
         }
+
+        TextView textid =  convertView.findViewById(R.id.idtext);
         TextView textViewNom = convertView.findViewById(R.id.NomText);
         TextView textViewWattage= convertView.findViewById(R.id.wattageText);
 
         textViewNom.setText(equipement.getNom());
         textViewWattage.setText(String.valueOf(equipement.getWattage()));
-
+        textid.setText(String.valueOf(equipement.getId()));
         return convertView;
     }
 }

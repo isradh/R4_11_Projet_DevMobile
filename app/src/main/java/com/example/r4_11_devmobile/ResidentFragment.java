@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.android.volley.Request;
@@ -25,6 +26,8 @@ public class ResidentFragment extends Fragment {
 
     private View view;
     private ListView listView;
+
+    private int nbhabitant;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -63,6 +66,7 @@ public class ResidentFragment extends Fragment {
                 String prenom = jsonObject.getString("prenom");
                 String etageStr = jsonObject.getString("etage");
                 int etage = Integer.parseInt(etageStr);
+
                 residents.add(new Resident(id, nom, prenom, 1, etage));
             } catch (JSONException e) {
                 e.printStackTrace();
@@ -70,5 +74,10 @@ public class ResidentFragment extends Fragment {
         }
         ResidentAdapter adapter = new ResidentAdapter(getContext(), residents);
         listView.setAdapter(adapter);
+        nbhabitant = residents.size();
+        TextView textnb = view.findViewById(R.id.hello);
+        textnb.setText("Il y a "+ nbhabitant + " habitant(s)" );
+
+
     }
 }

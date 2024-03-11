@@ -38,6 +38,9 @@ public class EquipementFragment extends Fragment {
 
     ImageView ajoutAlerte;
 
+    ImageView ajoutpetit;
+
+    private int wattotale;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
@@ -48,6 +51,7 @@ public class EquipementFragment extends Fragment {
         listView = view.findViewById(R.id.ancienneAlertelistView);
 
         ajoutAlerte = view.findViewById(R.id.ajoutAlerte);
+        ajoutpetit = view.findViewById(R.id.ajoutpetit);
 
         ajoutAlerte.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -57,6 +61,13 @@ public class EquipementFragment extends Fragment {
             }
         });
 
+        ajoutpetit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getActivity(), NewEquipmentActivity.class);
+                startActivity(intent);
+            }
+        });
         String userId = UserId.getUserId();
         connectUser(userId);
 
@@ -94,11 +105,13 @@ public class EquipementFragment extends Fragment {
         for (int i = 0; i < response.length(); i++) {
             try {
                 JSONObject jsonObject = response.getJSONObject(i);
+                String idStr = jsonObject.getString("id");
+                int id = Integer.parseInt(idStr);
                 String nom = jsonObject.getString("nom");
                 String wattageStr = jsonObject.getString("wattage");
                 int wattage = Integer.parseInt(wattageStr);
-                equipement.add(new Equipement(nom, wattage));
-
+                equipement.add(new Equipement(id,nom, wattage));
+                wattotale += wattage;
             } catch (JSONException e) {
                 e.printStackTrace();
             }
@@ -106,6 +119,9 @@ public class EquipementFragment extends Fragment {
         EquipmentAdaptateur adapter = new EquipmentAdaptateur(getContext(), equipement);
         listView.setAdapter(adapter);
         nbEquipement = equipement.size();
+        TextView puissanceGlobal = view.findViewById(R.id.puissanceGlobal);
+        puissanceGlobal.setText("Puissance maximale :" + wattotale);
+
 
     }
 

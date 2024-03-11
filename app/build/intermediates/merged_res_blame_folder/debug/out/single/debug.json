@@ -168,6 +168,10 @@
         "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/layout/fragment_espace_client.xml"
     },
     {
+        "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/layout_ft_accueil.xml.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/layout/ft_accueil.xml"
+    },
+    {
         "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/layout_activity_espace_client_modification.xml.flat",
         "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/layout/activity_espace_client_modification.xml"
     },
@@ -184,16 +188,16 @@
         "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/layout/fragment_equipement.xml"
     },
     {
-        "merged": "com.example.r4_11_devmobile.app-merged_res-31:/layout_activity_resident.xml.flat",
-        "source": "com.example.r4_11_devmobile.app-main-33:/layout/activity_resident.xml"
-    },
-    {
         "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/mipmap-xxhdpi_ic_launcher.webp.flat",
         "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/mipmap-xxhdpi/ic_launcher.webp"
     },
     {
         "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/layout_activity_splash_screen.xml.flat",
         "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/layout/activity_splash_screen.xml"
+    },
+    {
+        "merged": "com.example.r4_11_devmobile.app-merged_res-31:/layout_fragment_resident.xml.flat",
+        "source": "com.example.r4_11_devmobile.app-main-33:/layout/fragment_resident.xml"
     },
     {
         "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/drawable_utilisateur.png.flat",

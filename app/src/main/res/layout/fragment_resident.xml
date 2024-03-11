@@ -8,15 +8,36 @@
     android:background="#BFD8BD"
     tools:openDrawer="start">
 
-    <ListView
-        android:id="@+id/ancienneAlertelistView"
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingRight="20dp"
-        android:paddingLeft="20dp"
-        android:paddingBottom="15dp"
-        android:divider="#FFFFFF"
-        android:dividerHeight="17dp"
-        tools:ignore="MissingConstraints" />
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/hello"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:text="Faire une reservation ! "
+            android:fontFamily="sans-serif-light"
+            android:textColor="#FFFFFF"
+            android:textSize="25dp"
+            android:textStyle="bold" />
+
+        <ListView
+            android:id="@+id/ancienneAlertelistView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/hello"
+            android:layout_marginTop="20dp"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:paddingBottom="15dp"
+            android:divider="@color/veriligthgreen"
+            android:dividerHeight="7dp"
+            tools:ignore="MissingConstraints" />
+
+    </RelativeLayout>
 
 </androidx.drawerlayout.widget.DrawerLayout>

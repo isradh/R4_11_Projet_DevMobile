@@ -80,8 +80,8 @@ public class AccueilActivity extends AppCompatActivity {
                     startActivity(intent);*/
 
                 }else if (item.getItemId() == R.id.nav_accueil){
-                    replaceFragment(new AccueilFragment());
-                    toolbar.setTitle("Accueil");
+                    /*replaceFragment(new AccueilFragment());
+                    toolbar.setTitle("Accueil");*/
 
                 }
 

@@ -59,6 +59,7 @@
         </FrameLayout>
 
         <ImageView
+            android:id="@+id/ajoutpetit"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ajout_alerte_petit"
@@ -88,6 +89,7 @@
                     android:padding="10dp">
 
                     <TextView
+                        android:id="@+id/puissanceGlobal"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="Puissance maximale :" />

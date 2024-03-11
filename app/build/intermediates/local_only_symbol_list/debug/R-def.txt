@@ -40,6 +40,7 @@ id Nom
 id NomText
 id adressMail
 id ajoutAlerte
+id ajoutpetit
 id ajtEq
 id ajtRes
 id ancienneAlertelistView
@@ -103,6 +104,7 @@ id nomSaisie
 id prenom
 id prenomSaisie
 id prenomText
+id puissanceGlobal
 id superficie
 id superficieSaisie
 id text
@@ -122,7 +124,6 @@ layout activity_register
 layout activity_resident
 layout activity_splash_screen
 layout activity_splash_screen2
-layout fragment_accueil
 layout fragment_coin
 layout fragment_equipement
 layout fragment_espace_client
