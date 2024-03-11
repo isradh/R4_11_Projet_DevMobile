@@ -18,10 +18,9 @@ try {
 // Vérifie si l'id de l'utilisateur est fourni
 if(isset($_GET['userId'])) {
     $userId = $_GET['userId'];
-    $sql = "SELECT u.nom, u.prenom, u.email, u.mdp, h.etage, h.superficie
-    FROM users u
-    INNER JOIN habitats h ON u.idUser = h.idUser
-    WHERE u.idUser = :userId";
+    $sql = "SELECT nom, wattage
+    FROM appliances
+    WHERE idUser = :userId";
 
     
     try {
@@ -39,10 +38,12 @@ if(isset($_GET['userId'])) {
 
         echo json_encode($data);
     } catch(PDOException $e) {
-        die(json_encode(array("error" => $e->getMessage())));
+        die(json_encode(array("error" => "An error occurred: " . $e->getMessage())));
     }
 } else {
-    echo json_encode(array("error" => "L'id n'est pas valide"));
+    echo json_encode(array("error" => "User ID is required."));
 }
 
 ?>
+
+
