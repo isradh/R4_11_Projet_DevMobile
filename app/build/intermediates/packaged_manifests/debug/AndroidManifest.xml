@@ -36,6 +36,9 @@
             android:name="com.example.r4_11_devmobile.NewEquipmentActivity"
             android:exported="false" />
         <activity
+            android:name="com.example.r4_11_devmobile.NewReservationActivity"
+            android:exported="false" />
+        <activity
             android:name="com.example.r4_11_devmobile.NewPasswordActivity"
             android:exported="false" />
         <activity

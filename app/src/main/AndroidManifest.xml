@@ -24,6 +24,10 @@
             android:exported="false" />
 
         <activity
+            android:name=".NewReservationActivity"
+            android:exported="false" />
+
+        <activity
             android:name=".NewPasswordActivity"
             android:exported="false" />
 

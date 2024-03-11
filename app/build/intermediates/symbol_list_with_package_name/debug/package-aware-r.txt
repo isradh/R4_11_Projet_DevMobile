@@ -3350,7 +3350,9 @@ id guidelineStart
 id header_title
 id hello
 id heuredebut
+id heuredebutindication
 id heurefin
+id heurefinindication
 id hideable
 id home
 id homeAsUp
@@ -3582,6 +3584,8 @@ id south
 id spacer
 id special_effects_controller_view_tag
 id spinnerEquipements
+id spinner_heuredebut
+id spinner_heurefin
 id spline
 id split_action_bar
 id spread
@@ -3889,6 +3893,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+layout test
 menu main_menu
 mipmap ic_launcher
 mipmap ic_launcher_round

@@ -29,6 +29,7 @@ drawable logo_back
 drawable maison_ecologique
 drawable notif
 drawable prefererencs
+drawable rounded_button
 drawable seconnecter
 drawable telechargement
 drawable user
@@ -44,11 +45,14 @@ id ajoutpetit
 id ajtEq
 id ajtRes
 id ancienneAlertelistView
+id annuler
 id appbarLayout
 id back
 id btnAnnuler
 id btnUpload
 id cardView
+id cardViewHeureDebut
+id cardViewHeureFin
 id cardetage
 id citationText
 id coin
@@ -63,6 +67,9 @@ id conseil
 id copyright
 id drawer_layout
 id ecoCoins
+id editTextHeureDebut
+id editTextHeureFin
+id equipements
 id etage
 id etageSaisie
 id explicationText
@@ -70,6 +77,10 @@ id frameLayout
 id guidelineEnd
 id guidelineStart
 id hello
+id heuredebut
+id heuredebutindication
+id heurefin
+id heurefinindication
 id id
 id idtext
 id image
@@ -105,6 +116,9 @@ id prenom
 id prenomSaisie
 id prenomText
 id puissanceGlobal
+id spinnerEquipements
+id spinner_heuredebut
+id spinner_heurefin
 id superficie
 id superficieSaisie
 id text
@@ -120,6 +134,7 @@ layout activity_forgot_password
 layout activity_login
 layout activity_new_equipment
 layout activity_new_password
+layout activity_nouvellereservation
 layout activity_register
 layout activity_resident
 layout activity_splash_screen
@@ -131,6 +146,7 @@ layout fragment_resident
 layout header_menu
 layout item_equipement
 layout item_resident
+layout test
 menu main_menu
 mipmap ic_launcher
 mipmap ic_launcher_round

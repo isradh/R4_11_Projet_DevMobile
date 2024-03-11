@@ -103,7 +103,7 @@ public class AccueilActivity extends AppCompatActivity {
         ajtRes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), NewEquipmentActivity.class);
+                Intent intent = new Intent(getApplicationContext(), NewReservationActivity.class);
                 startActivity(intent);
             }
         });
