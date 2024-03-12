@@ -58,7 +58,7 @@ public class NewReservationActivity extends AppCompatActivity {
 
         ArrayList<String> heuresList = new ArrayList<>();
         for (int i = 0; i < 24; i++) {
-            heuresList.add(String.format("%02d", i)); // Ajouter les heures formatées (ex: 01, 02, ..., 23)
+            heuresList.add(String.format("%02d", i));
         }
 
         ArrayAdapter<String> heureAdapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_item, heuresList);
@@ -80,6 +80,11 @@ public class NewReservationActivity extends AppCompatActivity {
         btnajouter.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+
+                equipement = listequipement.getSelectedItem().toString();
+                heureDebut = spinnerHeuredebut.getSelectedItem().toString() + ":00";
+                heureFin= spinnerHeureFin.getSelectedItem().toString() + ":00";
+
                 reservation();
 
                 if (listequipement.getSelectedItem() == null) {
@@ -90,12 +95,7 @@ public class NewReservationActivity extends AppCompatActivity {
                 }else if(spinnerHeureFin.getSelectedItem() == null){
                     Toast.makeText(NewReservationActivity.this, "Veuillez sélectionner une heure de fin.", Toast.LENGTH_SHORT).show();
 
-                }else {
-                     equipement = listequipement.getSelectedItem().toString();
-                     heureDebut = spinnerHeuredebut.getSelectedItem().toString();
-                     heureFin= spinnerHeureFin.getSelectedItem().toString();
-
-
+                } else {
 
                 }
             }
@@ -154,18 +154,18 @@ public class NewReservationActivity extends AppCompatActivity {
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, url, parametre, new Response.Listener<JSONObject>() {
             @Override
             public void onResponse(JSONObject response) {
-
                 ApiResponse(response);
             }
-        },new Response.ErrorListener() {
+        }, new Response.ErrorListener() {
             @Override
             public void onErrorResponse(VolleyError erreur) {
                 Toast.makeText(getApplicationContext(), erreur.getMessage().toString(), Toast.LENGTH_LONG).show();
             }
         });
 
-        databaseManager.queue.add(jsonObjectRequest);
+        Volley.newRequestQueue(getApplicationContext()).add(jsonObjectRequest); // Ajout de la requête à la file d'attente
     }
+
 
 
 
@@ -176,19 +176,18 @@ public class NewReservationActivity extends AppCompatActivity {
         try{
             success = reponse.getBoolean("success");
 
-            if(success == true ){
-                Toast.makeText(NewReservationActivity.this, "Ri", Toast.LENGTH_SHORT).show();
-            }else {
-                error = reponse.getString("erreur");
+            if(success){
+                Toast.makeText(NewReservationActivity.this, "Réservation réussie.", Toast.LENGTH_SHORT).show();
+            } else {
+                error = reponse.getString("error");
                 Toast.makeText(NewReservationActivity.this, error, Toast.LENGTH_SHORT).show();
-
             }
 
-        }catch(JSONException e){
+        } catch(JSONException e){
             e.printStackTrace();
             Toast.makeText(NewReservationActivity.this, e.toString(), Toast.LENGTH_SHORT).show();
-
         }
     }
+
 
 }
