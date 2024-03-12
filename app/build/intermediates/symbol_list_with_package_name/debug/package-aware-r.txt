@@ -3188,7 +3188,6 @@ id always
 id ancienneAlertelistView
 id animateToEnd
 id animateToStart
-id annuler
 id antiClockwise
 id anticipate
 id appbarLayout
@@ -3219,8 +3218,6 @@ id cache_measures
 id callMeasure
 id cancel_button
 id cardView
-id cardViewHeureDebut
-id cardViewHeureFin
 id cardetage
 id carryVelocity
 id center
@@ -3304,8 +3301,6 @@ id easeOut
 id east
 id ecoCoins
 id edge
-id editTextHeureDebut
-id editTextHeureFin
 id edit_query
 id elastic
 id embed
@@ -3803,6 +3798,7 @@ layout activity_accueil
 layout activity_espace_client_modification
 layout activity_forgot_password
 layout activity_login
+layout activity_mes_preferences
 layout activity_new_equipment
 layout activity_new_password
 layout activity_nouvellereservation
@@ -3826,6 +3822,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_accueil
 layout fragment_coin
 layout fragment_equipement
 layout fragment_espace_client
@@ -3894,7 +3891,6 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
-layout test
 menu main_menu
 mipmap ic_launcher
 mipmap ic_launcher_round

@@ -15,7 +15,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nouvelle alerte"
-        android:textColor="#FFFFFF"
+        android:textColor="@color/white"
         android:textSize="30dp"
         android:gravity="center_horizontal"
         android:textStyle="bold"
@@ -54,7 +54,7 @@
                 android:layout_height="wrap_content"
 
                 android:text="Équipements  : "
-                android:textColor="#FFFFFF"
+                android:textColor="@color/white"
                 android:textSize="18dp" />
 
 
@@ -64,7 +64,7 @@
                 android:layout_height="wrap_content"
 
                 android:layout_marginTop="15dp"
-                android:background="#FF6B9080"
+                android:background="@color/white"
                 app:cardCornerRadius="8dp">
 
                 <Spinner
@@ -91,7 +91,7 @@
                 android:text="Heure de début  : "
 
                 android:layout_gravity="center"
-                android:textColor="#FFFFFF"
+                android:textColor="@color/white"
                 android:textSize="18dp" />
 
 
@@ -99,7 +99,7 @@
                     android:id="@+id/heuredebut"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:background="#FF6B9080"
+                    android:background="@color/white"
                     android:layout_marginLeft="10dp"
                     app:cardCornerRadius="8dp">
                     <Spinner
@@ -130,7 +130,7 @@
                     android:text="Heure de fin        : "
 
                     android:layout_gravity="center"
-                    android:textColor="#FFFFFF"
+                    android:textColor="@color/white"
                     android:textSize="18dp" />
 
 
@@ -138,7 +138,7 @@
                     android:id="@+id/heurefin"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:background="#FF6B9080"
+                    android:background="@color/white"
                     android:layout_marginLeft="10dp"
                     app:cardCornerRadius="8dp">
                     <Spinner

@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SplashScreenActivity"
-    android:background="#BFD8BD">
+    android:background="@color/veriligthgreen">
 
 
     <LinearLayout
@@ -88,7 +88,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="30dp"
             android:elevation="10dp"
-            android:backgroundTint="#5C7E6F"
+            android:backgroundTint="@color/darkgreen"
             android:text="Connectez-vous !"
             android:textSize="15dp"
             tools:ignore="TextSizeCheck" />

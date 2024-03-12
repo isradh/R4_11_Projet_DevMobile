@@ -5,7 +5,7 @@
     android:id="@+id/drawer_layout"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#BFD8BD"
+    android:background="@color/veriligthgreen"
     tools:openDrawer="start">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -18,7 +18,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Bonjour, "
-            android:textColor="#FFFFFF"
+            android:textColor="@color/white"
 
             android:textSize="22dp"
             android:textStyle="bold"
@@ -95,7 +95,7 @@
             android:layout_gravity="center"
             android:layout_margin="20dp"
             app:cardCornerRadius="15dp"
-            android:backgroundTint="#6B9080"
+            android:backgroundTint="@color/darkgreen"
             app:cardBackgroundColor="@color/white"
             app:layout_constraintTop_toBottomOf="@id/info"
             app:layout_constraintStart_toStartOf="parent"
@@ -119,7 +119,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Nom : "
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/white"
                         android:textSize="18dp"
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="20dp" />
@@ -128,7 +128,7 @@
                         android:id="@+id/nomSaisie"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/white"
                         android:textSize="18dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="20dp" />
@@ -144,7 +144,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Prénom : "
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/white"
                         android:textSize="18dp"
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="15dp" />
@@ -154,7 +154,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=""
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/white"
                         android:textSize="18dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="20dp" />
@@ -169,7 +169,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Etage : "
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/white"
                         android:textSize="18dp"
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="15dp" />
@@ -178,7 +178,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=""
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/white"
                         android:textSize="18dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="20dp" />
@@ -193,7 +193,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Superficie  : "
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/white"
                         android:textSize="18dp"
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="15dp" />
@@ -202,7 +202,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=""
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/white"
                         android:textSize="18dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="20dp" />
@@ -217,7 +217,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Adresse mail   : "
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/white"
                         android:textSize="18dp"
                         android:layout_marginStart="20dp"
                         android:layout_marginTop="15dp" />
@@ -226,7 +226,7 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text=""
-                        android:textColor="#FFFFFF"
+                        android:textColor="@color/white"
                         android:textSize="18dp"
                         android:layout_marginStart="10dp"
                         android:layout_marginTop="20dp" />
@@ -240,7 +240,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:backgroundTint="#5C7E6F"
+            android:backgroundTint="@color/darkgreen"
             android:text="Modifier mes informations"
             android:textSize="15dp"
             android:elevation="10dp"

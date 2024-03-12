@@ -45,15 +45,12 @@ id ajoutpetit
 id ajtEq
 id ajtRes
 id ancienneAlertelistView
-id annuler
 id appbarLayout
 id back
 id btnAnnuler
 id btnUpload
 id btnajouter
 id cardView
-id cardViewHeureDebut
-id cardViewHeureFin
 id cardetage
 id citationText
 id coin
@@ -68,8 +65,6 @@ id conseil
 id copyright
 id drawer_layout
 id ecoCoins
-id editTextHeureDebut
-id editTextHeureFin
 id equipements
 id etage
 id etageSaisie
@@ -133,6 +128,7 @@ layout activity_accueil
 layout activity_espace_client_modification
 layout activity_forgot_password
 layout activity_login
+layout activity_mes_preferences
 layout activity_new_equipment
 layout activity_new_password
 layout activity_nouvellereservation
@@ -140,6 +136,7 @@ layout activity_register
 layout activity_resident
 layout activity_splash_screen
 layout activity_splash_screen2
+layout fragment_accueil
 layout fragment_coin
 layout fragment_equipement
 layout fragment_espace_client
@@ -147,7 +144,6 @@ layout fragment_resident
 layout header_menu
 layout item_equipement
 layout item_resident
-layout test
 menu main_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
