@@ -128,6 +128,10 @@
         "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/drawable/cadena.png"
     },
     {
+        "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/layout_fragment_a_propos.xml.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/layout/fragment_a_propos.xml"
+    },
+    {
         "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/drawable_notif.png.flat",
         "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/drawable/notif.png"
     },
@@ -198,6 +202,10 @@
     {
         "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/mipmap-xhdpi_ic_launcher_round.webp.flat",
         "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.r4_11_devmobile.app-merged_res-31:/menu_main_menu.xml.flat",
+        "source": "com.example.r4_11_devmobile.app-main-33:/menu/main_menu.xml"
     },
     {
         "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/drawable_bookingreservation.png.flat",
@@ -298,10 +306,6 @@
     {
         "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/mipmap-mdpi_ic_launcher_round.webp.flat",
         "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/mipmap-mdpi/ic_launcher_round.webp"
-    },
-    {
-        "merged": "com.example.r4_11_devmobile.app-merged_res-31:/layout_activity_nouvellereservation.xml.flat",
-        "source": "com.example.r4_11_devmobile.app-main-33:/layout/activity_nouvellereservation.xml"
     },
     {
         "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/layout_activity_splash_screen2.xml.flat",

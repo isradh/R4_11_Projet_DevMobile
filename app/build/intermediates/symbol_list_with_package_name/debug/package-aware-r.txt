@@ -3475,7 +3475,7 @@ id nav_habitats
 id nav_monhabitat
 id nav_notif
 id nav_preference
-id nav_profil
+id nav_reservation
 id nav_resident
 id nav_view
 id navigation_bar_item_active_indicator_view
@@ -3838,6 +3838,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout fragment_a_propos
 layout fragment_accueil
 layout fragment_coin
 layout fragment_equipement

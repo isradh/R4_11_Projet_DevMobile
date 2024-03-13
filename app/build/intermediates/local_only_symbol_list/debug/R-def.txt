@@ -114,7 +114,7 @@ id nav_habitats
 id nav_monhabitat
 id nav_notif
 id nav_preference
-id nav_profil
+id nav_reservation
 id nav_resident
 id nav_view
 id navigation_view
@@ -152,6 +152,7 @@ layout activity_reset_code
 layout activity_resident
 layout activity_splash_screen
 layout activity_splash_screen2
+layout fragment_a_propos
 layout fragment_accueil
 layout fragment_coin
 layout fragment_equipement

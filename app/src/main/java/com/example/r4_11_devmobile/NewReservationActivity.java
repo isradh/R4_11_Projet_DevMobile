@@ -65,6 +65,31 @@ public class NewReservationActivity extends AppCompatActivity {
         spinnerHeuredebut = findViewById(R.id.spinner_heuredebut);
         spinnerHeureFin = findViewById(R.id.spinner_heurefin);
 
+        Button btnAnnuler = findViewById(R.id.btnAnnuler);
+
+        btnAnnuler.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(NewReservationActivity.this);
+                builder.setMessage("Êtes-vous sûr de vouloir retourner en arrière ? Votre saisie sera annulée.");
+                builder.setPositiveButton("Oui", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        finish();
+                    }
+                });
+                builder.setNegativeButton("Non", new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+
+                        dialog.dismiss();
+                    }
+                });
+                AlertDialog dialog = builder.create();
+                dialog.show();
+            }
+        });
+
         calendar = Calendar.getInstance();
 
         dateButton.setOnClickListener(new View.OnClickListener() {
@@ -78,9 +103,7 @@ public class NewReservationActivity extends AppCompatActivity {
                         new DatePickerDialog.OnDateSetListener() {
                             @Override
                             public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
-                                // Traitement de la date sélectionnée
                                 dateReservation = dayOfMonth + "/" + (monthOfYear + 1) + "/" + year;
-                                Toast.makeText(NewReservationActivity.this, "Date sélectionnée : " + dateReservation, Toast.LENGTH_SHORT).show();
                             }
                         }, year, month, day);
                 datePickerDialog.show();
@@ -101,15 +124,9 @@ public class NewReservationActivity extends AppCompatActivity {
         spinnerHeuredebut.setAdapter(heureAdapter);
         spinnerHeureFin.setAdapter(heureAdapter);
 
-        Button btnAnnuler = findViewById(R.id.btnAnnuler);
         Button btnajouter = findViewById(R.id.btnajouter);
 
-        btnAnnuler.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                finish();
-            }
-        });
+
 
         btnajouter.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -199,7 +216,7 @@ public class NewReservationActivity extends AppCompatActivity {
             }
         });
 
-        Volley.newRequestQueue(getApplicationContext()).add(jsonObjectRequest); // Ajout de la requête à la file d'attente
+        Volley.newRequestQueue(getApplicationContext()).add(jsonObjectRequest);
     }
 
 
@@ -212,19 +229,6 @@ public class NewReservationActivity extends AppCompatActivity {
         try {
             success = reponse.getBoolean("success");
 
-            if (reponse.has("show_dialog")) {
-                boolean showDialog = reponse.getBoolean("show_dialog");
-                if (showDialog) {
-                    showReservationConfirmationDialog(new Runnable() {
-                        @Override
-                        public void run() {
-                            // Réponse de l'utilisateur à la boîte de dialogue
-                            // Si l'utilisateur approuve, effectuez la réservation
-                            reservation();
-                        }
-                    });
-                }
-            }
 
             if (success) {
                 Toast.makeText(NewReservationActivity.this, "Réservation réussie.", Toast.LENGTH_SHORT).show();
@@ -242,23 +246,5 @@ public class NewReservationActivity extends AppCompatActivity {
 
 
 
-    private void showReservationConfirmationDialog(final Runnable onConfirmation) {
-        AlertDialog.Builder builder = new AlertDialog.Builder(NewReservationActivity.this);
-        builder.setMessage("Êtes-vous sûr de vouloir réserver ce créneau ? Il est presque complet, cela entraînera un malus.");
-        builder.setPositiveButton("Oui", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                onConfirmation.run(); // Appel du callback lorsque l'utilisateur appuie sur "Oui"
-            }
-        });
-        builder.setNegativeButton("Non", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                // Ne rien faire, l'utilisateur a annulé la réservation
-            }
-        });
-        AlertDialog dialog = builder.create();
-        dialog.show();
-    }
 
 }

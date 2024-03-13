@@ -61,22 +61,24 @@ public class AccueilActivity extends AppCompatActivity {
             public boolean onNavigationItemSelected(@NonNull MenuItem item) {
                 if (item.getItemId() == R.id.nav_equipement) {
                     replaceFragment(new EquipementFragment());
-                    toolbar.setTitle("Espace Client");
+                    toolbar.setTitle("Mes équipements");
 
                     visibilitybtn();
                 }
                 else if(item.getItemId() == R.id.nav_resident){
                     replaceFragment(new ResidentFragment());
-                    toolbar.setTitle("Resident");
+                    toolbar.setTitle("Residents");
                     visibilitybtn();
                 }
                 else if(item.getItemId() == R.id.nav_espaceclient){
-                    replaceFragment(new ReservationFragment());
+                    replaceFragment(new EspaceClientFragment());
                     toolbar.setTitle("Espace Client");
                     visibilitybtn();
 
-                } else if (item.getItemId() == R.id.nav_profil) {
-
+                } else if (item.getItemId() == R.id.nav_reservation) {
+                    replaceFragment(new ReservationFragment());
+                    toolbar.setTitle("Mes reservations");
+                    visibilitybtn();
                 }else if (item.getItemId() == R.id.nav_accueil){
                     replaceFragment(new AccueilFragment());
                     toolbar.setTitle("Accueil");
@@ -119,26 +121,6 @@ public class AccueilActivity extends AppCompatActivity {
         findViewById(R.id.ajtEq).setVisibility(View.GONE);
         findViewById(R.id.ajtRes).setVisibility(View.GONE);
     }
-
-    /*@Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-        int itemId = menuItem.getItemId();
-        if (itemId == MenuIds.NAV_HABITATS) {
-            replaceFragment(new EspaceClientFragment());
-        } else if (itemId == MenuIds.NAV_NOTIF) {
-            Intent i = new Intent(AccueilActivity.this, NotificationsActivity.class);
-            startActivity(i);
-        } else if (itemId == MenuIds.NAV_PREFERENCE) {
-            Intent pref = new Intent(AccueilActivity.this, PreferencesActivity.class);
-            startActivity(pref);
-        } else if (itemId == MenuIds.NAV_MONHABITAT) {
-            Intent habitat = new Intent(AccueilActivity.this, MonHabitatActivity.class);
-            startActivity(habitat);
-        }
-
-        drawerLayout.closeDrawer(GravityCompat.START);
-        return true;
-    }*/
 
 
 

@@ -1,50 +1,32 @@
-<?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
+
     <group>
         <item
             android:id="@+id/nav_accueil"
-            android:title="Page d'accueil"
+            android:title="Page d'accueil" />
 
-            />
         <item
             android:id="@+id/nav_equipement"
-            android:title="Listes des équipement"
-            />
+            android:title="Mon habitats" />
 
         <item
             android:id="@+id/nav_resident"
             android:title="Liste des résidents" />
 
         <item
-            android:id="@+id/nav_espaceclient"
-
-            android:title="Espace Client" />
+            android:id="@+id/nav_reservation"
+            android:title="Mes reservation" />
 
         <item
-            android:id="@+id/nav_monhabitat"
-            android:title="Mon Habitats" />
+            android:id="@+id/nav_espaceclient"
+            android:title="Espace Client" />
     </group>
 
-    <item android:title="Mon Profil">
-
-        <menu>
-
-            <group android:checkableBehavior="single">
-
-                <item
-                    android:id="@+id/nav_profil"
-
-                    android:title="Mon Profil " />
-
-                <item
-                    android:id="@+id/nav_apropos"
-
-                    android:title="A propos" />
-
-
-            </group>
-        </menu>
-    </item>
+    <group android:checkableBehavior="none">
+        <item
+            android:id="@+id/nav_apropos"
+            android:title="A propos" />
+    </group>
 
 </menu>

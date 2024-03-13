@@ -14,7 +14,7 @@
         android:id="@+id/hello"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nouvelle alerte"
+        android:text="Nouvel équipement"
         android:textColor="@color/white"
         android:textSize="30dp"
         android:gravity="center_horizontal"
