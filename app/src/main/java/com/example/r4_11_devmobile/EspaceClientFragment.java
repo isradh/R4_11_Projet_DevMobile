@@ -29,6 +29,8 @@ import java.util.ArrayList;
 public class EspaceClientFragment extends Fragment {
 
     private View view;
+    private String etageStr; // Déclaration de la variable etageStr
+
     public EspaceClientFragment() {
     }
 
@@ -42,31 +44,20 @@ public class EspaceClientFragment extends Fragment {
         TextView infoTextView = view.findViewById(R.id.info);
         infoTextView.setPaintFlags(infoTextView.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
 
-        Button modif = view.findViewById(R.id.modif);
-
-        modif.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), EspaceClientModificationActivity.class);
-                startActivity(intent);
-            }
-        });
-
         String userId = UserId.getUserId();
         connectUser(userId);
 
         return view;
     }
 
-
-    public void connectUser(String userId) {
+    private void connectUser(String userId) {
         String url = "http://10.0.2.2/devmobile/actions/recupInfoUser.php?userId=" + userId;
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, url, null,
                 new Response.Listener<JSONArray>() {
                     @Override
                     public void onResponse(JSONArray response) {
-
                         handleResponse(response);
+                        setModifButton();
                     }
                 }, new Response.ErrorListener() {
             @Override
@@ -77,6 +68,7 @@ public class EspaceClientFragment extends Fragment {
 
         Volley.newRequestQueue(getContext()).add(jsonArrayRequest);
     }
+
     private void handleResponse(JSONArray response) {
         try {
             if (response.length() > 0) {
@@ -84,12 +76,8 @@ public class EspaceClientFragment extends Fragment {
                 String nom = jsonObject.getString("nom");
                 String prenom = jsonObject.getString("prenom");
                 String email = jsonObject.getString("email");
-
-                String etageStr = jsonObject.getString("etage");
-                int etage = Integer.parseInt(etageStr);
+                etageStr = jsonObject.getString("etage"); // Affectation de la valeur à etageStr
                 String superficieStr = jsonObject.getString("superficie");
-                int superficie = Integer.parseInt(superficieStr);
-
 
                 TextView nomTextView = view.findViewById(R.id.nomSaisie);
                 nomTextView.setText(nom);
@@ -101,16 +89,35 @@ public class EspaceClientFragment extends Fragment {
                 emailTextView.setText(email);
 
                 TextView etageTextView = view.findViewById(R.id.etageSaisie);
-                etageTextView.setText(String.valueOf(etage));
+                etageTextView.setText(etageStr);
 
                 TextView superficieTextView = view.findViewById(R.id.superficieSaisie);
-                superficieTextView.setText(String.valueOf(superficie));
+                superficieTextView.setText(superficieStr);
             }
         } catch (JSONException e) {
             e.printStackTrace();
         }
     }
 
+    private void setModifButton() {
+        Button modif = view.findViewById(R.id.modif);
+        modif.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String nom = ((TextView) view.findViewById(R.id.nomSaisie)).getText().toString();
+                String prenom = ((TextView) view.findViewById(R.id.prenomSaisie)).getText().toString();
+
+                int etage = Integer.parseInt(etageStr);
+                int superficie = Integer.parseInt(((TextView) view.findViewById(R.id.superficieSaisie)).getText().toString());
+
+                Intent intent = new Intent(getActivity(), EspaceClientModificationActivity.class);
+                intent.putExtra("nom", nom);
+                intent.putExtra("prenom", prenom);
+
+                intent.putExtra("etage", etage);
+                intent.putExtra("superficie", superficie);
+                startActivity(intent);
+            }
+        });
+    }
 }
-
-
