@@ -29,7 +29,10 @@ import java.util.ArrayList;
 public class EspaceClientFragment extends Fragment {
 
     private View view;
-    private String etageStr; // Déclaration de la variable etageStr
+    private String etageStr;
+    private String userId;
+
+    private String email;
 
     public EspaceClientFragment() {
     }
@@ -44,7 +47,7 @@ public class EspaceClientFragment extends Fragment {
         TextView infoTextView = view.findViewById(R.id.info);
         infoTextView.setPaintFlags(infoTextView.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
 
-        String userId = UserId.getUserId();
+        userId = UserId.getUserId();
         connectUser(userId);
 
         return view;
@@ -69,23 +72,26 @@ public class EspaceClientFragment extends Fragment {
         Volley.newRequestQueue(getContext()).add(jsonArrayRequest);
     }
 
+
     private void handleResponse(JSONArray response) {
         try {
             if (response.length() > 0) {
-                JSONObject jsonObject = response.getJSONObject(0); // Accédez au premier objet JSON
+                JSONObject jsonObject = response.getJSONObject(0);
                 String nom = jsonObject.getString("nom");
                 String prenom = jsonObject.getString("prenom");
 
-                etageStr = jsonObject.getString("etage"); // Affectation de la valeur à etageStr
+                etageStr = jsonObject.getString("etage");
                 String superficieStr = jsonObject.getString("superficie");
+                email = jsonObject.getString("email");
+
+                TextView emailTextView = view.findViewById(R.id.emailSaisie);
+                emailTextView.setText(email);
 
                 TextView nomTextView = view.findViewById(R.id.nomSaisie);
                 nomTextView.setText(nom);
 
                 TextView prenomTextView = view.findViewById(R.id.prenomSaisie);
                 prenomTextView.setText(prenom);
-
-
 
                 TextView etageTextView = view.findViewById(R.id.etageSaisie);
                 etageTextView.setText(etageStr);
@@ -105,18 +111,27 @@ public class EspaceClientFragment extends Fragment {
             public void onClick(View v) {
                 String nom = ((TextView) view.findViewById(R.id.nomSaisie)).getText().toString();
                 String prenom = ((TextView) view.findViewById(R.id.prenomSaisie)).getText().toString();
-
                 int etage = Integer.parseInt(etageStr);
                 int superficie = Integer.parseInt(((TextView) view.findViewById(R.id.superficieSaisie)).getText().toString());
 
                 Intent intent = new Intent(getActivity(), EspaceClientModificationActivity.class);
                 intent.putExtra("nom", nom);
                 intent.putExtra("prenom", prenom);
-
                 intent.putExtra("etage", etage);
                 intent.putExtra("superficie", superficie);
-                startActivity(intent);
+                intent.putExtra("email",email);
+                startActivityForResult(intent, 1); // Ajouter une demande de code pour obtenir un résultat
             }
         });
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == 1) {
+            if (resultCode == AppCompatActivity.RESULT_OK) {
+                connectUser(userId); // Rafraîchir les données après la modification
+            }
+        }
     }
 }

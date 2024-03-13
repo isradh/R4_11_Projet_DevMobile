@@ -3,9 +3,9 @@ package com.example.r4_11_devmobile;
 import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -21,37 +21,40 @@ import org.json.JSONObject;
 
 public class EspaceClientModificationActivity extends AppCompatActivity {
 
-    private EditText nomEditText, prenomEditText, etageEditText, superficieEditText, mdpEditText;
+    private EditText nomEditText, prenomEditText, mdpEditText;
+
+    private TextView emailSaisie, etageEditText, superficieEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_espace_client_modification);
 
-        // Récupérer les références des champs EditText
         nomEditText = findViewById(R.id.nomSaisie);
         prenomEditText = findViewById(R.id.prenomSaisie);
         etageEditText = findViewById(R.id.etageSaisie);
+        emailSaisie = findViewById(R.id.emailSaisie);
         superficieEditText = findViewById(R.id.superficieSaisie);
-        mdpEditText = findViewById(R.id.mdpSaisie); // Ajout du champ de mot de passe
+        mdpEditText = findViewById(R.id.mdpSaisie);
 
-        // Remplir les champs EditText avec les données de l'utilisateur
         fillUserInfo();
 
-        // Configurer le bouton pour enregistrer les modifications
+
         @SuppressLint({"MissingInflatedId", "LocalSuppress"}) Button saveButton = findViewById(R.id.saveButton);
         saveButton.setOnClickListener(view -> updateUserInfo());
     }
 
     private void fillUserInfo() {
-        // Récupérer les informations de l'utilisateur depuis l'intent
         Intent intent = getIntent();
         if (intent != null) {
             nomEditText.setText(intent.getStringExtra("nom"));
             prenomEditText.setText(intent.getStringExtra("prenom"));
             etageEditText.setText(String.valueOf(intent.getIntExtra("etage", 0)));
+            emailSaisie.setText(intent.getStringExtra("email"));
             superficieEditText.setText(String.valueOf(intent.getIntExtra("superficie", 0)));
-            mdpEditText.setText(intent.getStringExtra("mdp")); // Remplir le champ de mot de passe
+            mdpEditText.setText(intent.getStringExtra("mdp"));
+
+
         }
     }
 
@@ -60,41 +63,40 @@ public class EspaceClientModificationActivity extends AppCompatActivity {
         String nouveauPrenom = prenomEditText.getText().toString().trim();
         String nouvelEtage = etageEditText.getText().toString().trim();
         String nouvelleSuperficie = superficieEditText.getText().toString().trim();
-        String nouveauMotDePasse = mdpEditText.getText().toString().trim(); // Récupérer le nouveau mot de passe
+        String nouveauMotDePasse = mdpEditText.getText().toString().trim();
+        String email = emailSaisie.getText().toString();
 
-        // Vérifier les champs obligatoires
         if (nouveauNom.isEmpty() || nouveauPrenom.isEmpty() || nouvelEtage.isEmpty() || nouvelleSuperficie.isEmpty()) {
             Toast.makeText(this, "Veuillez remplir tous les champs obligatoires", Toast.LENGTH_SHORT).show();
         } else {
-            sendUpdateRequest(nouveauNom, nouveauPrenom, nouvelEtage, nouvelleSuperficie, nouveauMotDePasse); // Passer le nouveau mot de passe à la méthode d'envoi de la requête
+            sendUpdateRequest(nouveauNom, nouveauPrenom, nouvelEtage, nouvelleSuperficie, nouveauMotDePasse, email);
         }
     }
 
-    // Modifier la fonction sendUpdateRequest() pour afficher un message d'erreur en cas de problème lors de la mise à jour des informations
+
     private void sendUpdateRequest(String nouveauNom, String nouveauPrenom, String nouvelEtage,
-                                   String nouvelleSuperficie, String nouveauMotDePasse) {
-        // Créer un objet JSON contenant les nouvelles informations de l'utilisateur, y compris le nouveau mot de passe
+                                   String nouvelleSuperficie, String nouveauMotDePasse, String email) {
         JSONObject requestBody = new JSONObject();
         try {
             requestBody.put("nom", nouveauNom);
             requestBody.put("prenom", nouveauPrenom);
             requestBody.put("etage", nouvelEtage);
             requestBody.put("superficie", nouvelleSuperficie);
-            requestBody.put("mot_de_passe", nouveauMotDePasse); // Ajouter le nouveau mot de passe
+            requestBody.put("mot_de_passe", nouveauMotDePasse);
+            requestBody.put("email", email);
+
         } catch (JSONException e) {
             e.printStackTrace();
         }
 
-        // Envoyer la requête HTTP au serveur
         JsonObjectRequest request = new JsonObjectRequest(Request.Method.POST, "http://10.0.2.2/devmobile/actions/changeinfo.php", requestBody,
                 response -> {
-                    // Gérer la réponse du serveur
                     try {
-                        Log.d("Server Response", response.toString()); // Log de la réponse serveur
                         boolean success = response.getBoolean("success");
                         if (success) {
                             Toast.makeText(this, "Informations mises à jour avec succès", Toast.LENGTH_SHORT).show();
-                            finish(); // Terminer l'activité après la mise à jour réussie
+                            setResult(AppCompatActivity.RESULT_OK);
+                            finish();
                         } else {
                             String message = response.getString("message");
                             Toast.makeText(this, message, Toast.LENGTH_SHORT).show();
@@ -109,15 +111,12 @@ public class EspaceClientModificationActivity extends AppCompatActivity {
                     if (error.networkResponse != null) {
                         int statusCode = error.networkResponse.statusCode;
                         String errorMessage = new String(error.networkResponse.data);
-                        Log.e("Volley Error", "HTTP Status Code: " + statusCode);
-                        Log.e("Volley Error", "Error Message: " + errorMessage);
+                        Toast.makeText(this, "HTTP Status Code: " + statusCode + "Error Message: " + errorMessage, Toast.LENGTH_SHORT).show();
                     } else {
-                        Log.e("Volley Error", "Unknown error occurred.");
+                        Toast.makeText(this, "Unknown error occurred.", Toast.LENGTH_SHORT).show();
                     }
-                    Toast.makeText(this, "Erreur lors de la mise à jour des informations", Toast.LENGTH_SHORT).show();
                 });
 
-        // Ajouter la requête à la file d'attente de Volley pour l'exécution
         Volley.newRequestQueue(this).add(request);
     }
 }

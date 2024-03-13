@@ -41,11 +41,16 @@ public class EquipementFragment extends Fragment {
     ImageView ajoutpetit;
 
     private int wattotale;
+
+    private String userId;
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
         view = inflater.inflate(R.layout.fragment_equipement, container, false);
+
+        userId = UserId.getUserId();
+
 
         // Initialisez votre ListView ici
         listView = view.findViewById(R.id.ancienneAlertelistView);
@@ -68,7 +73,7 @@ public class EquipementFragment extends Fragment {
                 startActivity(intent);
             }
         });
-        String userId = UserId.getUserId();
+
         connectUser(userId);
 
         return view;
