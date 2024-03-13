@@ -11,27 +11,18 @@
     >
 
 
-    <ImageView
-        android:layout_width="100dp"
-        android:layout_height="100dp"
-        android:paddingRight="30dp"
-        android:src="@drawable/maison_ecologique"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="5dp"
-        tools:layout_editor_absoluteY="31dp" />
-
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Bonjour, [nom] !"
+        android:text="Bonjour ! Bienvenue sur powerHouse"
         android:textColor="@color/white"
         android:textSize="24sp"
 
 
         tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="1dp"
-        tools:layout_editor_absoluteY="134dp" />
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="82dp" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

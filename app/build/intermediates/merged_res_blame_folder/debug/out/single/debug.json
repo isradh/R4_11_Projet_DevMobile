@@ -40,10 +40,6 @@
         "source": "/Users/oumi/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/drawable/carte_identite.png"
     },
     {
-        "merged": "com.example.r4_11_devmobile.app-merged_res-31:/layout_activity_espace_client_modification.xml.flat",
-        "source": "com.example.r4_11_devmobile.app-main-33:/layout/activity_espace_client_modification.xml"
-    },
-    {
         "merged": "/Users/oumi/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/drawable_booking.png.flat",
         "source": "/Users/oumi/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/drawable/booking.png"
     },
@@ -86,6 +82,10 @@
     {
         "merged": "/Users/oumi/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/drawable_utilisateur.png.flat",
         "source": "/Users/oumi/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/drawable/utilisateur.png"
+    },
+    {
+        "merged": "com.example.r4_11_devmobile.app-merged_res-31:/layout_header_menu.xml.flat",
+        "source": "com.example.r4_11_devmobile.app-main-33:/layout/header_menu.xml"
     },
     {
         "merged": "/Users/oumi/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/drawable_ic_launcher_background.xml.flat",
