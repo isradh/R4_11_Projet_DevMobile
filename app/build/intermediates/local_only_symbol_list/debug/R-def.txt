@@ -51,6 +51,7 @@ id btnAnnuler
 id btnUpload
 id btnajouter
 id cardView
+id cardViewinputcode
 id cardetage
 id citationText
 id coin
@@ -112,6 +113,8 @@ id prenom
 id prenomSaisie
 id prenomText
 id puissanceGlobal
+id reset
+id resetCodeInput
 id spinnerEquipements
 id spinner_heuredebut
 id spinner_heurefin
@@ -133,6 +136,7 @@ layout activity_new_equipment
 layout activity_new_password
 layout activity_nouvellereservation
 layout activity_register
+layout activity_reset_code
 layout activity_resident
 layout activity_splash_screen
 layout activity_splash_screen2

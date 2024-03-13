@@ -33,6 +33,9 @@
         android:testOnly="true"
         android:theme="@style/Theme.R4_11_DevMobile" >
         <activity
+            android:name="com.example.r4_11_devmobile.resetCode"
+            android:exported="false" />
+        <activity
             android:name="com.example.r4_11_devmobile.MesPreferencesActivity"
             android:exported="false" />
         <activity

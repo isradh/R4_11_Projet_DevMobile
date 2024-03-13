@@ -1,8 +1,8 @@
-#Tue Mar 12 21:22:29 CET 2024
-base.0=/Users/ines/Desktop/R4_11_Projet_DevMobile/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
-base.1=/Users/ines/Desktop/R4_11_Projet_DevMobile/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
-base.2=/Users/ines/Desktop/R4_11_Projet_DevMobile/app/build/intermediates/dex/debug/mergeProjectDexDebug/11/classes.dex
-base.3=/Users/ines/Desktop/R4_11_Projet_DevMobile/app/build/intermediates/dex/debug/mergeProjectDexDebug/15/classes.dex
+#Wed Mar 13 15:55:33 CET 2024
+base.0=/Users/oumi/AndroidStudioProjects/R4_11_Projet_DevMobileIsraenvoie/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
+base.1=/Users/oumi/AndroidStudioProjects/R4_11_Projet_DevMobileIsraenvoie/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
+base.2=/Users/oumi/AndroidStudioProjects/R4_11_Projet_DevMobileIsraenvoie/app/build/intermediates/dex/debug/mergeProjectDexDebug/11/classes.dex
+base.3=/Users/oumi/AndroidStudioProjects/R4_11_Projet_DevMobileIsraenvoie/app/build/intermediates/dex/debug/mergeProjectDexDebug/15/classes.dex
 path.0=classes.dex
 path.1=0/classes.dex
 path.2=11/classes.dex

@@ -3218,6 +3218,7 @@ id cache_measures
 id callMeasure
 id cancel_button
 id cardView
+id cardViewinputcode
 id cardetage
 id carryVelocity
 id center
@@ -3532,6 +3533,8 @@ id radio
 id ratio
 id rectangles
 id report_drawn
+id reset
+id resetCodeInput
 id reverseSawtooth
 id right
 id rightToLeft
@@ -3803,6 +3806,7 @@ layout activity_new_equipment
 layout activity_new_password
 layout activity_nouvellereservation
 layout activity_register
+layout activity_reset_code
 layout activity_resident
 layout activity_splash_screen
 layout activity_splash_screen2
