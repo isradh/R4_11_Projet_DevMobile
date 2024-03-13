@@ -75,7 +75,7 @@ public class EspaceClientFragment extends Fragment {
                 JSONObject jsonObject = response.getJSONObject(0); // Accédez au premier objet JSON
                 String nom = jsonObject.getString("nom");
                 String prenom = jsonObject.getString("prenom");
-                String email = jsonObject.getString("email");
+
                 etageStr = jsonObject.getString("etage"); // Affectation de la valeur à etageStr
                 String superficieStr = jsonObject.getString("superficie");
 
@@ -85,8 +85,7 @@ public class EspaceClientFragment extends Fragment {
                 TextView prenomTextView = view.findViewById(R.id.prenomSaisie);
                 prenomTextView.setText(prenom);
 
-                TextView emailTextView = view.findViewById(R.id.mailSaisie);
-                emailTextView.setText(email);
+
 
                 TextView etageTextView = view.findViewById(R.id.etageSaisie);
                 etageTextView.setText(etageStr);

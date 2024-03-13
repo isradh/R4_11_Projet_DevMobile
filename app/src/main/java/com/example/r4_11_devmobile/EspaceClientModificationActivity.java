@@ -21,7 +21,7 @@ import org.json.JSONObject;
 
 public class EspaceClientModificationActivity extends AppCompatActivity {
 
-    private EditText nomEditText, prenomEditText, etageEditText, superficieEditText, mailEditText;
+    private EditText nomEditText, prenomEditText, etageEditText, superficieEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +33,7 @@ public class EspaceClientModificationActivity extends AppCompatActivity {
         prenomEditText = findViewById(R.id.prenomSaisie);
         etageEditText = findViewById(R.id.etageSaisie);
         superficieEditText = findViewById(R.id.superficieSaisie);
-        mailEditText = findViewById(R.id.mailSaisie);
+
 
         // Remplir les champs EditText avec les données de l'utilisateur
         fillUserInfo();
@@ -51,7 +51,7 @@ public class EspaceClientModificationActivity extends AppCompatActivity {
             prenomEditText.setText(intent.getStringExtra("prenom"));
             etageEditText.setText(String.valueOf(intent.getIntExtra("etage", 0)));
             superficieEditText.setText(String.valueOf(intent.getIntExtra("superficie", 0)));
-            mailEditText.setText(intent.getStringExtra("email"));
+
         }
     }
 
@@ -60,20 +60,20 @@ public class EspaceClientModificationActivity extends AppCompatActivity {
         String nouveauPrenom = prenomEditText.getText().toString().trim();
         String nouvelEtage = etageEditText.getText().toString().trim();
         String nouvelleSuperficie = superficieEditText.getText().toString().trim();
-        String nouveauMail = mailEditText.getText().toString().trim();
+
 
         // Vérifier les champs obligatoires
-        if (nouveauNom.isEmpty() || nouveauPrenom.isEmpty() || nouvelEtage.isEmpty() || nouvelleSuperficie.isEmpty() || nouveauMail.isEmpty()) {
+        if (nouveauNom.isEmpty() || nouveauPrenom.isEmpty() || nouvelEtage.isEmpty() || nouvelleSuperficie.isEmpty() ) {
             Toast.makeText(this, "Veuillez remplir tous les champs obligatoires", Toast.LENGTH_SHORT).show();
         } else {
-            sendUpdateRequest(nouveauNom, nouveauPrenom, nouvelEtage, nouvelleSuperficie, nouveauMail);
+            sendUpdateRequest(nouveauNom, nouveauPrenom, nouvelEtage, nouvelleSuperficie);
         }
     }
 
 
     // Modifier la fonction sendUpdateRequest() pour afficher un message d'erreur en cas de problème lors de la mise à jour des informations
     private void sendUpdateRequest(String nouveauNom, String nouveauPrenom, String nouvelEtage,
-                                   String nouvelleSuperficie, String nouveauMail) {
+                                   String nouvelleSuperficie) {
         // Créer un objet JSON contenant les nouvelles informations de l'utilisateur
         JSONObject requestBody = new JSONObject();
         try {
@@ -81,7 +81,7 @@ public class EspaceClientModificationActivity extends AppCompatActivity {
             requestBody.put("prenom", nouveauPrenom);
             requestBody.put("etage", nouvelEtage);
             requestBody.put("superficie", nouvelleSuperficie);
-            requestBody.put("email", nouveauMail);
+
         } catch (JSONException e) {
             e.printStackTrace();
         }

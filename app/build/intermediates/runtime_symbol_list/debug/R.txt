@@ -3474,7 +3474,7 @@ int id nav_habitats 0x7f08016b
 int id nav_monhabitat 0x7f08016c
 int id nav_notif 0x7f08016d
 int id nav_preference 0x7f08016e
-int id nav_reservation 0x7f08024a
+int id nav_reservation 0x7f08016f
 int id nav_resident 0x7f080170
 int id nav_view 0x7f080171
 int id navigation_bar_item_active_indicator_view 0x7f080172
@@ -3552,6 +3552,7 @@ int id right_icon 0x7f0801b9
 int id right_side 0x7f0801ba
 int id rounded 0x7f0801bb
 int id row_index_key 0x7f0801bc
+int id saveButton 0x7f08024a
 int id save_non_transition_alpha 0x7f0801bd
 int id save_overlay_view 0x7f0801be
 int id sawtooth 0x7f0801bf
