@@ -1,4 +1,4 @@
-#Wed Mar 13 20:43:11 CET 2024
+#Wed Mar 13 21:04:37 CET 2024
 base.0=/Users/oumi/AndroidStudioProjects/R4_11_Projet_DevMobileredirection/app/build/intermediates/dex/debug/mergeExtDexDebug/classes.dex
 base.1=/Users/oumi/AndroidStudioProjects/R4_11_Projet_DevMobileredirection/app/build/intermediates/dex/debug/mergeProjectDexDebug/0/classes.dex
 base.2=/Users/oumi/AndroidStudioProjects/R4_11_Projet_DevMobileredirection/app/build/intermediates/dex/debug/mergeProjectDexDebug/11/classes.dex

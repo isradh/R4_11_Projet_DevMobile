@@ -21,7 +21,7 @@ import org.json.JSONObject;
 
 public class EspaceClientModificationActivity extends AppCompatActivity {
 
-    private EditText nomEditText, prenomEditText, etageEditText, superficieEditText;
+    private EditText nomEditText, prenomEditText, etageEditText, superficieEditText, mdpEditText;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -33,7 +33,7 @@ public class EspaceClientModificationActivity extends AppCompatActivity {
         prenomEditText = findViewById(R.id.prenomSaisie);
         etageEditText = findViewById(R.id.etageSaisie);
         superficieEditText = findViewById(R.id.superficieSaisie);
-
+        mdpEditText = findViewById(R.id.mdpSaisie); // Ajout du champ de mot de passe
 
         // Remplir les champs EditText avec les données de l'utilisateur
         fillUserInfo();
@@ -51,7 +51,7 @@ public class EspaceClientModificationActivity extends AppCompatActivity {
             prenomEditText.setText(intent.getStringExtra("prenom"));
             etageEditText.setText(String.valueOf(intent.getIntExtra("etage", 0)));
             superficieEditText.setText(String.valueOf(intent.getIntExtra("superficie", 0)));
-
+            mdpEditText.setText(intent.getStringExtra("mdp")); // Remplir le champ de mot de passe
         }
     }
 
@@ -60,28 +60,27 @@ public class EspaceClientModificationActivity extends AppCompatActivity {
         String nouveauPrenom = prenomEditText.getText().toString().trim();
         String nouvelEtage = etageEditText.getText().toString().trim();
         String nouvelleSuperficie = superficieEditText.getText().toString().trim();
-
+        String nouveauMotDePasse = mdpEditText.getText().toString().trim(); // Récupérer le nouveau mot de passe
 
         // Vérifier les champs obligatoires
-        if (nouveauNom.isEmpty() || nouveauPrenom.isEmpty() || nouvelEtage.isEmpty() || nouvelleSuperficie.isEmpty() ) {
+        if (nouveauNom.isEmpty() || nouveauPrenom.isEmpty() || nouvelEtage.isEmpty() || nouvelleSuperficie.isEmpty()) {
             Toast.makeText(this, "Veuillez remplir tous les champs obligatoires", Toast.LENGTH_SHORT).show();
         } else {
-            sendUpdateRequest(nouveauNom, nouveauPrenom, nouvelEtage, nouvelleSuperficie);
+            sendUpdateRequest(nouveauNom, nouveauPrenom, nouvelEtage, nouvelleSuperficie, nouveauMotDePasse); // Passer le nouveau mot de passe à la méthode d'envoi de la requête
         }
     }
 
-
     // Modifier la fonction sendUpdateRequest() pour afficher un message d'erreur en cas de problème lors de la mise à jour des informations
     private void sendUpdateRequest(String nouveauNom, String nouveauPrenom, String nouvelEtage,
-                                   String nouvelleSuperficie) {
-        // Créer un objet JSON contenant les nouvelles informations de l'utilisateur
+                                   String nouvelleSuperficie, String nouveauMotDePasse) {
+        // Créer un objet JSON contenant les nouvelles informations de l'utilisateur, y compris le nouveau mot de passe
         JSONObject requestBody = new JSONObject();
         try {
             requestBody.put("nom", nouveauNom);
             requestBody.put("prenom", nouveauPrenom);
             requestBody.put("etage", nouvelEtage);
             requestBody.put("superficie", nouvelleSuperficie);
-
+            requestBody.put("mot_de_passe", nouveauMotDePasse); // Ajouter le nouveau mot de passe
         } catch (JSONException e) {
             e.printStackTrace();
         }
@@ -102,7 +101,7 @@ public class EspaceClientModificationActivity extends AppCompatActivity {
                         }
                     } catch (JSONException e) {
                         e.printStackTrace();
-                        Toast.makeText(this, "Erreur lors de la mise à jour des informations2", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(this, "Erreur lors de la mise à jour des informations", Toast.LENGTH_SHORT).show();
                     }
                 },
                 error -> {
@@ -115,13 +114,10 @@ public class EspaceClientModificationActivity extends AppCompatActivity {
                     } else {
                         Log.e("Volley Error", "Unknown error occurred.");
                     }
-                    Toast.makeText(this, "Erreur lors de la mise à jour des informations1", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(this, "Erreur lors de la mise à jour des informations", Toast.LENGTH_SHORT).show();
                 });
 
         // Ajouter la requête à la file d'attente de Volley pour l'exécution
         Volley.newRequestQueue(this).add(request);
     }
-
-
-
 }

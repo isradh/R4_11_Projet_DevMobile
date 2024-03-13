@@ -216,7 +216,7 @@
                         android:id="@+id/mail"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Adresse mail   : "
+                        android:text="Mot de passe  : "
                         android:textColor="@color/white"
                         android:textSize="18dp"
                         android:layout_marginStart="20dp"
