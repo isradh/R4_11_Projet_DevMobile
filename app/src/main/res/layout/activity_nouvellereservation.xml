@@ -15,7 +15,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Nouvelle alerte"
-        android:textColor="@color/white"
+        android:textColor="#FFFFFF"
         android:textSize="30dp"
         android:gravity="center_horizontal"
         android:textStyle="bold"
@@ -54,7 +54,7 @@
                 android:layout_height="wrap_content"
 
                 android:text="Équipements  : "
-                android:textColor="@color/white"
+                android:textColor="#FFFFFF"
                 android:textSize="18dp" />
 
 
@@ -64,7 +64,7 @@
                 android:layout_height="wrap_content"
 
                 android:layout_marginTop="15dp"
-                android:background="@color/white"
+                android:background="#FF6B9080"
                 app:cardCornerRadius="8dp">
 
                 <Spinner
@@ -74,9 +74,37 @@
                     android:paddingTop="8dp"
                     android:paddingBottom="8dp"
                     android:layout_height="match_parent"
- />
+                    />
 
             </androidx.cardview.widget.CardView>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/datereservation"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date de reservation : "
+                    android:layout_gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18dp" />
+
+
+                <ImageView
+
+                    android:layout_marginStart="20dp"
+                    android:id="@+id/calendrier"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/bookingreservation"/>
+
+
+
+            </LinearLayout>
+
 
 
             <LinearLayout
@@ -84,22 +112,22 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="30dp"
                 android:orientation="horizontal">
-            <TextView
-                android:id="@+id/heuredebutindication"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="Heure de début  : "
+                <TextView
+                    android:id="@+id/heuredebutindication"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Heure de début  : "
 
-                android:layout_gravity="center"
-                android:textColor="@color/white"
-                android:textSize="18dp" />
+                    android:layout_gravity="center"
+                    android:textColor="#FFFFFF"
+                    android:textSize="18dp" />
 
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/heuredebut"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:background="@color/white"
+                    android:background="#FF6B9080"
                     android:layout_marginLeft="10dp"
                     app:cardCornerRadius="8dp">
                     <Spinner
@@ -111,7 +139,7 @@
                         android:layout_width="match_parent"
                         android:background="@color/white"
                         android:layout_height="wrap_content"
-                                                            />
+                        />
 
                 </androidx.cardview.widget.CardView>
 
@@ -130,7 +158,7 @@
                     android:text="Heure de fin        : "
 
                     android:layout_gravity="center"
-                    android:textColor="@color/white"
+                    android:textColor="#FFFFFF"
                     android:textSize="18dp" />
 
 
@@ -138,7 +166,7 @@
                     android:id="@+id/heurefin"
                     android:layout_width="100dp"
                     android:layout_height="wrap_content"
-                    android:background="@color/white"
+                    android:background="#FF6B9080"
                     android:layout_marginLeft="10dp"
                     app:cardCornerRadius="8dp">
                     <Spinner

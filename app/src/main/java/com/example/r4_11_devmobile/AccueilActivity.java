@@ -71,18 +71,17 @@ public class AccueilActivity extends AppCompatActivity {
                     visibilitybtn();
                 }
                 else if(item.getItemId() == R.id.nav_espaceclient){
-                    replaceFragment(new EspaceClientFragment());
+                    replaceFragment(new ReservationFragment());
                     toolbar.setTitle("Espace Client");
                     visibilitybtn();
 
                 } else if (item.getItemId() == R.id.nav_profil) {
-                   /* Intent intent = new Intent(AccueilActivity.this, EspaceClientActivity.class);
-                    startActivity(intent);*/
 
                 }else if (item.getItemId() == R.id.nav_accueil){
-                    replaceFragment(new AccueilFragment());
-                    toolbar.setTitle("Accueil");
-                    visibilitybtn();
+                    Intent intent = new Intent(AccueilActivity.this, AccueilActivity.class);
+                    startActivity(intent);
+
+
                 }
 
 
@@ -106,6 +105,7 @@ public class AccueilActivity extends AppCompatActivity {
                 Intent intent = new Intent(getApplicationContext(), NewReservationActivity.class);
                 startActivity(intent);
             }
+
         });
 
 
