@@ -78,10 +78,13 @@ public class AccueilActivity extends AppCompatActivity {
                 } else if (item.getItemId() == R.id.nav_profil) {
 
                 }else if (item.getItemId() == R.id.nav_accueil){
-                    Intent intent = new Intent(AccueilActivity.this, AccueilActivity.class);
-                    startActivity(intent);
-
-
+                    replaceFragment(new AccueilFragment());
+                    toolbar.setTitle("Accueil");
+                    visibilitybtn();
+                }else if (item.getItemId() == R.id.nav_apropos){
+                    replaceFragment(new AProposFragment());
+                    toolbar.setTitle("A Propos");
+                    visibilitybtn();
                 }
 
 
