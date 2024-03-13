@@ -27,7 +27,7 @@ import java.util.Map;
 public class ForgotPasswordActivity extends AppCompatActivity {
 
 
-    private EditText adressMail;
+    private static EditText adressMail;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,8 +50,11 @@ public class ForgotPasswordActivity extends AppCompatActivity {
         page2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*Intent intent = new Intent(getApplicationContext(), NewPasswordActivity.class);
-                startActivity(intent);*/
+                Intent intent = new Intent(getApplicationContext(), resetCode.class);
+                intent.putExtra("email", adressMail.getText().toString());
+
+
+                startActivity(intent);
                 reinitialisation();
             }
         });
@@ -60,6 +63,11 @@ public class ForgotPasswordActivity extends AppCompatActivity {
 
     }
 
+    public static String getEmail() {
+        return adressMail.getText().toString().trim();
+    }
+
+
     private void reinitialisation(){
         RequestQueue queue = Volley.newRequestQueue(this);
         String url ="http://10.0.2.2/devmobile/actions/sendResetCode.php";
@@ -67,6 +75,7 @@ public class ForgotPasswordActivity extends AppCompatActivity {
         Map<String, String>  params = new HashMap<>();
         params.put("email", adressMail.getText().toString());
         JSONObject parametre = new JSONObject(params);
+
 
         JsonObjectRequest postRequest = new JsonObjectRequest(Request.Method.POST, url, parametre,
                 new Response.Listener<JSONObject>()

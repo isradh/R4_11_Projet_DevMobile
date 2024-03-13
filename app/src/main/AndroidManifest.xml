@@ -17,6 +17,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.R4_11_DevMobile"
         tools:targetApi="31">
+
+        <activity
+            android:name=".resetCode"
+            android:exported="false" />
         <activity
             android:name=".MesPreferencesActivity"
             android:exported="false" />
