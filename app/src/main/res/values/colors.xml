@@ -5,6 +5,10 @@
     <color name="ligthgreen">#6B9080</color>
     <color name="darkgreen">#5C7E6F</color>
     <color name="veriligthgreen">#BFD8BD</color>
+    <color name="colorPrimaryDark">#1B1919</color>
+    <color name="colorAccent">#2B472C</color>
+    <color name="colorPrimary">#E6908A</color>
 
+    <color name="textColor">#000000</color>
 
 </resources>

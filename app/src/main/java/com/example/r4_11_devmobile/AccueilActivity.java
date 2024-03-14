@@ -39,12 +39,14 @@ public class AccueilActivity extends AppCompatActivity {
         setContentView(R.layout.activity_accueil);
         Button ajtEq= findViewById(R.id.ajtEq);
         Button ajtRes= findViewById(R.id.ajtRes);
+        Button ajtPar =findViewById(R.id.ajtpar);
 
         MaterialToolbar toolbar = findViewById(R.id.toolbar);
         DrawerLayout drawerLayout = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.navigation_view);
         ajtEq.setVisibility(View.VISIBLE);
         ajtRes.setVisibility(View.VISIBLE);
+        ajtPar.setVisibility(View.VISIBLE);
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -100,6 +102,14 @@ public class AccueilActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getApplicationContext(), NewEquipmentActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ajtPar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), MesPreferencesActivity.class);
                 startActivity(intent);
             }
         });
