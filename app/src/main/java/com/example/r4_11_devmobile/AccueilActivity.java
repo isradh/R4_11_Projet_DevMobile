@@ -43,8 +43,6 @@ public class AccueilActivity extends AppCompatActivity {
         DrawerLayout drawerLayout = findViewById(R.id.drawer_layout);
         NavigationView navigationView = findViewById(R.id.navigation_view);
 
-
-
         if (getSupportFragmentManager().findFragmentById(R.id.frameLayout) == null) {
 
             replaceFragment(new AccueilFragment());
@@ -88,6 +86,9 @@ public class AccueilActivity extends AppCompatActivity {
                 }else if (item.getItemId() == R.id.nav_preferences){
                     replaceFragment(new PreferencesFragment());
                     toolbar.setTitle("Mes préférences");
+                }else if (item.getItemId() == R.id.nav_notification){
+                    replaceFragment(new NotificationFragment());
+                    toolbar.setTitle("Mes Notifications");
                 }
 
 

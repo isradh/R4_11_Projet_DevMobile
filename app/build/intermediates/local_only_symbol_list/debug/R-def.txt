@@ -45,6 +45,8 @@ drawable logo_back
 drawable maison_ecologique
 drawable modejour
 drawable notif
+drawable notification
+drawable notification_1
 drawable nuit
 drawable prefererencs
 drawable rounded_button
@@ -81,6 +83,7 @@ id coins3
 id confirmeMdp
 id conseil
 id copyright
+id dateM
 id datereservation
 id drawer_layout
 id ecoCoins
@@ -116,6 +119,7 @@ id mailSaisie
 id malus
 id mdp
 id mdpSaisie
+id message
 id modif
 id nav_accueil
 id nav_apropos
@@ -124,6 +128,7 @@ id nav_espaceclient
 id nav_habitats
 id nav_monhabitat
 id nav_notif
+id nav_notification
 id nav_preference
 id nav_preferences
 id nav_reservation
@@ -171,11 +176,13 @@ layout fragment_accueil
 layout fragment_coin
 layout fragment_equipement
 layout fragment_espace_client
+layout fragment_notification
 layout fragment_preferences
 layout fragment_reservation
 layout fragment_resident
 layout header_menu
 layout item_equipement
+layout item_notification
 layout item_reservation
 layout item_resident
 menu main_menu

@@ -3095,6 +3095,8 @@ drawable mtrl_switch_track_decoration
 drawable mtrl_tabs_default_indicator
 drawable navigation_empty_icon
 drawable notif
+drawable notification
+drawable notification_1
 drawable notification_action_background
 drawable notification_bg
 drawable notification_bg_low
@@ -3283,6 +3285,7 @@ id currentState
 id custom
 id customPanel
 id cut
+id dateM
 id date_picker_actions
 id datereservation
 id decelerate
@@ -3485,6 +3488,7 @@ id nav_espaceclient
 id nav_habitats
 id nav_monhabitat
 id nav_notif
+id nav_notification
 id nav_preference
 id nav_preferences
 id nav_reservation
@@ -3857,11 +3861,13 @@ layout fragment_accueil
 layout fragment_coin
 layout fragment_equipement
 layout fragment_espace_client
+layout fragment_notification
 layout fragment_preferences
 layout fragment_reservation
 layout fragment_resident
 layout header_menu
 layout item_equipement
+layout item_notification
 layout item_reservation
 layout item_resident
 layout m3_alert_dialog
