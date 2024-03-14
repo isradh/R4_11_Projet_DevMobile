@@ -3212,6 +3212,7 @@ int id beginOnFirstDraw 0x7f080065
 int id beginning 0x7f080066
 int id bestChoice 0x7f080067
 int id blocking 0x7f080068
+int id bonus 0x7f08024b
 int id bottom 0x7f080069
 int id bounce 0x7f08006a
 int id bounceBoth 0x7f08006b
@@ -3248,9 +3249,6 @@ int id clip_vertical 0x7f080089
 int id clockwise 0x7f08008a
 int id closest 0x7f08008b
 int id coin 0x7f08008c
-int id coin1 0x7f08008d
-int id coin2 0x7f08008e
-int id coin3 0x7f08008f
 int id coins1 0x7f080090
 int id coins2 0x7f080091
 int id coins3 0x7f080092
@@ -3313,6 +3311,8 @@ int id ecoCoins 0x7f0800ca
 int id edge 0x7f0800cb
 int id edit_query 0x7f0800cc
 int id elastic 0x7f0800cd
+int id email 0x7f08024c
+int id emailSaisie 0x7f08024d
 int id embed 0x7f0800ce
 int id end 0x7f0800cf
 int id endToStart 0x7f0800d0
@@ -3404,6 +3404,7 @@ int id lostMDPText 0x7f080125
 int id m3_side_sheet 0x7f080126
 int id mail 0x7f080127
 int id mailSaisie 0x7f080128
+int id malus 0x7f08024e
 int id marquee 0x7f080129
 int id masked 0x7f08012a
 int id match_constraint 0x7f08012b

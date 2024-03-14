@@ -53,14 +53,11 @@
         <activity
             android:name="com.example.r4_11_devmobile.LoginActivity"
             android:exported="true" >
-
-            <!--
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            -->
         </activity>
         <activity
             android:name="com.example.r4_11_devmobile.EspaceClientModificationActivity"
@@ -71,23 +68,23 @@
         <activity
             android:name="com.example.r4_11_devmobile.SplashScreenActivity"
             android:exported="true" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
+            <!--
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
+            -->
         </activity>
         <activity
             android:name="com.example.r4_11_devmobile.AccueilActivity"
             android:exported="true" >
-
-            <!--
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-            -->
         </activity> <!-- Vous devez supprimer cette occurrence -->
         <!--
         <activity

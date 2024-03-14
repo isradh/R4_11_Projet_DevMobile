@@ -31,27 +31,28 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Date;
 import java.util.HashMap;
+import java.util.Locale;
 import java.util.Map;
 
 public class NewReservationActivity extends AppCompatActivity {
 
 
-    Spinner listequipement;
-    Spinner spinnerHeuredebut;
-    Spinner spinnerHeureFin;
+    private Spinner listequipement;
+    private Spinner spinnerHeuredebut;
+    private Spinner spinnerHeureFin;
 
-    String equipement;
-    Calendar calendar;
+    private String equipement;
+    private Calendar calendar;
 
-    ImageView dateButton;
+    private ImageView dateButton;
 
 
     private DatabaseManager databaseManager;
 
-    String heureDebut;
+    private String heureDebut;
 
-    String heureFin;
-    String dateReservation;
+    private String heureFin;
+    private String dateReservation;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -103,7 +104,9 @@ public class NewReservationActivity extends AppCompatActivity {
                         new DatePickerDialog.OnDateSetListener() {
                             @Override
                             public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
-                                dateReservation = dayOfMonth + "/" + (monthOfYear + 1) + "/" + year;
+                                // Formatage de la date en YYYY-MM-DD
+                                String formattedDate = String.format(Locale.getDefault(), "%d-%02d-%02d", year, monthOfYear + 1, dayOfMonth);
+                                dateReservation = formattedDate;
                             }
                         }, year, month, day);
                 datePickerDialog.show();
@@ -225,13 +228,14 @@ public class NewReservationActivity extends AppCompatActivity {
     public void ApiResponse(JSONObject reponse) {
         Boolean success = null;
         String error = "";
-
         try {
             success = reponse.getBoolean("success");
-
-
             if (success) {
                 Toast.makeText(NewReservationActivity.this, "Réservation réussie.", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(getApplicationContext(), AccueilActivity.class);
+                startActivity(intent);
+                finish();
+
             } else {
                 error = reponse.getString("error");
                 if (error != null) {

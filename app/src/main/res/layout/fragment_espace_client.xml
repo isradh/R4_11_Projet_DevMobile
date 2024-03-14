@@ -39,40 +39,58 @@
             app:layout_constraintTop_toBottomOf="@id/hello"
             app:layout_constraintStart_toStartOf="parent" />
 
-        <LinearLayout
-            android:id="@+id/coin"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/coins1"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
             android:layout_marginTop="20dp"
-            app:layout_constraintTop_toBottomOf="@id/ecoCoins"
+            android:layout_marginEnd="35dp"
+            app:cardCornerRadius="15dp"
+            android:backgroundTint="#6B9080"
+            app:cardBackgroundColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/ecoCoins"
+            app:layout_constraintEnd_toStartOf="@+id/coins2"
+            app:cardElevation="20dp">
+
+            <TextView
+                android:id="@+id/malus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="5"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
+
+        </androidx.cardview.widget.CardView>
+        <androidx.cardview.widget.CardView
+            android:id="@+id/coins2"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="20dp"
+
+            app:cardCornerRadius="15dp"
+            android:backgroundTint="#6B9080"
+            app:cardBackgroundColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@+id/ecoCoins"
             app:layout_constraintStart_toStartOf="parent"
-            android:gravity="center_horizontal">
+            app:layout_constraintEnd_toEndOf="parent"
+            app:cardElevation="20dp">
 
-            <fragment
-                android:id="@+id/coin1"
-                android:name="com.example.r4_11_devmobile.CoinFragment"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                tools:layout="@layout/fragment_coin" />
+            <TextView
+                android:id="@+id/bonus"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="5"
+                android:gravity="center"
+                android:textColor="@color/white"
+                android:textSize="20sp"/>
 
-            <fragment
-                android:id="@+id/coin2"
-                android:name="com.example.r4_11_devmobile.CoinFragment"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                tools:layout="@layout/fragment_coin" />
+        </androidx.cardview.widget.CardView>
 
-            <fragment
-                android:id="@+id/coin3"
-                android:name="com.example.r4_11_devmobile.CoinFragment"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                tools:layout="@layout/fragment_coin" />
-
-        </LinearLayout>
 
         <TextView
             android:id="@+id/info"
@@ -84,7 +102,7 @@
             android:textStyle="bold"
             android:layout_marginTop="30dp"
             android:layout_marginStart="20dp"
-            app:layout_constraintTop_toBottomOf="@id/coin"
+            app:layout_constraintTop_toBottomOf="@id/coins2"
             app:layout_constraintStart_toStartOf="parent" />
 
 
@@ -184,6 +202,31 @@
                         android:layout_marginTop="20dp" />
                 </LinearLayout>
 
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+                    <TextView
+                        android:id="@+id/email"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Email  : "
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        android:layout_marginStart="20dp"
+                        android:layout_marginTop="15dp" />
+                    <TextView
+                        android:id="@+id/emailSaisie"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=""
+                        android:textColor="@color/white"
+                        android:textSize="18dp"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="20dp" />
+                </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -216,7 +259,7 @@
                         android:id="@+id/mail"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Adresse mail   : "
+                        android:text="Mot de passe  : "
                         android:textColor="@color/white"
                         android:textSize="18dp"
                         android:layout_marginStart="20dp"

@@ -3213,6 +3213,7 @@ id beginOnFirstDraw
 id beginning
 id bestChoice
 id blocking
+id bonus
 id bottom
 id bounce
 id bounceBoth
@@ -3249,9 +3250,6 @@ id clip_vertical
 id clockwise
 id closest
 id coin
-id coin1
-id coin2
-id coin3
 id coins1
 id coins2
 id coins3
@@ -3314,6 +3312,8 @@ id ecoCoins
 id edge
 id edit_query
 id elastic
+id email
+id emailSaisie
 id embed
 id end
 id endToStart
@@ -3405,6 +3405,7 @@ id lostMDPText
 id m3_side_sheet
 id mail
 id mailSaisie
+id malus
 id marquee
 id masked
 id match_constraint

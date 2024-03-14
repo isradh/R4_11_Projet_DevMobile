@@ -55,6 +55,7 @@ id ajtRes
 id ancienneAlertelistView
 id appbarLayout
 id back
+id bonus
 id btnAnnuler
 id btnUpload
 id btnajouter
@@ -64,9 +65,6 @@ id cardViewinputcode
 id cardetage
 id citationText
 id coin
-id coin1
-id coin2
-id coin3
 id coins1
 id coins2
 id coins3
@@ -76,6 +74,8 @@ id copyright
 id datereservation
 id drawer_layout
 id ecoCoins
+id email
+id emailSaisie
 id equipements
 id etage
 id etageSaisie
@@ -103,6 +103,7 @@ id lost
 id lostMDPText
 id mail
 id mailSaisie
+id malus
 id mdp
 id mdpSaisie
 id modif

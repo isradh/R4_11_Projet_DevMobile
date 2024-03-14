@@ -29,6 +29,11 @@ import java.util.ArrayList;
 public class EspaceClientFragment extends Fragment {
 
     private View view;
+    private String etageStr;
+    private String userId;
+
+    private String email;
+
     public EspaceClientFragment() {
     }
 
@@ -42,31 +47,20 @@ public class EspaceClientFragment extends Fragment {
         TextView infoTextView = view.findViewById(R.id.info);
         infoTextView.setPaintFlags(infoTextView.getPaintFlags() | Paint.UNDERLINE_TEXT_FLAG);
 
-        Button modif = view.findViewById(R.id.modif);
-
-        modif.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getActivity(), EspaceClientModificationActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        String userId = UserId.getUserId();
+        userId = UserId.getUserId();
         connectUser(userId);
 
         return view;
     }
 
-
-    public void connectUser(String userId) {
+    private void connectUser(String userId) {
         String url = "http://10.0.2.2/devmobile/actions/recupInfoUser.php?userId=" + userId;
         JsonArrayRequest jsonArrayRequest = new JsonArrayRequest(Request.Method.GET, url, null,
                 new Response.Listener<JSONArray>() {
                     @Override
                     public void onResponse(JSONArray response) {
-
                         handleResponse(response);
+                        setModifButton();
                     }
                 }, new Response.ErrorListener() {
             @Override
@@ -77,19 +71,32 @@ public class EspaceClientFragment extends Fragment {
 
         Volley.newRequestQueue(getContext()).add(jsonArrayRequest);
     }
+
+
     private void handleResponse(JSONArray response) {
         try {
             if (response.length() > 0) {
-                JSONObject jsonObject = response.getJSONObject(0); // Accédez au premier objet JSON
+                JSONObject jsonObject = response.getJSONObject(0);
                 String nom = jsonObject.getString("nom");
                 String prenom = jsonObject.getString("prenom");
-                String email = jsonObject.getString("email");
 
-                String etageStr = jsonObject.getString("etage");
-                int etage = Integer.parseInt(etageStr);
+                etageStr = jsonObject.getString("etage");
                 String superficieStr = jsonObject.getString("superficie");
-                int superficie = Integer.parseInt(superficieStr);
+                email = jsonObject.getString("email");
 
+                String malusStr =  jsonObject.getString("malus");
+                String bonusStr =  jsonObject.getString("bonus");
+
+
+
+                TextView malus = view.findViewById(R.id.malus);
+                malus.setText(malusStr + "\nmalus");
+
+                TextView bonus = view.findViewById(R.id.bonus);
+                bonus.setText(bonusStr + "\nbonus");
+
+                TextView emailTextView = view.findViewById(R.id.emailSaisie);
+                emailTextView.setText(email);
 
                 TextView nomTextView = view.findViewById(R.id.nomSaisie);
                 nomTextView.setText(nom);
@@ -97,20 +104,45 @@ public class EspaceClientFragment extends Fragment {
                 TextView prenomTextView = view.findViewById(R.id.prenomSaisie);
                 prenomTextView.setText(prenom);
 
-                TextView emailTextView = view.findViewById(R.id.mailSaisie);
-                emailTextView.setText(email);
-
                 TextView etageTextView = view.findViewById(R.id.etageSaisie);
-                etageTextView.setText(String.valueOf(etage));
+                etageTextView.setText(etageStr);
 
                 TextView superficieTextView = view.findViewById(R.id.superficieSaisie);
-                superficieTextView.setText(String.valueOf(superficie));
+                superficieTextView.setText(superficieStr);
             }
         } catch (JSONException e) {
             e.printStackTrace();
         }
     }
 
+    private void setModifButton() {
+        Button modif = view.findViewById(R.id.modif);
+        modif.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                String nom = ((TextView) view.findViewById(R.id.nomSaisie)).getText().toString();
+                String prenom = ((TextView) view.findViewById(R.id.prenomSaisie)).getText().toString();
+                int etage = Integer.parseInt(etageStr);
+                int superficie = Integer.parseInt(((TextView) view.findViewById(R.id.superficieSaisie)).getText().toString());
+
+                Intent intent = new Intent(getActivity(), EspaceClientModificationActivity.class);
+                intent.putExtra("nom", nom);
+                intent.putExtra("prenom", prenom);
+                intent.putExtra("etage", etage);
+                intent.putExtra("superficie", superficie);
+                intent.putExtra("email",email);
+                startActivityForResult(intent, 1); // Ajouter une demande de code pour obtenir un résultat
+            }
+        });
+    }
+
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == 1) {
+            if (resultCode == AppCompatActivity.RESULT_OK) {
+                connectUser(userId); // Rafraîchir les données après la modification
+            }
+        }
+    }
 }
-
-
