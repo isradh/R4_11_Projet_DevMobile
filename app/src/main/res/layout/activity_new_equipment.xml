@@ -46,12 +46,12 @@
             android:orientation="vertical"
             android:padding="30dp">
 
-            <ImageView
+            <!--<ImageView
                 android:id="@+id/imageView"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center_horizontal"
-                android:src="@drawable/telechargement" />
+                android:src="@drawable/telechargement" />-->
 
             <EditText
                 android:id="@+id/nom"

@@ -88,8 +88,11 @@ public class ReservationFragment extends Fragment {
                 String dateReservation = jsonObject.getString("date_reservation");
                 String heureDebut = jsonObject.getString("heure_debut");
                 String heureFin = jsonObject.getString("heure_fin");
+                String id_ = jsonObject.getString("id");
+                int id = Integer.parseInt(id_);
 
-                Reservation reservation = new Reservation(equipement, dateReservation, heureDebut, heureFin);
+
+                Reservation reservation = new Reservation(id, equipement, dateReservation, heureDebut, heureFin);
                 reservations.add(reservation);
             } catch (JSONException e) {
                 e.printStackTrace();

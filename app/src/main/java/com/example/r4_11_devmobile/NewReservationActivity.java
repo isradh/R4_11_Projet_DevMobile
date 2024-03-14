@@ -104,7 +104,6 @@ public class NewReservationActivity extends AppCompatActivity {
                         new DatePickerDialog.OnDateSetListener() {
                             @Override
                             public void onDateSet(DatePicker view, int year, int monthOfYear, int dayOfMonth) {
-                                // Formatage de la date en YYYY-MM-DD
                                 String formattedDate = String.format(Locale.getDefault(), "%d-%02d-%02d", year, monthOfYear + 1, dayOfMonth);
                                 dateReservation = formattedDate;
                             }

@@ -7,12 +7,18 @@ public class Reservation {
     private String dateReservation;
     private String heureDebut;
     private String heureFin;
+    private int id;
 
-    public Reservation(String equipement, String dateReservation, String heureDebut, String heureFin) {
+    public Reservation(int id, String equipement, String dateReservation, String heureDebut, String heureFin) {
+        this.id = id;
         this.equipement = equipement;
         this.dateReservation = dateReservation;
         this.heureDebut = heureDebut;
         this.heureFin = heureFin;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public String getEquipement() {
