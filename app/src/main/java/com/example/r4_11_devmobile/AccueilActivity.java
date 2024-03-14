@@ -44,9 +44,11 @@ public class AccueilActivity extends AppCompatActivity {
         NavigationView navigationView = findViewById(R.id.navigation_view);
 
 
-        toolbar.setTitle("Accueil");
 
-        replaceFragment(new AccueilFragment());
+        if (getSupportFragmentManager().findFragmentById(R.id.frameLayout) == null) {
+            // Si le fragment n'est pas déjà présent, remplacez-le
+            replaceFragment(new AccueilFragment());
+        }
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -87,6 +89,9 @@ public class AccueilActivity extends AppCompatActivity {
                     replaceFragment(new PreferencesFragment());
                     toolbar.setTitle("Mes préférences");
                 }
+
+
+
 
 
 

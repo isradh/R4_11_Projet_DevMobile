@@ -191,6 +191,7 @@ string traveling
 string www_taimoorsikander_com
 style AppTheme
 style AppTheme2
+style Base.Theme.R4_11_DevMobile
 style Base.Theme.R4_11_DevMobile1
 style Theme.Navigation_Drawer
 style Theme.R4_11_DevMobile
