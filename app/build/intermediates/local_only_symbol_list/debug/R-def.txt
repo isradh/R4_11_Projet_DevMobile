@@ -154,6 +154,7 @@ id text
 id textView
 id textView5
 id textViewTitle
+id textxt
 id toolbar
 id tout
 id wattage

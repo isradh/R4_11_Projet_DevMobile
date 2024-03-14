@@ -24,14 +24,14 @@ public class NotificationAdaptateur extends ArrayAdapter<Message> {
         Message message = getItem(position);
 
         if (convertView == null) {
-            convertView = LayoutInflater.from(getContext()).inflate(R.layout.item_equipement, parent, false);
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.item_notification, parent, false);
         }
 
         TextView textMessage =  convertView.findViewById(R.id.message);
         TextView textViewNom = convertView.findViewById(R.id.dateM);
 
-        textMessage.setText(message.getDateM());
-        textViewNom.setText(String.valueOf(message.getMessage()));
+        textViewNom.setText(message.getDateM());
+        textMessage.setText(String.valueOf(message.getMessage()));
 
         return convertView;
     }

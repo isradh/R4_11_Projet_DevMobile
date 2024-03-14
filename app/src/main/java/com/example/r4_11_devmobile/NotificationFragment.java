@@ -97,7 +97,7 @@ public class NotificationFragment extends Fragment {
         listView.setAdapter(adapter);
         nbEquipement = messages.size();
         TextView hello = view.findViewById(R.id.hello);
-        hello.setText("Vous avez" + nbEquipement + "équipements !");
+        hello.setText("Vous avez " + nbEquipement + "équipements !");
 
 
     }
