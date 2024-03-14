@@ -180,6 +180,10 @@
         "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/layout/activity_new_equipment.xml"
     },
     {
+        "merged": "com.example.r4_11_devmobile.app-merged_res-31:/layout_activity_new_equipment.xml.flat",
+        "source": "com.example.r4_11_devmobile.app-main-33:/layout/activity_new_equipment.xml"
+    },
+    {
         "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/layout_activity_accueil.xml.flat",
         "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/layout/activity_accueil.xml"
     },
@@ -214,10 +218,6 @@
     {
         "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/layout_fragment_espace_client.xml.flat",
         "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/layout/fragment_espace_client.xml"
-    },
-    {
-        "merged": "com.example.r4_11_devmobile.app-merged_res-31:/layout_fragment_reservation.xml.flat",
-        "source": "com.example.r4_11_devmobile.app-main-33:/layout/fragment_reservation.xml"
     },
     {
         "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/layout_activity_espace_client_modification.xml.flat",

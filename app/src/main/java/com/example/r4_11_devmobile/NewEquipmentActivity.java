@@ -113,28 +113,31 @@ public class NewEquipmentActivity extends AppCompatActivity {
         upload_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                /*ByteArrayOutputStream byteArrayOutputStream;
+                ByteArrayOutputStream byteArrayOutputStream;
                 byteArrayOutputStream = new ByteArrayOutputStream();
                 if (bitmap != null){
                     bitmap.compress(Bitmap.CompressFormat.JPEG, 100, byteArrayOutputStream);
                     byte[]bytes = byteArrayOutputStream.toByteArray();
                     base64Image = Base64.encodeToString(bytes,Base64.DEFAULT);
+
+                    userId = UserId.getUserId();
+
+                    EditText nomEditText = findViewById(R.id.nom);
+                    nom = nomEditText.getText().toString();
+                    EditText wattageEditText = findViewById(R.id.wattage);
+                    wattage = wattageEditText.getText().toString();
+
+                    recupPhoto();
+
+
+                }else {
+                    Toast.makeText(NewEquipmentActivity.this, "Veuillez selectionner une image", Toast.LENGTH_SHORT).show();
+
                 }
-
-                userId = UserId.getUserId();
-
-                EditText nomEditText = findViewById(R.id.nom);
-                nom = nomEditText.getText().toString();
-                EditText wattageEditText = findViewById(R.id.wattage);
-                wattage = wattageEditText.getText().toString();
-
-                recupPhoto();
-                Intent intent = new Intent(getApplicationContext(), AccueilActivity.class);
-                startActivity(intent);*/
-
-                finish();
             }
         });
+
+
     }
 
 
