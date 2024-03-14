@@ -1,8 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="http://schemas.android.com/tools">
     <color name="black">#FF000000</color>
+    <color name="colorAccent">#2B472C</color>
+    <color name="colorPrimary">#E6908A</color>
+    <color name="colorPrimaryDark">#1B1919</color>
     <color name="darkgreen">#5C7E6F</color>
     <color name="ligthgreen">#6B9080</color>
+    <color name="textColor">#000000</color>
     <color name="veriligthgreen">#BFD8BD</color>
     <color name="white">#FFFFFFFF</color>
     <item name="nav_habitats" type="id"/>
@@ -14,16 +18,23 @@
     <string name="navi">Close </string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="text">Light Mode</string>
     <string name="traveling">Traveling</string>
     <string name="www_taimoorsikander_com">www.taimoorsikander.com</string>
     <style name="AppTheme" parent="Theme.MaterialComponents.Light.DarkActionBar"/>
-    <style name="Base.Theme.R4_11_DevMobile" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="AppTheme2" parent="Theme.AppCompat.DayNight.DarkActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@android:color/white</item>
+    </style>
+    <style name="Base.Theme.R4_11_DevMobile1" parent="Theme.Material3.DayNight.NoActionBar">
         
     </style>
     <style name="Theme.Navigation_Drawer" parent="Theme.MaterialComponents.Light.NoActionBar">
         <item name="android:statusBarColor" ns1:targetApi="l">@color/white</item>
     </style>
-    <style name="Theme.R4_11_DevMobile" parent="Base.Theme.R4_11_DevMobile"/>
+    <style name="Theme.R4_11_DevMobile" parent="Base.Theme.R4_11_DevMobile1"/>
     <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
         
         <item name="android:textColorPrimary">@android:color/white</item>

@@ -1,7 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <style name="Base.Theme.R4_11_DevMobile" parent="Theme.Material3.DayNight.NoActionBar">
-        
-        
-    </style>
+    <color name="black">#D51515</color>
+    <color name="colorAccent">#A8082F</color>
+    <color name="colorPrimary">#62B6CB</color>
+    <color name="colorPrimaryDark">#9917FB</color>
+    <color name="darkgreen">#5FA8D3</color>
+    <color name="ligthgreen">#113951</color>
+    <color name="textColor">#FFDFDF</color>
+    <color name="veriligthgreen">#CAE9FF</color>
+    <color name="white">#62B6CB</color>
+    <string name="app_name">R4_11_DevMobile</string>
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="navi">Close </string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="text">Night Mode</string>
+    <string name="traveling">Traveling</string>
+    <string name="www_taimoorsikander_com">www.taimoorsikander.com</string>
 </resources>

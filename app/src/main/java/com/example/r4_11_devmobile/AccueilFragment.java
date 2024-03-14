@@ -1,5 +1,6 @@
 package com.example.r4_11_devmobile;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -33,6 +34,32 @@ public class AccueilFragment extends Fragment {
         NavigationView navigationView = view.findViewById(R.id.navigation_view);
         ajtEq.setVisibility(View.VISIBLE);
         ajtRes.setVisibility(View.VISIBLE);
-        return inflater.inflate(R.layout.fragment_accueil, container, false);
+
+        ajtEq.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), NewEquipmentActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
+
+        ajtRes.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), NewReservationActivity.class);
+                startActivity(intent);
+            }
+
+        });
+        return view;
     }
+
+
+
+
+
+
+
 }

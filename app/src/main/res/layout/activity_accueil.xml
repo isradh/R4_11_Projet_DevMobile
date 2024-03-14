@@ -58,51 +58,9 @@
                 android:layout_marginTop="150dp"
                 android:src="@drawable/maison_ecologique" />
 
-            <Button
-                android:id="@+id/ajtEq"
-                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:padding="15dp"
-                android:layout_gravity="center"
-                android:layout_marginTop="50dp"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="50dp"
-                android:backgroundTint="@color/darkgreen"
-                android:elevation="10dp"
-                android:text="Ajouter un équipement "
-                android:textSize="15dp" />
-
-            <Button
-                android:id="@+id/ajtRes"
-                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:padding="15dp"
-                android:layout_marginTop="150dp"
-                android:layout_marginLeft="50dp"
-                android:layout_marginRight="50dp"
-                android:backgroundTint="@color/darkgreen"
-                android:elevation="10dp"
-                android:text="Ajouter une réservation"
-                android:textSize="15dp" />
+A
 
 
-            <Button
-                android:id="@+id/ajtpar"
-                style="@style/Widget.MaterialComponents.Button.UnelevatedButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center"
-                android:layout_marginLeft="50dp"
-                android:layout_marginTop="250dp"
-                android:layout_marginRight="50dp"
-                android:backgroundTint="@color/darkgreen"
-                android:elevation="10dp"
-                android:padding="15dp"
-                android:text="mode  "
-                android:textSize="15dp" />
 
         </FrameLayout>
 

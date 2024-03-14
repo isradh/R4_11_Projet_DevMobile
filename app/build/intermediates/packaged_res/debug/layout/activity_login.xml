@@ -61,7 +61,7 @@
             android:layout_marginTop="30dp"
             android:background="@drawable/background_edittext"
             android:hint="Mot de passe"
-            android:inputType="text"
+            android:inputType="textPassword"
             android:elevation="10dp"
             android:drawableLeft="@drawable/cadena"
             android:drawablePadding="8dp"
