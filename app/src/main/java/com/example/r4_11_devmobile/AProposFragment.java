@@ -13,7 +13,7 @@ public class AProposFragment extends Fragment {
     private View view;
 
     public AProposFragment() {
-        // Required empty public constructor
+
     }
 
     @Override

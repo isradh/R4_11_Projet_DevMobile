@@ -52,7 +52,6 @@ public class EquipementFragment extends Fragment {
         userId = UserId.getUserId();
 
 
-        // Initialisez votre ListView ici
         listView = view.findViewById(R.id.ancienneAlertelistView);
 
         ajoutAlerte = view.findViewById(R.id.ajoutAlerte);

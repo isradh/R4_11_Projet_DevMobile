@@ -100,7 +100,7 @@ public class ReservationFragment extends Fragment {
         }
         Log.d("ReservationFragment", "Nombre de réservations récupérées : " + reservations.size());
 
-        // Créer un adaptateur pour afficher les réservations dans la liste
+
         ReservationAdaptateur adapter = new ReservationAdaptateur(getContext(), reservations);
         listView.setAdapter(adapter);
         nbReservation = reservations.size();

@@ -12,9 +12,9 @@
     </style>
 
     <style name="ToolbarTheme" parent="ThemeOverlay.AppCompat.Dark.ActionBar">
-        <!-- Définir la couleur du titre -->
+
         <item name="android:textColorPrimary">@android:color/white</item>
-        <!-- Appliquer le style de texte gras -->
+
         <item name="android:textStyle">bold</item>
     </style>
 

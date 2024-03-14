@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
-    private static final long SPLASH_DELAY = 2000; // Temps en millisecondes (2 secondes)
+    private static final long SPLASH_DELAY = 2000;
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {

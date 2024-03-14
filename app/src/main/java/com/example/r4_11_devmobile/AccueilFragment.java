@@ -18,7 +18,7 @@ public class AccueilFragment extends Fragment {
     private View view;
 
     public AccueilFragment() {
-        // Required empty public constructor
+
     }
 
     @Override

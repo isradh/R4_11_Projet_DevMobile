@@ -71,7 +71,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="20dp"
 
-            android:text="Code de vÃ©rification : "
+            android:text="Code de vérification : "
             android:textColor="#FFFFFF"
             android:textSize="18dp" />
 

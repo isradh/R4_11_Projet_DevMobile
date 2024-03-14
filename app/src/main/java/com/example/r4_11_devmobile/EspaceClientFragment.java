@@ -131,7 +131,7 @@ public class EspaceClientFragment extends Fragment {
                 intent.putExtra("etage", etage);
                 intent.putExtra("superficie", superficie);
                 intent.putExtra("email",email);
-                startActivityForResult(intent, 1); // Ajouter une demande de code pour obtenir un résultat
+                startActivityForResult(intent, 1);
             }
         });
     }
@@ -141,7 +141,7 @@ public class EspaceClientFragment extends Fragment {
         super.onActivityResult(requestCode, resultCode, data);
         if (requestCode == 1) {
             if (resultCode == AppCompatActivity.RESULT_OK) {
-                connectUser(userId); // Rafraîchir les données après la modification
+                connectUser(userId);
             }
         }
     }

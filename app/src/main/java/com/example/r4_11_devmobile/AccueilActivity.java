@@ -46,7 +46,7 @@ public class AccueilActivity extends AppCompatActivity {
 
 
         if (getSupportFragmentManager().findFragmentById(R.id.frameLayout) == null) {
-            // Si le fragment n'est pas déjà présent, remplacez-le
+
             replaceFragment(new AccueilFragment());
         }
         toolbar.setNavigationOnClickListener(new View.OnClickListener() {

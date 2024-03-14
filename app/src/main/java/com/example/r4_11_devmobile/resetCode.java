@@ -43,7 +43,7 @@ public class resetCode extends AppCompatActivity {
     }
 
     private void verifyResetCode(String email, String resetCode) {
-        // Créer une requête JSON vers le serveur PHP
+
         JSONObject requestBody = new JSONObject();
         try {
             requestBody.put("email", email);
