@@ -6,6 +6,8 @@ import android.os.Handler;
 import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.r4_11_devmobile.RegisterLogin.LoginActivity;
+
 import java.util.Random;
 
 
@@ -36,7 +38,7 @@ public class SplashScreenActivity2 extends AppCompatActivity {
             @Override
             public void run() {
 
-                Intent intent = new Intent(getApplicationContext(),LoginActivity.class);
+                Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
                 startActivity(intent);
                 finish();
             }
