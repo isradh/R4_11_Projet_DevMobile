@@ -3260,7 +3260,6 @@ int id clip_horizontal 0x7f080089
 int id clip_vertical 0x7f08008a
 int id clockwise 0x7f08008b
 int id closest 0x7f08008c
-int id coin 0x7f08008d
 int id coins1 0x7f08008e
 int id coins2 0x7f08008f
 int id coins3 0x7f080090
@@ -3482,6 +3481,7 @@ int id mtrl_view_tag_bottom_padding 0x7f080167
 int id multiply 0x7f080168
 int id nav_accueil 0x7f080169
 int id nav_apropos 0x7f08016a
+int id nav_deconnection 0x7f080252
 int id nav_equipement 0x7f08016b
 int id nav_espaceclient 0x7f08016c
 int id nav_habitats 0x7f08016d
@@ -3858,7 +3858,6 @@ int layout design_text_input_end_icon 0x7f0b0037
 int layout design_text_input_start_icon 0x7f0b0038
 int layout fragment_a_propos 0x7f0b0039
 int layout fragment_accueil 0x7f0b003a
-int layout fragment_coin 0x7f0b003b
 int layout fragment_equipement 0x7f0b003c
 int layout fragment_espace_client 0x7f0b003d
 int layout fragment_notification 0x7f0b003e

@@ -7,6 +7,7 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -25,6 +26,7 @@ import com.example.r4_11_devmobile.EspaceClient.EspaceClientFragment;
 import com.example.r4_11_devmobile.Notification.NotificationFragment;
 import com.example.r4_11_devmobile.Preferences.PreferencesFragment;
 import com.example.r4_11_devmobile.R;
+import com.example.r4_11_devmobile.RegisterLogin.LoginActivity;
 import com.example.r4_11_devmobile.Reservation.ReservationFragment;
 import com.example.r4_11_devmobile.Resident.ResidentFragment;
 import com.google.android.material.appbar.MaterialToolbar;
@@ -95,7 +97,11 @@ public class AccueilActivity extends AppCompatActivity {
                 }else if (item.getItemId() == R.id.nav_notification){
                     replaceFragment(new NotificationFragment());
                     toolbar.setTitle("Mes Notifications");
-                }
+                }else if (item.getItemId() == R.id.nav_deconnection){
+                    finish();
+                    Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
+                    startActivity(intent);
+            }
 
 
 

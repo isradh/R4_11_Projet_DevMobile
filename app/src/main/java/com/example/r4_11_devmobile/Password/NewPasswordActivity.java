@@ -53,8 +53,10 @@ public class NewPasswordActivity extends AppCompatActivity {
 
 
                 if (password.equals(confirmPassword)) {
-
                     changePassword(password);
+                    finish();
+                    Intent intent = new Intent(NewPasswordActivity.this, LoginActivity.class);
+                    startActivity(intent);
                 } else {
                     Toast.makeText(NewPasswordActivity.this, "Les mots de passe ne correspondent pas.", Toast.LENGTH_SHORT).show();
                 }

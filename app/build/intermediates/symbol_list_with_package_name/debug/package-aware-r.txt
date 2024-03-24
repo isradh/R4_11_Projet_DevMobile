@@ -3261,7 +3261,6 @@ id clip_horizontal
 id clip_vertical
 id clockwise
 id closest
-id coin
 id coins1
 id coins2
 id coins3
@@ -3483,6 +3482,7 @@ id mtrl_view_tag_bottom_padding
 id multiply
 id nav_accueil
 id nav_apropos
+id nav_deconnection
 id nav_equipement
 id nav_espaceclient
 id nav_habitats
@@ -3859,7 +3859,6 @@ layout design_text_input_end_icon
 layout design_text_input_start_icon
 layout fragment_a_propos
 layout fragment_accueil
-layout fragment_coin
 layout fragment_equipement
 layout fragment_espace_client
 layout fragment_notification

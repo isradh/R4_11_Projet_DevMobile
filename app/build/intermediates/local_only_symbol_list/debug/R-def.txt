@@ -76,7 +76,6 @@ id cardView
 id cardViewinputcode
 id cardetage
 id citationText
-id coin
 id coins1
 id coins2
 id coins3
@@ -123,6 +122,7 @@ id message
 id modif
 id nav_accueil
 id nav_apropos
+id nav_deconnection
 id nav_equipement
 id nav_espaceclient
 id nav_habitats
@@ -174,7 +174,6 @@ layout activity_splash_screen
 layout activity_splash_screen2
 layout fragment_a_propos
 layout fragment_accueil
-layout fragment_coin
 layout fragment_equipement
 layout fragment_espace_client
 layout fragment_notification

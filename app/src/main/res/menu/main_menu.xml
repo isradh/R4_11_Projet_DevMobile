@@ -35,5 +35,8 @@
             android:id="@+id/nav_apropos"
             android:title="A propos" />
     </group>
+    <item
+        android:id="@+id/nav_deconnection"
+        android:title="Déconnection" />
 
 </menu>

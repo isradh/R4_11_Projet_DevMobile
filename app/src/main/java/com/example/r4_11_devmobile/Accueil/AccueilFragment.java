@@ -12,7 +12,7 @@ import android.view.ViewGroup;
 import android.widget.Button;
 
 import com.example.r4_11_devmobile.Equipement.NewEquipmentActivity;
-import com.example.r4_11_devmobile.Password.NewReservationActivity;
+import com.example.r4_11_devmobile.Reservation.NewReservationActivity;
 import com.example.r4_11_devmobile.R;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.navigation.NavigationView;

@@ -33,25 +33,25 @@
         android:testOnly="true"
         android:theme="@style/Theme.R4_11_DevMobile" >
         <activity
-            android:name="com.example.r4_11_devmobile.resetCode"
+            android:name="com.example.r4_11_devmobile.Password.resetCode"
             android:exported="false" />
         <activity
             android:name="com.example.r4_11_devmobile.MesPreferencesActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.r4_11_devmobile.NewEquipmentActivity"
+            android:name="com.example.r4_11_devmobile.Equipement.NewEquipmentActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.r4_11_devmobile.NewReservationActivity"
+            android:name="com.example.r4_11_devmobile.Password.NewReservationActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.r4_11_devmobile.NewPasswordActivity"
+            android:name="com.example.r4_11_devmobile.Password.NewPasswordActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.r4_11_devmobile.ForgotPasswordActivity"
+            android:name="com.example.r4_11_devmobile.Password.ForgotPasswordActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.r4_11_devmobile.LoginActivity"
+            android:name="com.example.r4_11_devmobile.RegisterLogin.LoginActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -60,10 +60,10 @@
             </intent-filter>
         </activity>
         <activity
-            android:name="com.example.r4_11_devmobile.EspaceClientModificationActivity"
+            android:name="com.example.r4_11_devmobile.EspaceClient.EspaceClientModificationActivity"
             android:exported="false" />
         <activity
-            android:name="com.example.r4_11_devmobile.RegisterActivity"
+            android:name="com.example.r4_11_devmobile.RegisterLogin.RegisterActivity"
             android:exported="true" />
         <activity
             android:name="com.example.r4_11_devmobile.SplashScreenActivity"
@@ -78,7 +78,7 @@
             -->
         </activity>
         <activity
-            android:name="com.example.r4_11_devmobile.AccueilActivity"
+            android:name="com.example.r4_11_devmobile.Accueil.AccueilActivity"
             android:exported="true" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

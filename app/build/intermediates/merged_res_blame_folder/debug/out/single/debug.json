@@ -196,10 +196,6 @@
         "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/drawable/img_2.png"
     },
     {
-        "merged": "com.example.r4_11_devmobile.app-merged_res-31:/layout_activity_new_equipment.xml.flat",
-        "source": "com.example.r4_11_devmobile.app-main-33:/layout/activity_new_equipment.xml"
-    },
-    {
         "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/layout_activity_accueil.xml.flat",
         "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/layout/activity_accueil.xml"
     },
@@ -222,6 +218,10 @@
     {
         "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/mipmap-xhdpi_ic_launcher_round.webp.flat",
         "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-33:/mipmap-xhdpi/ic_launcher_round.webp"
+    },
+    {
+        "merged": "com.example.r4_11_devmobile.app-merged_res-31:/menu_main_menu.xml.flat",
+        "source": "com.example.r4_11_devmobile.app-main-33:/menu/main_menu.xml"
     },
     {
         "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-31:/drawable_bookingreservation.png.flat",

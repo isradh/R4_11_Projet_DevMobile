@@ -28,7 +28,7 @@
             android:name=".Equipement.NewEquipmentActivity"
             android:exported="false" />
         <activity
-            android:name=".Password.NewReservationActivity"
+            android:name=".Reservation.NewReservationActivity"
             android:exported="false" />
         <activity
             android:name=".Password.NewPasswordActivity"
