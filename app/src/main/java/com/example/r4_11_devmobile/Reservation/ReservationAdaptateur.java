@@ -1,5 +1,6 @@
 package com.example.r4_11_devmobile.Reservation;
 
+import android.app.Activity;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.view.LayoutInflater;
@@ -16,6 +17,7 @@ import com.android.volley.Request;
 import com.android.volley.Response;
 import com.android.volley.VolleyError;
 import com.android.volley.toolbox.JsonObjectRequest;
+import com.android.volley.toolbox.Volley;
 import com.example.r4_11_devmobile.R;
 import com.example.r4_11_devmobile.UserId;
 import com.example.r4_11_devmobile.bd.DatabaseManager;
@@ -66,6 +68,8 @@ public class ReservationAdaptateur extends ArrayAdapter<Reservation> {
                 builder.setPositiveButton("Oui", new DialogInterface.OnClickListener() {
                     @Override
                     public void onClick(DialogInterface dialog, int which) {
+                        //Toast.makeText(getContext(), reservation.getId(), Toast.LENGTH_SHORT).show();
+
                         supprimerReservation(reservation.getId());
                     }
                 });
@@ -77,11 +81,14 @@ public class ReservationAdaptateur extends ArrayAdapter<Reservation> {
         return convertView;
     }
 
+
     public void ApiResponse(JSONObject response) {
         try {
             boolean success = response.getBoolean("success");
             if (success) {
                 Toast.makeText(getContext(), "Votre réservation a bien été supprimée", Toast.LENGTH_SHORT).show();
+                ((Activity) getContext()).recreate(); // Redémarre l'activité
+
             } else {
                 if (response.has("erreur")) {
                     String error = response.getString("erreur");
@@ -98,6 +105,7 @@ public class ReservationAdaptateur extends ArrayAdapter<Reservation> {
 
 
     public void supprimerReservation(int reservationId) {
+
         String url = "http://10.0.2.2/devmobile/actions/supprimerReservation.php?id=" + reservationId;
         JsonObjectRequest jsonObjectRequest = new JsonObjectRequest(Request.Method.POST, url, null,
                 new Response.Listener<JSONObject>() {
@@ -112,6 +120,7 @@ public class ReservationAdaptateur extends ArrayAdapter<Reservation> {
                         Toast.makeText(getContext(), erreur.getMessage(), Toast.LENGTH_LONG).show();
                     }
                 });
-        databaseManager.queue.add(jsonObjectRequest);
+        Volley.newRequestQueue(getContext()).add(jsonObjectRequest);
     }
+
 }

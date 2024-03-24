@@ -6,6 +6,7 @@ import androidx.fragment.app.Fragment;
 import android.content.Intent;
 import android.graphics.Paint;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -83,13 +84,15 @@ public class EspaceClientFragment extends Fragment {
                 String superficieStr = jsonObject.getString("superficie");
                 email = jsonObject.getString("email");
 
-                String malusStr =  jsonObject.getString("malus");
-                String bonusStr =  jsonObject.getString("bonus");
+                String malusStr =  jsonObject.getString("total_malus");
+                String bonusStr = jsonObject.getString("total_bonus");
+
+
 
 
 
                 TextView malus = view.findViewById(R.id.malus);
-                malus.setText(malusStr + "\nmalus");
+               malus.setText(malusStr + "\nmalus");
 
                 TextView bonus = view.findViewById(R.id.bonus);
                 bonus.setText(bonusStr + "\nbonus");
