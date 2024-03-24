@@ -74,8 +74,8 @@
 43-->/Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/VF_R4_VF/app/src/main/AndroidManifest.xml:29:13-37
 44        <activity
 44-->/Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/VF_R4_VF/app/src/main/AndroidManifest.xml:30:9-32:40
-45            android:name="com.example.r4_11_devmobile.Password.NewReservationActivity"
-45-->/Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/VF_R4_VF/app/src/main/AndroidManifest.xml:31:13-60
+45            android:name="com.example.r4_11_devmobile.Reservation.NewReservationActivity"
+45-->/Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/VF_R4_VF/app/src/main/AndroidManifest.xml:31:13-63
 46            android:exported="false" />
 46-->/Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/VF_R4_VF/app/src/main/AndroidManifest.xml:32:13-37
 47        <activity

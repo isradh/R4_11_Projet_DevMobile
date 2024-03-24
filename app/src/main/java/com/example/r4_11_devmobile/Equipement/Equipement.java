@@ -7,12 +7,14 @@ public class Equipement {
 
     private String nom;
     private int wattage;
+    private String imageUrl;
 
 
-    public Equipement(int id, String nom, int wattage){
+    public Equipement(int id, String nom, int wattage, String imageUrl){
         this.id = id;
         this.nom = nom;
         this.wattage = wattage;
+        this.imageUrl = imageUrl; // Initialisez l'URL de l'image
     }
 
 
@@ -25,5 +27,10 @@ public class Equipement {
 
     public int getWattage() {
         return wattage;
+    }
+
+
+    public String getImageUrl() {
+        return imageUrl;
     }
 }

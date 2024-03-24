@@ -8,6 +8,7 @@ MERGED from [com.google.android.material:material:1.11.0] /Users/isra/.gradle/ca
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/isra/.gradle/caches/transforms-3/3c6b14974eada3b737e4646addd01d24/transformed/constraintlayout-2.1.4/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/isra/.gradle/caches/transforms-3/8c60153bca6de4306b04ab8bc2348ea8/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/isra/.gradle/caches/transforms-3/b1741c2033ae6eec819ff5ea06ca1704/transformed/appcompat-1.6.1/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:glide:4.12.0] /Users/isra/.gradle/caches/transforms-3/0c335e9d3e9a3ebe696426835521bffb/transformed/glide-4.12.0/AndroidManifest.xml:2:1-12:12
 MERGED from [com.android.volley:volley:1.2.1] /Users/isra/.gradle/caches/transforms-3/e768328bbfffbdf343ced896e67753c4/transformed/volley-1.2.1/AndroidManifest.xml:2:1-7:12
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/isra/.gradle/caches/transforms-3/019add5e771534bb68424657ad94cdee/transformed/cardview-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.viewpager2:viewpager2:1.0.0] /Users/isra/.gradle/caches/transforms-3/21f8526f0d48b1fdd53d78929a1fa6eb/transformed/viewpager2-1.0.0/AndroidManifest.xml:17:1-24:12
@@ -36,6 +37,8 @@ MERGED from [androidx.recyclerview:recyclerview:1.1.0] /Users/isra/.gradle/cache
 MERGED from [androidx.customview:customview:1.1.0] /Users/isra/.gradle/caches/transforms-3/7ffea0bbf48c0d4abe22b77e0722cae2/transformed/customview-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.core:core:1.9.0] /Users/isra/.gradle/caches/transforms-3/16088aea6844a21f0ae8707202a192eb/transformed/core-1.9.0/AndroidManifest.xml:17:1-30:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/isra/.gradle/caches/transforms-3/618cbb17bba8c81668c4dc9604ffc868/transformed/cursoradapter-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] /Users/isra/.gradle/caches/transforms-3/8a4bf342abf45d299d86b723f8749193/transformed/gifdecoder-4.12.0/AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.exifinterface:exifinterface:1.2.0] /Users/isra/.gradle/caches/transforms-3/f7bfdd05f05b18f61dd3e072ca017ebf/transformed/exifinterface-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/isra/.gradle/caches/transforms-3/5ed20899a643be0e8f8917ec92e14e8b/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:17:1-27:12
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/isra/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:17:1-55:12
 MERGED from [androidx.startup:startup-runtime:1.1.1] /Users/isra/.gradle/caches/transforms-3/9b710c4adc9712c14d4578c905862b5b/transformed/startup-runtime-1.1.1/AndroidManifest.xml:17:1-33:12
@@ -75,12 +78,16 @@ MERGED from [com.google.android.material:material:1.11.0] /Users/isra/.gradle/ca
 MERGED from [com.google.android.material:material:1.11.0] /Users/isra/.gradle/caches/transforms-3/7bf998f9f4bdd84f156fbe08c4253964/transformed/material-1.11.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/isra/.gradle/caches/transforms-3/3c6b14974eada3b737e4646addd01d24/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:2.1.4] /Users/isra/.gradle/caches/transforms-3/3c6b14974eada3b737e4646addd01d24/transformed/constraintlayout-2.1.4/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:glide:4.12.0] /Users/isra/.gradle/caches/transforms-3/0c335e9d3e9a3ebe696426835521bffb/transformed/glide-4.12.0/AndroidManifest.xml:10:5-20
+MERGED from [com.github.bumptech.glide:glide:4.12.0] /Users/isra/.gradle/caches/transforms-3/0c335e9d3e9a3ebe696426835521bffb/transformed/glide-4.12.0/AndroidManifest.xml:10:5-20
 MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/isra/.gradle/caches/transforms-3/ea260942d8acadff20549e4d8b1553b4/transformed/emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.emoji2:emoji2:1.2.0] /Users/isra/.gradle/caches/transforms-3/ea260942d8acadff20549e4d8b1553b4/transformed/emoji2-1.2.0/AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /Users/isra/.gradle/caches/transforms-3/7537b831cd7e02c36f17372471ebcd05/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.lifecycle:lifecycle-process:2.6.1] /Users/isra/.gradle/caches/transforms-3/7537b831cd7e02c36f17372471ebcd05/transformed/lifecycle-process-2.6.1/AndroidManifest.xml:23:5-33:19
 MERGED from [androidx.core:core:1.9.0] /Users/isra/.gradle/caches/transforms-3/16088aea6844a21f0ae8707202a192eb/transformed/core-1.9.0/AndroidManifest.xml:28:5-89
 MERGED from [androidx.core:core:1.9.0] /Users/isra/.gradle/caches/transforms-3/16088aea6844a21f0ae8707202a192eb/transformed/core-1.9.0/AndroidManifest.xml:28:5-89
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] /Users/isra/.gradle/caches/transforms-3/8a4bf342abf45d299d86b723f8749193/transformed/gifdecoder-4.12.0/AndroidManifest.xml:9:5-20
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] /Users/isra/.gradle/caches/transforms-3/8a4bf342abf45d299d86b723f8749193/transformed/gifdecoder-4.12.0/AndroidManifest.xml:9:5-20
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/isra/.gradle/caches/transforms-3/5ed20899a643be0e8f8917ec92e14e8b/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/isra/.gradle/caches/transforms-3/5ed20899a643be0e8f8917ec92e14e8b/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/isra/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:23:5-53:19
@@ -129,12 +136,12 @@ ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/VF_R4_VF/app/src/main/An
 		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/VF_R4_VF/app/src/main/AndroidManifest.xml:29:13-37
 	android:name
 		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/VF_R4_VF/app/src/main/AndroidManifest.xml:28:13-60
-activity#com.example.r4_11_devmobile.Password.NewReservationActivity
+activity#com.example.r4_11_devmobile.Reservation.NewReservationActivity
 ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/VF_R4_VF/app/src/main/AndroidManifest.xml:30:9-32:40
 	android:exported
 		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/VF_R4_VF/app/src/main/AndroidManifest.xml:32:13-37
 	android:name
-		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/VF_R4_VF/app/src/main/AndroidManifest.xml:31:13-60
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/VF_R4_VF/app/src/main/AndroidManifest.xml:31:13-63
 activity#com.example.r4_11_devmobile.Password.NewPasswordActivity
 ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/VF_R4_VF/app/src/main/AndroidManifest.xml:33:9-35:40
 	android:exported
@@ -205,6 +212,8 @@ MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/isra/.gradle/c
 MERGED from [androidx.appcompat:appcompat-resources:1.6.1] /Users/isra/.gradle/caches/transforms-3/8c60153bca6de4306b04ab8bc2348ea8/transformed/appcompat-resources-1.6.1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/isra/.gradle/caches/transforms-3/b1741c2033ae6eec819ff5ea06ca1704/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
 MERGED from [androidx.appcompat:appcompat:1.6.1] /Users/isra/.gradle/caches/transforms-3/b1741c2033ae6eec819ff5ea06ca1704/transformed/appcompat-1.6.1/AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:glide:4.12.0] /Users/isra/.gradle/caches/transforms-3/0c335e9d3e9a3ebe696426835521bffb/transformed/glide-4.12.0/AndroidManifest.xml:6:5-8:41
+MERGED from [com.github.bumptech.glide:glide:4.12.0] /Users/isra/.gradle/caches/transforms-3/0c335e9d3e9a3ebe696426835521bffb/transformed/glide-4.12.0/AndroidManifest.xml:6:5-8:41
 MERGED from [com.android.volley:volley:1.2.1] /Users/isra/.gradle/caches/transforms-3/e768328bbfffbdf343ced896e67753c4/transformed/volley-1.2.1/AndroidManifest.xml:5:5-43
 MERGED from [com.android.volley:volley:1.2.1] /Users/isra/.gradle/caches/transforms-3/e768328bbfffbdf343ced896e67753c4/transformed/volley-1.2.1/AndroidManifest.xml:5:5-43
 MERGED from [androidx.cardview:cardview:1.0.0] /Users/isra/.gradle/caches/transforms-3/019add5e771534bb68424657ad94cdee/transformed/cardview-1.0.0/AndroidManifest.xml:20:5-44
@@ -261,6 +270,10 @@ MERGED from [androidx.core:core:1.9.0] /Users/isra/.gradle/caches/transforms-3/1
 MERGED from [androidx.core:core:1.9.0] /Users/isra/.gradle/caches/transforms-3/16088aea6844a21f0ae8707202a192eb/transformed/core-1.9.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/isra/.gradle/caches/transforms-3/618cbb17bba8c81668c4dc9604ffc868/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] /Users/isra/.gradle/caches/transforms-3/618cbb17bba8c81668c4dc9604ffc868/transformed/cursoradapter-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] /Users/isra/.gradle/caches/transforms-3/8a4bf342abf45d299d86b723f8749193/transformed/gifdecoder-4.12.0/AndroidManifest.xml:5:5-7:41
+MERGED from [com.github.bumptech.glide:gifdecoder:4.12.0] /Users/isra/.gradle/caches/transforms-3/8a4bf342abf45d299d86b723f8749193/transformed/gifdecoder-4.12.0/AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.exifinterface:exifinterface:1.2.0] /Users/isra/.gradle/caches/transforms-3/f7bfdd05f05b18f61dd3e072ca017ebf/transformed/exifinterface-1.2.0/AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.exifinterface:exifinterface:1.2.0] /Users/isra/.gradle/caches/transforms-3/f7bfdd05f05b18f61dd3e072ca017ebf/transformed/exifinterface-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/isra/.gradle/caches/transforms-3/5ed20899a643be0e8f8917ec92e14e8b/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.1] /Users/isra/.gradle/caches/transforms-3/5ed20899a643be0e8f8917ec92e14e8b/transformed/versionedparcelable-1.1.1/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.profileinstaller:profileinstaller:1.3.0] /Users/isra/.gradle/caches/transforms-3/6aebe797d2fce5c8727f4e04e3cbbf9a/transformed/profileinstaller-1.3.0/AndroidManifest.xml:21:5-44

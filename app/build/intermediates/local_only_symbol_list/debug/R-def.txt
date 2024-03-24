@@ -104,6 +104,7 @@ id id
 id idtext
 id image
 id imageView
+id imagequipement
 id info
 id information
 id listereservation

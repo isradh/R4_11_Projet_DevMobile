@@ -106,7 +106,7 @@ public class EquipementFragment extends Fragment {
     }
 
     private void handleResponse(JSONArray response) {
-        ArrayList<Equipement> equipement = new ArrayList<>();
+        ArrayList<Equipement> equipementList = new ArrayList<>();
         for (int i = 0; i < response.length(); i++) {
             try {
                 JSONObject jsonObject = response.getJSONObject(i);
@@ -115,19 +115,19 @@ public class EquipementFragment extends Fragment {
                 String nom = jsonObject.getString("nom");
                 String wattageStr = jsonObject.getString("wattage");
                 int wattage = Integer.parseInt(wattageStr);
-                equipement.add(new Equipement(id,nom, wattage));
+                String imageUrl = jsonObject.getString("path");
+                equipementList.add(new Equipement(id, nom, wattage, imageUrl));
                 wattotale += wattage;
             } catch (JSONException e) {
                 e.printStackTrace();
             }
         }
-        EquipmentAdaptateur adapter = new EquipmentAdaptateur(getContext(), equipement);
+        EquipmentAdaptateur adapter = new EquipmentAdaptateur(getContext(), equipementList);
         listView.setAdapter(adapter);
-        nbEquipement = equipement.size();
+        nbEquipement = equipementList.size();
         TextView puissanceGlobal = view.findViewById(R.id.puissanceGlobal);
         puissanceGlobal.setText("Puissance maximale :" + wattotale);
-
-
     }
+
 
 }

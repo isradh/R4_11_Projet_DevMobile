@@ -49,7 +49,7 @@
             android:layout_marginTop="20dp"
             android:layout_marginEnd="35dp"
             app:cardCornerRadius="15dp"
-            android:backgroundTint="#6B9080"
+            android:backgroundTint="@color/ligthgreen"
             app:cardBackgroundColor="@color/white"
             app:layout_constraintTop_toBottomOf="@+id/ecoCoins"
             app:layout_constraintEnd_toStartOf="@+id/coins2"
@@ -72,7 +72,7 @@
             android:layout_marginTop="20dp"
 
             app:cardCornerRadius="15dp"
-            android:backgroundTint="#6B9080"
+            android:backgroundTint="@color/ligthgreen"
             app:cardBackgroundColor="@color/white"
             app:layout_constraintTop_toBottomOf="@+id/ecoCoins"
             app:layout_constraintStart_toStartOf="parent"
