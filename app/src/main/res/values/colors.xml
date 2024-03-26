@@ -8,7 +8,9 @@
     <color name="colorPrimaryDark">#1B1919</color>
     <color name="colorAccent">#2B472C</color>
     <color name="colorPrimary">#E6908A</color>
-
+    <color name="lightGray">#EEE</color>
+    <color name="gray">#888</color>
+    <color name="blue">#0000FF</color>
     <color name="textColor">#000000</color>
 
 </resources>

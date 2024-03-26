@@ -1,10 +1,13 @@
 R_DEF: Internal format may change without notice
 local
 color black
+color blue
 color colorAccent
 color colorPrimary
 color colorPrimaryDark
 color darkgreen
+color gray
+color lightGray
 color ligthgreen
 color textColor
 color veriligthgreen
@@ -71,10 +74,12 @@ id bonus
 id btnAnnuler
 id btnUpload
 id btnajouter
+id calendarRecyclerView
 id calendrier
 id cardView
 id cardViewinputcode
 id cardetage
+id cellDayText
 id citationText
 id coins1
 id coins2
@@ -82,8 +87,10 @@ id coins3
 id confirmeMdp
 id conseil
 id copyright
+id couleur
 id dateM
 id datereservation
+id dayOfWeekTV
 id drawer_layout
 id ecoCoins
 id email
@@ -91,8 +98,14 @@ id emailSaisie
 id equipements
 id etage
 id etageSaisie
+id eventCellTV
+id eventDateTV
+id eventListView
+id eventNameET
+id eventTimeTV
 id explicationText
 id frameLayout
+id gridViewHours
 id guidelineEnd
 id guidelineStart
 id hello
@@ -100,6 +113,7 @@ id heuredebut
 id heuredebutindication
 id heurefin
 id heurefinindication
+id hourListView
 id id
 id idtext
 id image
@@ -121,8 +135,11 @@ id mdp
 id mdpSaisie
 id message
 id modif
+id monthDayText
+id monthYearTV
 id nav_accueil
 id nav_apropos
+id nav_calendrier
 id nav_deconnection
 id nav_equipement
 id nav_espaceclient
@@ -138,6 +155,8 @@ id nav_view
 id navigation_view
 id nom
 id nomSaisie
+id parentView
+id poucentage
 id prenom
 id prenomSaisie
 id prenomText
@@ -154,17 +173,24 @@ id switchCompat
 id text
 id textView
 id textView5
+id textViewDate
 id textViewTitle
 id textxt
+id timeTV
 id toolbar
 id tout
 id wattage
+id wattageTV
 id wattageText
+layout acticity_calendrier
 layout activity_accueil
 layout activity_apropos
+layout activity_daily_calendar
 layout activity_espace_client_modification
+layout activity_event_edit
 layout activity_forgot_password
 layout activity_login
+layout activity_main
 layout activity_new_equipment
 layout activity_new_password
 layout activity_nouvellereservation
@@ -173,6 +199,9 @@ layout activity_reset_code
 layout activity_resident
 layout activity_splash_screen
 layout activity_splash_screen2
+layout activity_week_view
+layout calendar_cell
+layout event_cell
 layout fragment_a_propos
 layout fragment_accueil
 layout fragment_equipement
@@ -182,6 +211,7 @@ layout fragment_preferences
 layout fragment_reservation
 layout fragment_resident
 layout header_menu
+layout hour_cell
 layout item_equipement
 layout item_notification
 layout item_reservation
@@ -190,6 +220,8 @@ menu main_menu
 mipmap ic_launcher
 mipmap ic_launcher_round
 string app_name
+string back
+string forward
 string hello_blank_fragment
 string navi
 string navigation_drawer_close

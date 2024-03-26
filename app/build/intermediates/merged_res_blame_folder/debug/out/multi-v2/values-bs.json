@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "com.example.r4_11_devmobile.app-mergeDebugResources-29:/values-bs/values-bs.xml",
+            "outputFile": "com.example.r4_11_devmobile.app-mergeDebugResources-30:/values-bs/values-bs.xml",
             "map": [
                 {
                     "source": "/Users/isra/.gradle/caches/transforms-3/b1741c2033ae6eec819ff5ea06ca1704/transformed/appcompat-1.6.1/res/values-bs/values-bs.xml",

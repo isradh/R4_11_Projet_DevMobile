@@ -17,13 +17,22 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.R4_11_DevMobile"
         tools:targetApi="31">
+        <activity android:name=".calendar.DailyCalendarActivity" />
 
+        <activity
+            android:name=".calendar.WeekViewActivity"
+            android:exported="false" >
+
+        </activity>
+
+        <activity
+            android:name=".calendar.MainActivity"
+            android:exported="true" >
+        </activity>
         <activity
             android:name=".Password.resetCode"
             android:exported="false" />
-        <activity
-            android:name=".MesPreferencesActivity"
-            android:exported="false" />
+
         <activity
             android:name=".Equipement.NewEquipmentActivity"
             android:exported="false" />
@@ -36,6 +45,8 @@
         <activity
             android:name=".Password.ForgotPasswordActivity"
             android:exported="false" />
+
+
         <activity
             android:name=".RegisterLogin.LoginActivity"
             android:exported="true">
@@ -54,11 +65,14 @@
         <activity
             android:name=".SplashScreenActivity"
             android:exported="true">
-            <!--<intent-filter>
+
+            <!--
+            <intent-filter>
             <action android:name="android.intent.action.MAIN" />
 
             <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>-->
+            </intent-filter>
+            -->
         </activity>
         <activity
             android:name=".Accueil.AccueilActivity"

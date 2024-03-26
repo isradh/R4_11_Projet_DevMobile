@@ -1355,6 +1355,7 @@ color background_floating_material_light
 color background_material_dark
 color background_material_light
 color black
+color blue
 color bright_foreground_disabled_material_dark
 color bright_foreground_disabled_material_light
 color bright_foreground_inverse_material_dark
@@ -1417,8 +1418,10 @@ color error_color_material_dark
 color error_color_material_light
 color foreground_material_dark
 color foreground_material_light
+color gray
 color highlighted_text_material_dark
 color highlighted_text_material_light
+color lightGray
 color ligthgreen
 color m3_appbar_overlay_color
 color m3_assist_chip_icon_tint_color
@@ -3236,6 +3239,7 @@ id btnUpload
 id btnajouter
 id buttonPanel
 id cache_measures
+id calendarRecyclerView
 id calendrier
 id callMeasure
 id cancel_button
@@ -3243,6 +3247,7 @@ id cardView
 id cardViewinputcode
 id cardetage
 id carryVelocity
+id cellDayText
 id center
 id centerCrop
 id centerInside
@@ -3278,6 +3283,7 @@ id continuousVelocity
 id coordinator
 id copyright
 id cos
+id couleur
 id counterclockwise
 id cradle
 id currentState
@@ -3287,6 +3293,7 @@ id cut
 id dateM
 id date_picker_actions
 id datereservation
+id dayOfWeekTV
 id decelerate
 id decelerateAndComplete
 id decor_content_parent
@@ -3334,6 +3341,11 @@ id enterAlwaysCollapsed
 id equipements
 id etage
 id etageSaisie
+id eventCellTV
+id eventDateTV
+id eventListView
+id eventNameET
+id eventTimeTV
 id exitUntilCollapsed
 id expand_activities_button
 id expanded_menu
@@ -3362,6 +3374,7 @@ id glide_custom_view_target_tag
 id gone
 id graph
 id graph_wrap
+id gridViewHours
 id group_divider
 id grouping
 id groups
@@ -3378,6 +3391,7 @@ id home
 id homeAsUp
 id honorRequest
 id horizontal_only
+id hourListView
 id icon
 id icon_group
 id id
@@ -3451,6 +3465,8 @@ id message
 id middle
 id mini
 id modif
+id monthDayText
+id monthYearTV
 id month_grid
 id month_navigation_bar
 id month_navigation_fragment_toggle
@@ -3484,6 +3500,7 @@ id mtrl_view_tag_bottom_padding
 id multiply
 id nav_accueil
 id nav_apropos
+id nav_calendrier
 id nav_deconnection
 id nav_equipement
 id nav_espaceclient
@@ -3542,6 +3559,7 @@ id parallax
 id parent
 id parentPanel
 id parentRelative
+id parentView
 id parent_matrix
 id password_toggle
 id path
@@ -3551,6 +3569,7 @@ id percent
 id pin
 id position
 id postLayout
+id poucentage
 id prenom
 id prenomSaisie
 id prenomText
@@ -3662,6 +3681,7 @@ id textStart
 id textTop
 id textView
 id textView5
+id textViewDate
 id textViewTitle
 id text_input_end_icon
 id text_input_error_icon
@@ -3674,6 +3694,7 @@ id textinput_prefix_text
 id textinput_suffix_text
 id textxt
 id time
+id timeTV
 id title
 id titleDividerNoCustom
 id title_template
@@ -3706,6 +3727,7 @@ id view_tree_view_model_store_owner
 id visible
 id visible_removing_fragment_view_tag
 id wattage
+id wattageTV
 id wattageText
 id west
 id withText
@@ -3830,11 +3852,15 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout acticity_calendrier
 layout activity_accueil
 layout activity_apropos
+layout activity_daily_calendar
 layout activity_espace_client_modification
+layout activity_event_edit
 layout activity_forgot_password
 layout activity_login
+layout activity_main
 layout activity_new_equipment
 layout activity_new_password
 layout activity_nouvellereservation
@@ -3843,6 +3869,8 @@ layout activity_reset_code
 layout activity_resident
 layout activity_splash_screen
 layout activity_splash_screen2
+layout activity_week_view
+layout calendar_cell
 layout custom_dialog
 layout design_bottom_navigation_item
 layout design_bottom_sheet_dialog
@@ -3859,6 +3887,7 @@ layout design_navigation_menu
 layout design_navigation_menu_item
 layout design_text_input_end_icon
 layout design_text_input_start_icon
+layout event_cell
 layout fragment_a_propos
 layout fragment_accueil
 layout fragment_equipement
@@ -3868,6 +3897,7 @@ layout fragment_preferences
 layout fragment_reservation
 layout fragment_resident
 layout header_menu
+layout hour_cell
 layout item_equipement
 layout item_notification
 layout item_reservation
@@ -3967,6 +3997,7 @@ string abc_toolbar_collapse_description
 string androidx_startup
 string app_name
 string appbar_scrolling_view_behavior
+string back
 string bottom_sheet_behavior
 string bottomsheet_action_collapse
 string bottomsheet_action_expand
@@ -3982,6 +4013,7 @@ string error_icon_content_description
 string exposed_dropdown_menu_content_description
 string fab_transformation_scrim_behavior
 string fab_transformation_sheet_behavior
+string forward
 string hello_blank_fragment
 string hide_bottom_view_on_scroll_behavior
 string icon_content_description

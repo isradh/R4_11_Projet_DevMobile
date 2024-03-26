@@ -1,10 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources xmlns:ns1="http://schemas.android.com/tools">
     <color name="black">#FF000000</color>
+    <color name="blue">#0000FF</color>
     <color name="colorAccent">#2B472C</color>
     <color name="colorPrimary">#E6908A</color>
     <color name="colorPrimaryDark">#1B1919</color>
     <color name="darkgreen">#5C7E6F</color>
+    <color name="gray">#888</color>
+    <color name="lightGray">#EEE</color>
     <color name="ligthgreen">#6B9080</color>
     <color name="textColor">#000000</color>
     <color name="veriligthgreen">#BFD8BD</color>
@@ -14,6 +17,8 @@
     <item name="nav_notif" type="id"/>
     <item name="nav_preference" type="id"/>
     <string name="app_name">R4_11_DevMobile</string>
+    <string name="back"><![CDATA[<-]]></string>
+    <string name="forward"><![CDATA[->]]></string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="navi">Close </string>
     <string name="navigation_drawer_close">Close navigation drawer</string>

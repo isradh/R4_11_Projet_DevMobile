@@ -5,7 +5,7 @@
     android:versionName="1.0" >
 
     <uses-sdk
-        android:minSdkVersion="21"
+        android:minSdkVersion="26"
         android:targetSdkVersion="34" />
 
     <uses-permission android:name="android.permission.INTERNET" />
@@ -23,7 +23,7 @@
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:dataExtractionRules="@xml/data_extraction_rules"
         android:debuggable="true"
-        android:extractNativeLibs="true"
+        android:extractNativeLibs="false"
         android:fullBackupContent="@xml/backup_rules"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
@@ -32,11 +32,17 @@
         android:supportsRtl="true"
         android:testOnly="true"
         android:theme="@style/Theme.R4_11_DevMobile" >
+        <activity android:name="com.example.r4_11_devmobile.calendar.DailyCalendarActivity" />
+        <activity
+            android:name="com.example.r4_11_devmobile.calendar.WeekViewActivity"
+            android:exported="false" >
+        </activity>
+        <activity
+            android:name="com.example.r4_11_devmobile.calendar.MainActivity"
+            android:exported="true" >
+        </activity>
         <activity
             android:name="com.example.r4_11_devmobile.Password.resetCode"
-            android:exported="false" />
-        <activity
-            android:name="com.example.r4_11_devmobile.MesPreferencesActivity"
             android:exported="false" />
         <activity
             android:name="com.example.r4_11_devmobile.Equipement.NewEquipmentActivity"
