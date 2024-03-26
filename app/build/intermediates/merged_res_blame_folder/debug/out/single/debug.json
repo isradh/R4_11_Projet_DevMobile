@@ -8,6 +8,10 @@
         "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-34:/drawable/auteur.png"
     },
     {
+        "merged": "com.example.r4_11_devmobile.app-merged_res-32:/layout_activity_daily_calendar.xml.flat",
+        "source": "com.example.r4_11_devmobile.app-main-34:/layout/activity_daily_calendar.xml"
+    },
+    {
         "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-32:/drawable_seconnecter.png.flat",
         "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-34:/drawable/seconnecter.png"
     },
@@ -46,10 +50,6 @@
     {
         "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-32:/drawable_ic_launcher_background.xml.flat",
         "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-34:/drawable/ic_launcher_background.xml"
-    },
-    {
-        "merged": "com.example.r4_11_devmobile.app-merged_res-32:/layout_hour_cell.xml.flat",
-        "source": "com.example.r4_11_devmobile.app-main-34:/layout/hour_cell.xml"
     },
     {
         "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-32:/layout_fragment_reservation.xml.flat",
