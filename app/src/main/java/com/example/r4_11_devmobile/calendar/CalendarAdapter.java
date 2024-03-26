@@ -13,7 +13,7 @@ import com.example.r4_11_devmobile.R;
 import java.time.LocalDate;
 import java.util.ArrayList;
 
-class CalendarAdapter extends RecyclerView.Adapter<CalendarViewHolder>
+public class CalendarAdapter extends RecyclerView.Adapter<CalendarViewHolder>
 {
     private final ArrayList<LocalDate> days;
     private final OnItemListener onItemListener;
@@ -40,9 +40,8 @@ class CalendarAdapter extends RecyclerView.Adapter<CalendarViewHolder>
     }
 
     @Override
-    public void onBindViewHolder(@NonNull CalendarViewHolder holder, int position)
-    {
-        LocalDate date = days.get(position).minusDays(-1);;
+    public void onBindViewHolder(@NonNull CalendarViewHolder holder, int position) {
+        LocalDate date = days.get(position);
 
         holder.dayOfMonth.setText(String.valueOf(date.getDayOfMonth()));
 

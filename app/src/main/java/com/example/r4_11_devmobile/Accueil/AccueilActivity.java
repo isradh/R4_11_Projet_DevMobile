@@ -29,7 +29,7 @@ import com.example.r4_11_devmobile.R;
 import com.example.r4_11_devmobile.RegisterLogin.LoginActivity;
 import com.example.r4_11_devmobile.Reservation.ReservationFragment;
 import com.example.r4_11_devmobile.Resident.ResidentFragment;
-import com.example.r4_11_devmobile.calendar.MainActivity;
+import com.example.r4_11_devmobile.calendar.CalendarFragment;
 import com.google.android.material.appbar.MaterialToolbar;
 import com.google.android.material.navigation.NavigationView;
 public class AccueilActivity extends AppCompatActivity {
@@ -103,9 +103,8 @@ public class AccueilActivity extends AppCompatActivity {
                     Intent intent = new Intent(getApplicationContext(), LoginActivity.class);
                     startActivity(intent);
                 }else if(item.getItemId() == R.id.nav_calendrier){
-                    finish();
-                    Intent intent = new Intent(getApplicationContext(), MainActivity.class);
-                    startActivity(intent);
+                    replaceFragment(new CalendarFragment());
+                    toolbar.setTitle("Calendrier");
             }
 
 

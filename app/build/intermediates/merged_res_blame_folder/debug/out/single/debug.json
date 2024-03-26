@@ -276,6 +276,10 @@
         "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-34:/drawable/broche.png"
     },
     {
+        "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-32:/layout_fragment_calandar.xml.flat",
+        "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-34:/layout/fragment_calandar.xml"
+    },
+    {
         "merged": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-merged_res-32:/drawable_img.png.flat",
         "source": "/Users/isra/.gradle/daemon/8.2/com.example.r4_11_devmobile.app-main-34:/drawable/img.png"
     },

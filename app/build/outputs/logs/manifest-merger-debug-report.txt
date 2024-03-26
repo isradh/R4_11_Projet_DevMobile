@@ -128,12 +128,12 @@ ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/VF_R4_VF/app/src/main/An
 		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/VF_R4_VF/app/src/main/AndroidManifest.xml:24:13-37
 	android:name
 		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/VF_R4_VF/app/src/main/AndroidManifest.xml:23:13-54
-activity#com.example.r4_11_devmobile.calendar.MainActivity
+activity#com.example.r4_11_devmobile.calendar.CalandarFragment
 ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/VF_R4_VF/app/src/main/AndroidManifest.xml:28:9-31:20
 	android:exported
 		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/VF_R4_VF/app/src/main/AndroidManifest.xml:30:13-36
 	android:name
-		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/VF_R4_VF/app/src/main/AndroidManifest.xml:29:13-50
+		ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/VF_R4_VF/app/src/main/AndroidManifest.xml:29:13-54
 activity#com.example.r4_11_devmobile.Password.resetCode
 ADDED from /Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/VF_R4_VF/app/src/main/AndroidManifest.xml:32:9-34:40
 	android:exported

@@ -3896,6 +3896,7 @@ int layout design_text_input_start_icon 0x7f0b003e
 int layout event_cell 0x7f0b003f
 int layout fragment_a_propos 0x7f0b0040
 int layout fragment_accueil 0x7f0b0041
+int layout fragment_calandar 0x7f0b008b
 int layout fragment_equipement 0x7f0b0042
 int layout fragment_espace_client 0x7f0b0043
 int layout fragment_notification 0x7f0b0044

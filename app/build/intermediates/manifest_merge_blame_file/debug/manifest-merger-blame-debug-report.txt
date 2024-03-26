@@ -66,8 +66,8 @@
 39        </activity>
 40        <activity
 40-->/Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/VF_R4_VF/app/src/main/AndroidManifest.xml:28:9-31:20
-41            android:name="com.example.r4_11_devmobile.calendar.MainActivity"
-41-->/Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/VF_R4_VF/app/src/main/AndroidManifest.xml:29:13-50
+41            android:name="com.example.r4_11_devmobile.calendar.CalandarFragment"
+41-->/Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/VF_R4_VF/app/src/main/AndroidManifest.xml:29:13-54
 42            android:exported="true" >
 42-->/Users/isra/Desktop/SEMESTRE 4/Mobile/PROJET/VF_R4_VF/app/src/main/AndroidManifest.xml:30:13-36
 43        </activity>

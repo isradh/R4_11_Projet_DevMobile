@@ -38,7 +38,7 @@
             android:exported="false" >
         </activity>
         <activity
-            android:name="com.example.r4_11_devmobile.calendar.MainActivity"
+            android:name="com.example.r4_11_devmobile.calendar.CalandarFragment"
             android:exported="true" >
         </activity>
         <activity

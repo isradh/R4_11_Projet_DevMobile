@@ -211,6 +211,7 @@ layout calendar_cell
 layout event_cell
 layout fragment_a_propos
 layout fragment_accueil
+layout fragment_calandar
 layout fragment_equipement
 layout fragment_espace_client
 layout fragment_notification
