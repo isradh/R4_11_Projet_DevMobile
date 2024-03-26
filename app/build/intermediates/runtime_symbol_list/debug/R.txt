@@ -2984,6 +2984,8 @@ int drawable avd_hide_password 0x7f07007d
 int drawable avd_show_password 0x7f07007e
 int drawable background_edittext 0x7f07007f
 int drawable banniere 0x7f070080
+int drawable baseline_arrow_back_ios_24 0x7f07010b
+int drawable baseline_arrow_forward_ios_24 0x7f07010c
 int drawable baseline_menu_24 0x7f070081
 int drawable blanchisserie 0x7f070082
 int drawable booking 0x7f070083
@@ -3293,6 +3295,7 @@ int id dateM 0x7f0800a7
 int id date_picker_actions 0x7f0800a8
 int id datereservation 0x7f0800a9
 int id dayOfWeekTV 0x7f0800aa
+int id dayView 0x7f08026b
 int id decelerate 0x7f0800ab
 int id decelerateAndComplete 0x7f0800ac
 int id decor_content_parent 0x7f0800ad
@@ -3410,6 +3413,8 @@ int id invisible 0x7f08011c
 int id inward 0x7f08011d
 int id italic 0x7f08011e
 int id item_touch_helper_previous_elevation 0x7f08011f
+int id jourApres 0x7f080267
+int id jourAvant 0x7f080268
 int id jumpToEnd 0x7f080120
 int id jumpToStart 0x7f080121
 int id labeled 0x7f080122
@@ -3464,6 +3469,8 @@ int id message 0x7f080152
 int id middle 0x7f080153
 int id mini 0x7f080154
 int id modif 0x7f080155
+int id moisApres 0x7f080269
+int id moisAvant 0x7f08026a
 int id monthDayText 0x7f080156
 int id monthYearTV 0x7f080157
 int id month_grid 0x7f080158

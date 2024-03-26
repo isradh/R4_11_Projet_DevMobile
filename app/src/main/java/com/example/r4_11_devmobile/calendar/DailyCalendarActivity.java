@@ -7,6 +7,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -33,7 +34,32 @@ public class DailyCalendarActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_daily_calendar);
         initWidgets();
+
+
+        ImageView jourAvant = findViewById(R.id.jourAvant);
+
+        jourAvant.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CalendarUtils.selectedDate = CalendarUtils.selectedDate.minusDays(1);
+                setDayView();
+            }
+        });
+
+
+        ImageView jourApres = findViewById(R.id.jourApres);
+
+        jourApres.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CalendarUtils.selectedDate = CalendarUtils.selectedDate.plusDays(1);
+                setDayView();
+            }
+
+        });
     }
+
+
 
     private void initWidgets()
     {
@@ -55,6 +81,11 @@ public class DailyCalendarActivity extends AppCompatActivity
         String dayOfWeek = selectedDate.getDayOfWeek().getDisplayName(TextStyle.FULL, Locale.getDefault());
         dayOfWeekTV.setText(dayOfWeek);
         setHourAdapter(); // Charger les nouvelles données
+
+
+
+
+
     }
 
 
@@ -80,17 +111,9 @@ public class DailyCalendarActivity extends AppCompatActivity
         return list;
     }
 
-    public void previousDayAction(View view)
-    {
-        CalendarUtils.selectedDate = CalendarUtils.selectedDate.minusDays(1);
-        setDayView();
-    }
 
-    public void nextDayAction(View view)
-    {
-        CalendarUtils.selectedDate = CalendarUtils.selectedDate.plusDays(1);
-        setDayView();
-    }
+
+
 
     public void newEventAction(View view)
     {

@@ -19,6 +19,8 @@ drawable aspirateur
 drawable auteur
 drawable background_edittext
 drawable banniere
+drawable baseline_arrow_back_ios_24
+drawable baseline_arrow_forward_ios_24
 drawable baseline_menu_24
 drawable blanchisserie
 drawable booking
@@ -91,6 +93,7 @@ id couleur
 id dateM
 id datereservation
 id dayOfWeekTV
+id dayView
 id drawer_layout
 id ecoCoins
 id email
@@ -121,6 +124,8 @@ id imageView
 id imagequipement
 id info
 id information
+id jourApres
+id jourAvant
 id listereservation
 id loginBtn
 id logo
@@ -135,6 +140,8 @@ id mdp
 id mdpSaisie
 id message
 id modif
+id moisApres
+id moisAvant
 id monthDayText
 id monthYearTV
 id nav_accueil

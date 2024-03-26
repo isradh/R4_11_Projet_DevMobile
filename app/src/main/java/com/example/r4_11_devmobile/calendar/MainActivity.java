@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
@@ -33,6 +34,40 @@ public class MainActivity extends AppCompatActivity implements CalendarAdapter.O
         initWidgets();
         CalendarUtils.selectedDate = LocalDate.now();
         setMonthView();
+
+
+        ImageView moisAvant = findViewById(R.id.moisAvant);
+
+        ImageView moisApres = findViewById(R.id.moisApres);
+
+        TextView dayView = findViewById(R.id.dayView);
+
+
+        dayView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(getApplicationContext(), DailyCalendarActivity.class));
+
+            }
+        });
+
+        moisAvant.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CalendarUtils.selectedDate = CalendarUtils.selectedDate.minusMonths(1);
+                setMonthView();
+            }
+        });
+
+        moisApres.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                CalendarUtils.selectedDate = CalendarUtils.selectedDate.plusMonths(1);
+                setMonthView();
+            }
+
+
+        });
     }
 
     private void initWidgets()
@@ -52,17 +87,9 @@ public class MainActivity extends AppCompatActivity implements CalendarAdapter.O
         calendarRecyclerView.setAdapter(calendarAdapter);
     }
 
-    public void previousMonthAction(View view)
-    {
-        CalendarUtils.selectedDate = CalendarUtils.selectedDate.minusMonths(1);
-        setMonthView();
-    }
 
-    public void nextMonthAction(View view)
-    {
-        CalendarUtils.selectedDate = CalendarUtils.selectedDate.plusMonths(1);
-        setMonthView();
-    }
+
+
 
     @Override
     public void onItemClick(int position, LocalDate date)
@@ -74,10 +101,7 @@ public class MainActivity extends AppCompatActivity implements CalendarAdapter.O
         }
     }
 
-    public void weeklyAction(View view)
-    {
-        startActivity(new Intent(this, DailyCalendarActivity.class));
-    }
+
 }
 
 
